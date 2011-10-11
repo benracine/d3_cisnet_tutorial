@@ -1,6 +1,7 @@
 ============================
 Title
 ============================
+
 Slide #1:  Data icon > Transformation > Visualization icon > Real world impact icon
 Introductions and 13 favorite tools/languages
 	Database and/or spreadsheet tool
