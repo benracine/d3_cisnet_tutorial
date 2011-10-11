@@ -1,3 +1,3 @@
 git add .
 git commit -am 'its early, give me a break'
-git push -u origin master
+git push -u origin master-editing
