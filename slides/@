@@ -7,50 +7,51 @@
 
 \mode<presentation>
 {
-    \usetheme{Warsaw}
-    \usecolortheme{default}
-    \usefonttheme[onlysmall]{structurebold}
-    \setbeamercovered{dynamic}
-    \setbeamercolor{math text}{fg=red!50!black}
-    \setbeamercolor{normal text in math text}{parent=math text}
+  \usetheme{Warsaw}
+  \usecolortheme{default}
+  \usefonttheme[onlysmall]{structurebold}
 }
 
-\usepackage{amsmath,amssymb}
-\usepackage{colortbl}
-\usepackage[english]{babel}
-\usepackage{fancybox, stmaryrd}
-\usepackage[latin1]{inputenc}
-\usepackage{lmodern}
+\setbeamercolor{math text}{fg=red!50!black}
+\setbeamercolor{normal text in math text}{parent=math text}
+
 \usepackage{pgf,pgfarrows,pgfnodes,pgfautomata}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage[latin1]{inputenc}
+\usepackage{colortbl}
+\usepackage{fancybox, stmaryrd}
+\usepackage[english]{babel}
+\usepackage{verbatim}
+\usepackage{lmodern}
 \usepackage[T1]{fontenc} 
 \usepackage{times}
-\usepackage{verbatim}
 
+\setbeamercovered{dynamic}
 
-% Intro Slide
-\title{PBO Workshop} 
-\subtitle{Data-Driven Documents With d3} 
-\author[]{ Ben Racine \inst{1} }
-\institute[]{\inst{1} Cornerstone Systems NW }
-\date[]{November 2, 2011}
+\title{PBO Workshop: Data-Driven Documents With d3} 
+\author[Ben Racine]{ Ben Racine \inst{1} }
+%\email[Something]{i3enhamin@gmail.com}
+\institute[]{ \inst{1} Cornerstone Systems NW }
+\date[AMath 2011]{ \\ November 2, 2011}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-% Intro Slide
-%\frame{\titlepage}
-    \part<presentation>{Main Talk}
 
+\frame{\titlepage}
+\part<presentation>{Main Talk}
 \begin{frame}
-    \frametitle{Outline}
+  \frametitle{Outline}
     \tableofcontents
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section[Introduction]{Introduction}
 
 \subsection[Attendees]{Attendees}
-
-
 \begin{frame}
     \frametitle{Introductions}
     \begin{block}{Favorite Tools?}
@@ -67,26 +68,22 @@
     \end{block}
 \end{frame}
 
-
 \subsection[Browser Poll]{Browser Poll}
-
 \begin{frame}
-    \frametitle{Introductions}
-    \begin{block}{Browser Usage}
-        \begin{itemize}
-            \item Chrome
-            \item Firefox 3
-            \item IE9
-            \item Safari
-            \item Opera
-            \item None of the above?
-        \end{itemize}
-    \end{block}
+\frametitle{Introductions}
+\begin{block}{Browser Usage}
+\begin{itemize}
+\item Chrome
+\item Firefox 3
+\item IE9
+\item Safari
+\item Opera
+\item None of the above?
+\end{itemize}
+\end{block}
 \end{frame}
 
-
 \section[Installation]{Installation}
-
 \begin{frame}
     \frametitle{Introductions}
     \begin{block}{Decision Tree}
@@ -102,7 +99,10 @@
     %else
     %	jsfiddle links 1n
     %end
+    \begin{verbatim}
+    \end{verbatim}
     \end{block}
+
     \footnote{Chrome might have funny behavior if you don't serve up d3 root as localhost}
 \end{frame}
 
