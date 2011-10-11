@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <style type="text/css">
+
+svg {
+  font: 300 12px "Helvetica Neue";
+}
+
+.bar rect {
+  fill: steelblue;
+}
+
+.bar text.value {
+  fill: white;
+}
+
+.axis line, .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+var numbers = [4, 8, 15, 16, 23, 42],
+    names = ["Locke", "Reyes", "Ford", "Jarrah", "Shephard", "Kwon"];
+
+var m = [20, 20, 20, 80], // top right bottom left
+    w = 500 - m[1] - m[3],
+    h = 200 - m[0] - m[2];
+
+var x = d3.scale.linear()
+    .domain([0, d3.max(numbers)])
+    .range([0, w]);
+
+var y = d3.scale.ordinal()
+    .domain(d3.range(numbers.length))
+    .rangeRoundBands([0, h], .1);
+
+var svg = d3.select("body").append("svg:svg")
+    .attr("width", w + m[1] + m[3])
+    .attr("height", h + m[0] + m[2])
+  .append("svg:g")
+    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+var g = svg.selectAll(".bar")
+    .data(numbers)
+  .enter().append("svg:g")
+    .attr("class", "bar")
+    .attr("transform", function(d, i) { return "translate(0," + y(i) + ")"; });
+
+g.append("svg:rect")
+    .attr("height", y.rangeBand())
+    .attr("width", x)
+
+g.append("svg:text")
+    .attr("class", "value")
+    .attr("x", x)
+    .attr("y", y.rangeBand() / 2)
+    .attr("dx", "-6px")
+    .attr("dy", ".35em")
+    .attr("text-anchor", "end")
+    .text(function(d) { return d; });
+
+g.append("svg:text")
+    .attr("class", "name")
+    .attr("y", y.rangeBand() / 2)
+    .attr("dx", "-6px")
+    .attr("dy", ".35em")
+    .attr("text-anchor", "end")
+    .text(function(d, i) { return names[i]; });
+
+svg.append("svg:g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + h + ")")
+    .call(d3.svg.axis().scale(x).orient("bottom"));
+
+    </script>
+  </body>
+</html>

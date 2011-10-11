@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <style tyle="text/css">
+
+svg {
+  display: block;
+}
+
+circle {
+  fill: steelblue;
+}
+
+text {
+  font: 300 36px "Helvetica Neue";
+  fill: white;
+  text-shadow: 0 1px 4px #000;
+}
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+var w = 960,
+    h = 500,
+    r = h / 4;
+
+d3.select("body").append("input")
+    .attr("type", "range")
+    .attr("min", 0)
+    .attr("max", 200)
+    .attr("value", 100)
+    .on("change", change);
+
+var svg = d3.select("body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h)
+  .append("svg:g")
+    .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")")
+  .append("svg:g");
+
+var circle = svg.append("svg:circle")
+    .attr("r", r);
+
+svg.append("svg:text")
+    .attr("dy", ".35em")
+    .attr("text-anchor", "middle")
+    .text("Hello, input!");
+
+function change() {
+  svg.attr("transform", "scale(" + this.value / 100 + ")");
+}
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="d3/d3.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+var w = 960,
+    h = 500;
+
+var svg = d3.select("body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+    /*
+  .append("svg:g")
+    .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
+    */
+
+svg.append("svg:circle")
+    .attr("r", h / 4)
+    .attr("cx", w / 2)
+    .attr("cy", h / 2)
+    .attr("fill", "steelblue");
+
+/*
+svg.append("svg:text")
+    .attr("dy", ".35em")
+    .attr("text-anchor", "middle")
+    .attr("font-weight", 300)
+    .attr("font-size", "36px")
+    .attr("font-family", "Helvetica Neue")
+    .attr("fill", "white")
+    .text("Hello, SVG!");
+    */
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {english}
+\beamer@sectionintoc {1}{History}{3}{1}{1}
+\beamer@subsectionintoc {1}{1}{Sarkovskii's Theorem}{3}{1}{1}
+\beamer@sectionintoc {2}{Period 3 Implies Chaos Theorem}{3}{1}{2}
+\beamer@subsectionintoc {2}{1}{Period 3 Proof Observations}{3}{1}{2}

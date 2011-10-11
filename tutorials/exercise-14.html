@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <script type="text/javascript" src="d3/d3.time.js"></script>
+    <script type="text/javascript" src="d3/d3.csv.js"></script>
+    <style type="text/css">
+
+svg {
+  font: 300 12px "Helvetica Neue";
+}
+
+.bar rect {
+  fill: steelblue;
+}
+
+.bar text.value {
+  fill: white;
+}
+
+.axis line, .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+var m = [20, 20, 20, 20], // top right bottom left
+    w = 960 - m[1] - m[3],
+    h = 500 - m[0] - m[2];
+
+// Formats.
+var format = d3.time.format("%Y-%m-%d");
+
+// Scales. Note the inverted domain for the y-scale: bigger is up!
+var x = d3.time.scale().range([0, w]),
+    y = d3.scale.linear().range([h, 0]);
+
+// Shapes.
+var area = d3.svg.area()
+    .x(function(d) { return x(d.Date); })
+    .y0(y(0))
+    .y1(function(d) { return y(d.Close); });
+
+var svg = d3.select("body").append("svg:svg")
+    .attr("width", w + m[1] + m[3])
+    .attr("height", h + m[0] + m[2])
+  .append("svg:g")
+    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+d3.csv("data/dji.csv", function(data) {
+
+  // Parse dates and numbers.
+  data.reverse().forEach(function(d) {
+    d.Date = format.parse(d.Date);
+    d.Close = +d.Close;
+  });
+
+  // Compute the minimum and maximum date, and the maximum price.
+  x.domain([data[0].Date, data[data.length - 1].Date]);
+  y.domain([0, d3.max(data, function(d) { return d.Close; })]);
+
+  svg.append("svg:path")
+      .attr("class", "area")
+      .attr("d", area(data));
+});
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <style tyle="text/css">
+
+rect {
+  fill: #000;
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 10px;
+  pointer-events: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+var w = 960,
+    h = 500;
+
+var svg = d3.select("body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.append("svg:rect")
+    .attr("width", w)
+    .attr("height", h)
+    .on("mousemove", mousemove);
+
+function mousemove() {
+  svg.append("svg:circle")
+      .attr("r", 0)
+      .attr("transform", "translate(" + d3.svg.mouse(this) + ")")
+    .transition()
+      .duration(750)
+//       .ease(Math.sqrt)
+      .attr("r", 120)
+      .styleTween("stroke", hslTween("brown"))
+      .style("stroke-width", 0)
+      .remove();
+}
+
+function hslTween(b) {
+  return function(d, i, a) {
+    return d3.interpolateHsl(a, b);
+  };
+}
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <style tyle="text/css">
+
+circle {
+  fill: steelblue;
+}
+
+text {
+  font: 300 36px "Helvetica Neue";
+  fill: white;
+  text-shadow: 0 1px 4px #000;
+  pointer-events: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+var w = 960,
+    h = 500;
+
+var svg = d3.select("body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h)
+  .append("svg:g")
+    .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
+
+svg.append("svg:circle")
+    .attr("r", h / 2)
+    .on("mouseover", mouseover)
+    .on("mouseout", mouseout);
+
+svg.append("svg:text")
+    .attr("dy", ".35em")
+    .attr("text-anchor", "middle")
+    .text("Hello, HSL!");
+
+function mouseover() {
+  d3.select(this).transition()
+      .duration(2500)
+      .styleTween("fill", hslTween("brown"));
+}
+
+function mouseout() {
+  d3.select(this).transition()
+      .duration(2500)
+      .styleTween("fill", hslTween("steelblue"));
+}
+
+// b is the destination color
+function hslTween(b) {
+  // a is the current color (from the computed style value)
+  return function(d, i, a) {
+    return d3.interpolateHsl(a, b);
+  };
+}
+
+    </script>
+  </body>
+</html>
