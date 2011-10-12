@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {german}
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Das behandelte Problem}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Fr\"uhere Arbeiten}{11}{0}{1}
+\beamer@sectionintoc {2}{Unsere Resultate/Beitrag}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Hauptresultate}{14}{0}{2}
+\beamer@subsectionintoc {2}{2}{Beweis-/Implementationsideen}{18}{0}{2}

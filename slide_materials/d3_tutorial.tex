@@ -16,7 +16,7 @@
 \usepackage{fancybox, stmaryrd}
 \usepackage[latin1]{inputenc}
 \usepackage{lmodern}
-\usepackage{pgf, pgfarrows, pgfnodes}
+\usepackage{pgf, pgfnodes}
 \usepackage[T1]{fontenc} 
 \usepackage{times}
 \usepackage{verbatim}
@@ -94,113 +94,111 @@
 
 \section{Installation}
 
+
 \begin{frame}[fragile]
     \frametitle{Introductions}
     \begin{block}{Decision Tree}
+        \tiny{
         \begin{verbatim}
 if you are comfortable developing in the browser
    if you are a git user
        git clone git@github.com:benracine/d3_cisnet_tutorial.git
    else
-       \href{https://github.com/benracine/d3_cisnet_tutorial/downloads}{https://github.com/benracine/d3_cisnet_tutorial/downloads}
+       https://github.com/benracine/d3_cisnet_tutorial/downloads
    end
 else
     jsfiddle links
 end
         \end{verbatim}
+        }
     \end{block}
-    \footnote{Chrome might have funny behavior if you don't serve up d3 root as localhost, i.e. python -m SimpleHTTPServer 8000}
-    \footnote{
+%   \footnote{Recommended to serve up on localhost on Chrome, i.e. python -m SimpleHTTPServer 8000}
+    \footnote{jsfiddle examples still need to be done}
 \end{frame}
+
+
+\section{Resources}
 
 
 \begin{frame}
-    \frametitle{Ready to Get Started?}
-    \begin{block}{Canonical Test}
+    \frametitle{Resources}
         \begin{itemize}
-        \item Open up web developer tools
-        \item Go to console
-        \item Enter d3 and you should see 'object' as the response
+        \item \href{http://mbostock.github.com/d3/}{Github}
+            \begin{itemize}
+            \item \href{https://github.com/mbostock/d3/wiki/API-Reference}{API}
+            \item \href{http://mbostock.github.com/d3/ex/}{Examples}
+            \item \href{}{Extended Examples}
+            \item \href{https://github.com/mbostock/d3.git}{Source}
+            \end{itemize}
+        \item \href{http://groups.google.com/group/d3-js?pli=1}{Google group}
+        \item \href{http://www.w3.org/TR/SVG/}{SVG Specification (v1.1)}
+        \item Twitter: $@i3enhamin, @mbostock$
         \end{itemize}
-    \end{block}
 \end{frame}
 
 
 %\begin{frame}
-%    \frametitle{Resources}
-%        %\begin{itemize}
-%        %\item \href{http://mbostock.github.com/d3/}{Github}
-%        %    \begin{itemize}
-%        %    \item \href{https://github.com/mbostock/d3/wiki/API-Reference}{API}
-%        %    \item \href{http://mbostock.github.com/d3/ex/}{Examples}
-%        %    \item \href{}{Extended Examples}
-%        %    \item \href{https://github.com/mbostock/d3.git}{Source}
-%        %    \end{itemize}
-%        %\item \href{}{Online tutorials}
-%        %\item \href{}{Google group}
-%        %\item \href{}{SVG Specification (v1.1)}
-%        %\item Twitter: @i3enhamin, @mbostock
-%        %\end{itemize}
-%\end{frame}
-%
-%
-%\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
+%    \frametitle{Ready to Get Started?}
+%    \begin{block}{Canonical Test}
 %        \begin{itemize}
-%        \item 
-%        \item 
+%        \item Navigate to an exercise file
+%        \item Open up web developer tools
+%        \item Go to console
+%        \item Enter d3 and you should see 'object' in the response
 %        \end{itemize}
 %    \end{block}
 %\end{frame}
 %
-%%Tutorials
-%%	Ok, if you're not here... I apologize, but I strongly encourage you to stay
-%%	so that you can absorb the spirit and go play in your free time.
-%%	Discuss the tutorials/topic outline
-%%	Who has jQuery experience? D3 is similar, but can also target SVG -> xml-like image format
-%%		- Long story short... they do some fancy functional programming
-%%		  to make it possible for us to declaratively (and efficiently)
-%%		  reach into the dom tree.
-%%
-%\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
-%        \begin{itemize}
-%        \item 
-%        \item 
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
+%
+%
+%\section{Background}
 %
 %\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
+%    \frametitle{Background}
+%    \begin{block}{jQuery + Protovis}
 %        \begin{itemize}
-%%        \item 
-%%		 exercise-01 ... modify per our use
-%%			 source d3 file 
-%%			 unified d3 namepace
-%%			 selector notation
-%%				 supports css3 selector notation
-%%					 element, class, id, attribute
-%%					 descendant
-%%					 etc**
-%%				 d3.select("") ~ $("") ~ jQuery("")
-%%			 cascading/callbacks
-%%			 note that we are only manipulating html elements so far
-%        \item 
-%        \end{itemize}
+%        \item Any jQuery experience?
+%            \pause
+%            \begin{itemize}
+%            \item D3 is similar, but can also target the SVG (xml-like image format)
+%            \pause
+%            \item They both do some fancy functional programming to make it possible 
+%                  for us to declaratively (and efficiently) reach into the dom tree.
+%            \pause
+%        \item Any Protovis exposure by any chance?
+%       \end{itemize}
 %    \end{block}
 %\end{frame}
+
+
+%\section{Tutorials}
+%
 %
 %\begin{frame}
-%    \frametitle{}
+%    \frametitle{Tutorials}
+%    \begin{block}{exercise-01.html}
+%        \begin{itemize}
+%        \item  Hello world
+%        \item  Concepts
+%        \begin{itemize}
+%			\item sourcing d3 file 
+%            \item unified d3 namepace
+%            \item css3 selector notation
+%            \item element, class, id, attribute, descendants, etc.
+%            \item d3.select("") ~ \$("") ~ jQuery("")
+%            \item cascading/callbacks
+%       \end{itemize}
+%    \end{block}
+%    \footnote{We are only manipulating html elements so far}
+%\end{frame}
+
+
+%\begin{frame}
+%    \frametitle{exercise-03.html}
 %    \begin{block}{}
 %        \begin{itemize}
 %        \item 
 %%\begin{frame}
-%%		 exercise-03 
 %%		 	- get rid of text
 %%		 	- get rid of clever tranform
 %%		    .append("svg:svg")  --> mention that he has other namespace**

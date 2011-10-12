@@ -17,10 +17,13 @@
 \headcommand {\beamer@subsectionpages {6}{11}}
 \headcommand {\slideentry {2}{0}{2}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{0}{3}{13/13}{}{0}}
+\headcommand {\sectionentry {3}{Resources}{13}{Resources}{0}}
+\headcommand {\beamer@sectionpages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\slideentry {3}{0}{3}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
 \headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {12}{13}}
-\headcommand {\beamer@sectionpages {12}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@sectionpages {13}{13}}
 \headcommand {\beamer@documentpages {13}}
 \headcommand {\def \inserttotalframenumber {6}}

@@ -4,3 +4,4 @@
 \beamer@subsectionintoc {1}{1}{Attendee Introduction}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Browser Poll}{6}{0}{1}
 \beamer@sectionintoc {2}{Installation}{12}{0}{2}
+\beamer@sectionintoc {3}{Resources}{13}{0}{3}
