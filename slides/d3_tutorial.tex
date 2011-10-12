@@ -1,18 +1,13 @@
-% d3 Tutorial CISNET Programmers Breakout November 2, 2011
-%
+%  d3 Tutorial CISNET Programmers Breakout November 2, 2011
 %  Author: Ben Racine
 %  Date:   November 2, 2011
 
-\documentclass[notes]{beamer}
+\documentclass{beamer}
 
 \mode<presentation>
 {
     \usetheme{Warsaw}
-    \usecolortheme{default}
-    \usefonttheme[onlysmall]{structurebold}
-    \setbeamercovered{dynamic}
-    \setbeamercolor{math text}{fg=red!50!black}
-    \setbeamercolor{normal text in math text}{parent=math text}
+    \setbeamercovered{transparent}
 }
 
 \usepackage{amsmath,amssymb}
@@ -21,205 +16,306 @@
 \usepackage{fancybox, stmaryrd}
 \usepackage[latin1]{inputenc}
 \usepackage{lmodern}
-\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata}
+\usepackage{pgf, pgfarrows, pgfnodes}
 \usepackage[T1]{fontenc} 
 \usepackage{times}
 \usepackage{verbatim}
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
 
 
-% Intro Slide
 \title{PBO Workshop} 
 \subtitle{Data-Driven Documents With d3} 
-\author[]{ Ben Racine \inst{1} }
-\institute[]{\inst{1} Cornerstone Systems NW }
-\date[]{November 2, 2011}
+\author{Ben Racine \inst{1} }
+\institute{\inst{1} Cornerstone Systems NW }
+\date{November 2, 2011}
+\subject{Data Visualization}
+
 
 \begin{document}
 
-% Intro Slide
-%\frame{\titlepage}
-    \part<presentation>{Main Talk}
+\begin{frame}
+    \frametitle{}
+    \titlepage
+\end{frame}
 
 \begin{frame}
     \frametitle{Outline}
     \tableofcontents
 \end{frame}
 
+\section{Introduction}
 
-\section[Introduction]{Introduction}
-
-\subsection[Attendees]{Attendees}
-
+\subsection{Attendee Introduction}
 
 \begin{frame}
     \frametitle{Introductions}
     \begin{block}{Favorite Tools?}
+        \pause
         \begin{itemize}
-            \item Database and/or spreadsheet tool
-            \item DSL and/or general programming language
-            \item Visualization tools
+        \item Database and/or spreadsheet tool
+        \item DSL and/or general programming language
+        \item Visualization tools
         \end{itemize}
     \end{block}
+    \pause
     \begin{block}{Any web developers?}
         \begin{itemize}
-            \item Who has Javascript experience?
+        \item Javascript experience?
         \end{itemize}
     \end{block}
 \end{frame}
 
 
-\subsection[Browser Poll]{Browser Poll}
+\subsection{Browser Poll}
 
 \begin{frame}
     \frametitle{Introductions}
     \begin{block}{Browser Usage}
         \begin{itemize}
-            \item Chrome
-            \item Firefox 3
-            \item IE9
-            \item Safari
-            \item Opera
-            \item None of the above?
+        \item Chrome
+        \pause
+        \item Firefox 3+
+        \pause
+        \item IE9
+        \pause
+        \item Safari
+        \pause
+        \item Opera
+        \pause
+        \item None of the above?
         \end{itemize}
     \end{block}
 \end{frame}
 
 
-\section[Installation]{Installation}
+\section{Installation}
 
-\begin{frame}
+\begin{frame}[fragile]
     \frametitle{Introductions}
     \begin{block}{Decision Tree}
-    %if you have developed in the browser**
-    %	if git.installed
-    %		git clone xxxxxxxxxxxxxx
-    %		join github; fork; make pull requests;
-    %	else dropbox.account 
-    %		dropbox.com/adfasdfasdfasdf
-    %	else
-    %		thumbdrive
-    %	end
-    %else
-    %	jsfiddle links 1n
-    %end
+        \begin{verbatim}
+if you have developed in the browser
+   if you are a git user
+       git clone 
+       make a github fork; make pull requests;
+   else if you have a dropbox account
+       dropbox.com/adfasdfasdfasdf
+   else
+       a thumb drive is floating around
+   end
+else
+    jsfiddle links 1n
+end
+        \end{verbatim}
     \end{block}
     \footnote{Chrome might have funny behavior if you don't serve up d3 root as localhost}
 \end{frame}
 
-%
-%
-%>>>>>>>>>>>>>  Everybody ready that wants to be ready? >>>>>>>>>>>>>>>>>>
-%
+
+\begin{frame}
+    \frametitle{Ready to Get Started?}
+    \begin{block}{Canonical Test}
+        \begin{itemize}
+        \item Open up web developer tools
+        \item Go to console
+        \item Enter d3 and you should see 'object' as the response
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+
 %\begin{frame}
-%\end{frame}
-%Canonical test: go to hello world tutorial and see if you have d3 at the console
-%	you should see 
-%		> d3
-%			object
-%Everybody ready that wants to be ready?
-%
-%\begin{frame}
-%\end{frame}
-%Resources
-%	github 
-%		API
-%		Examples/Gallery
-%		source
-%	online tutorials
-%	google group
-%	twitter: @i3enhamin, @mbostock
-%	SVG specification: v1.1 -> 2.0 is being worked on
-%
-%\begin{frame}
-%\end{frame}
-%Tutorials
-%	Ok, if you're not here... I apologize, but I strongly encourage you to stay
-%	so that you can absorb the spirit and go play in your free time.
-%
-%\begin{frame}
-%\end{frame}
-%	Who has jQuery experience? D3 is similar, but can also target SVG -> xml-like image format
-%		- Long story short... they do some fancy functional programming
-%		  to make it possible for us to declaratively (and efficiently)
-%		  reach into the dom tree.
-%
-%\begin{frame}
-%\end{frame}
-%	Discuss the tutorials/topic outline
-%
-%\begin{frame}
-%\end{frame}
-%		 exercise-01 ... modify per our use
-%			 source d3 file 
-%			 unified d3 namepace
-%			 selector notation
-%				 supports css3 selector notation
-%					 element, class, id, attribute
-%					 descendant
-%					 etc**
-%				 d3.select("") ~ $("") ~ jQuery("")
-%			 cascading/callbacks
-%			 note that we are only manipulating html elements so far
-%
-%
-%\begin{frame}
-%		 exercise-03 
-%		 	- get rid of text
-%		 	- get rid of clever tranform
-%		    .append("svg:svg")  --> mention that he has other namespace**
-%	    	.attr("width", w)
-%	    	make a namespace variable for the svg canvas (not to be confused with the "other" <canvas>)
-%	    		it's highly likely that we will want to reuse it and traversing the dom tree
-%	    		to get here is 'expensive'
+%    \frametitle{Resources}
+%        %\begin{itemize}
+%        %\item \href{http://mbostock.github.com/d3/}{Github}
+%        %    \begin{itemize}
+%        %    \item \href{https://github.com/mbostock/d3/wiki/API-Reference}{API}
+%        %    \item \href{http://mbostock.github.com/d3/ex/}{Examples}
+%        %    \item \href{}{Extended Examples}
+%        %    \item \href{https://github.com/mbostock/d3.git}{Source}
+%        %    \end{itemize}
+%        %\item \href{}{Online tutorials}
+%        %\item \href{}{Google group}
+%        %\item \href{}{SVG Specification (v1.1)}
+%        %\item Twitter: @i3enhamin, @mbostock
+%        %\end{itemize}
 %\end{frame}
 %
 %
 %\begin{frame}
-%		 exercise-10 ... 
-%		 	identity function**
-%		 		- functional programming
-%		 	data binding
-%		 		update
-%		 		enter
-%		 		exit
-%		 			explain the misnomer nature, stage/venn diagram analogy
-%		 	g namespace
-%		 	clever transform
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%        \item 
+%        \item 
+%        \end{itemize}
+%    \end{block}
+%\end{frame}
+%
+%%Tutorials
+%%	Ok, if you're not here... I apologize, but I strongly encourage you to stay
+%%	so that you can absorb the spirit and go play in your free time.
+%%	Discuss the tutorials/topic outline
+%%	Who has jQuery experience? D3 is similar, but can also target SVG -> xml-like image format
+%%		- Long story short... they do some fancy functional programming
+%%		  to make it possible for us to declaratively (and efficiently)
+%%		  reach into the dom tree.
+%%
+%\begin{frame}
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%        \item 
+%        \item 
+%        \end{itemize}
+%    \end{block}
 %\end{frame}
 %
 %\begin{frame}
-%		 exercise-11 ... 
-%		 	2D array into html table
-%		 	scales
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%%        \item 
+%%		 exercise-01 ... modify per our use
+%%			 source d3 file 
+%%			 unified d3 namepace
+%%			 selector notation
+%%				 supports css3 selector notation
+%%					 element, class, id, attribute
+%%					 descendant
+%%					 etc**
+%%				 d3.select("") ~ $("") ~ jQuery("")
+%%			 cascading/callbacks
+%%			 note that we are only manipulating html elements so far
+%        \item 
+%        \end{itemize}
+%    \end{block}
 %\end{frame}
 %
 %\begin{frame}
-%		 exercise-12 ... bar chart
-%		 	range bands**
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%        \item 
+%%\begin{frame}
+%%		 exercise-03 
+%%		 	- get rid of text
+%%		 	- get rid of clever tranform
+%%		    .append("svg:svg")  --> mention that he has other namespace**
+%%	    	.attr("width", w)
+%%	    	make a namespace variable for the svg canvas (not to be confused with the "other" <canvas>)
+%%	    		it's highly likely that we will want to reuse it and traversing the dom tree
+%%	    		to get here is 'expensive'
+%%\end{frame}
+%        \item 
+%        \end{itemize}
+%    \end{block}
 %\end{frame}
 %
 %\begin{frame}
-%		 finale: exercise 13 bar chart with axes elements
-%		 	ex
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%        \item 
+%%\begin{frame}
+%%		 exercise-10 ... 
+%%		 	identity function**
+%%		 		- functional programming
+%%		 	data binding
+%%		 		update
+%%		 		enter
+%%		 		exit
+%%		 			explain the misnomer nature, stage/venn diagram analogy
+%%		 	g namespace
+%%		 	clever transform
+%%\end{frame}
+%        \item 
+%        \end{itemize}
+%    \end{block}
+%\end{frame}
+%
+%
+%\begin{frame}
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%        \item 
+%%		 exercise-11 ... 
+%%		 	2D array into html table
+%%		 	scales
+%        \item 
+%        \end{itemize}
+%    \end{block}
+%\end{frame}
+%
+%
+%\begin{frame}
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%        \item 
+%%		 exercise-12 ... bar chart
+%%		 	range bands**
+%        \item 
+%        \end{itemize}
+%    \end{block}
+%\end{frame}
+%
+%
+%\begin{frame}
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%%		 finale: exercise 13 bar chart with axes elements
+%%		 	ex
+%        \item 
+%        \item 
+%        \end{itemize}
+%    \end{block}
+%\end{frame}
+%
+%
+%\begin{frame}
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%%		 Extras
+%%			 css-hover
+%%			 d3 event-based transition
+%%			 ease
+%%			 tween
+%%			 interpolate
+%        \item 
+%        \item 
+%        \end{itemize}
+%    \end{block}
 %\end{frame}
 %
 %\begin{frame}
-%		 Extras
-%			 css-hover
-%			 d3 event-based transition
-%			 ease
-%			 tween
-%			 interpolate
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%        \item 
+%%Conclusion / summary
+%        \item 
+%        \end{itemize}
+%    \end{block}
 %\end{frame}
 %
 %
 %\begin{frame}
-%Conclusion / summary
-%
-%Checklist
-%	Ensure that 6 examples are as I want them
-%	5 + 6 slides
-%
+%    \frametitle{}
+%    \begin{block}{}
+%        \begin{itemize}
+%%Checklist
+%%	Ensure that 6 examples are as I want them
+%%	5 + 6 slides
+%        \item 
+%        \item 
+%        \end{itemize}
+%    \end{block}
 %\end{frame}
+%
 %** Perhaps we should videotape it
 \end{document}

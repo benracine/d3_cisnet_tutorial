@@ -1,0 +1,18 @@
+\frametitle {Introductions}
+    \begin{block}{Decision Tree}
+        \begin{verbatim}
+if you have developed in the browser
+   if you are a git user
+       git clone
+       make a github fork; make pull requests;
+   else if you have a dropbox account
+       dropbox.com/adfasdfasdfasdf
+   else
+       a thumb drive is floating around
+   end
+else
+    jsfiddle links 1n
+end
+        \end{verbatim}
+    \end{block}
+    \footnote{Chrome might have funny behavior if you don't serve up d3 root as localhost}
