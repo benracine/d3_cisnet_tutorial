@@ -42,8 +42,10 @@
 
 
 \begin{frame}
-    \frametitle{Outline}
-    \tableofcontents
+    \scriptsize{
+        \frametitle{Outline}
+        \tableofcontents[pausesections]
+    }
 \end{frame}
 
 
@@ -53,11 +55,10 @@
 
 \begin{frame}
     \frametitle{Introductions}
-    \begin{block}{Favorite Tools?}
-        \pause
-        \begin{itemize}
-        \item Database and/or spreadsheet tool
-        \item DSL and/or general programming language
+    \pause
+    \begin{block}{Favorite Tools?} \begin{itemize}
+        \item Database and/or spreadsheet tools
+        \item DSL and/or general programming languages
         \item Visualization tools
         \end{itemize}
     \end{block}
@@ -74,8 +75,9 @@
 
 \begin{frame}
     \frametitle{Introductions}
-    \begin{block}{Browser Usage}
+    \begin{block}{Browser Poll}
         \begin{itemize}
+        \pause
         \item Chrome
         \pause
         \item Firefox 3+
@@ -84,12 +86,51 @@
         \pause
         \item Safari
         \pause
-        \item Opera
-        \pause
         \item None of the above?
         \end{itemize}
     \end{block}
 \end{frame}
+
+
+\section{Background}
+
+\begin{frame}
+    \frametitle{Background}
+    \begin{block}{jQuery $+$ Protovis $\approx$ d3}
+        \begin{itemize}
+        \item Any jQuery experience?
+        \pause
+            \begin{itemize}
+            \item D3 is similar, but can also target the SVG (xml-like image format)
+        \pause
+            \item They both do some fancy functional programming to make it possible 
+                  for us to declaratively (and efficiently) reach into the dom tree.
+            \end{itemize}
+        \pause
+        \item Any Protovis exposure by any chance?
+       \end{itemize}
+    \end{block}
+\end{frame}
+
+
+\section{Resources}
+
+
+\begin{frame}
+    \frametitle{Resources}
+        \begin{itemize}
+        \item \href{http://mbostock.github.com/d3/}{Github}
+            \begin{itemize}
+            \item \href{https://github.com/mbostock/d3/wiki/API-Reference}{API}
+            \item \href{http://mbostock.github.com/d3/ex/}{Examples}
+            \item \href{https://github.com/mbostock/d3.git}{Source}
+            \end{itemize}
+        \item \href{http://groups.google.com/group/d3-js?pli=1}{Google group}
+        \item \href{http://www.w3.org/TR/SVG/}{SVG Specification (v1.1)}
+        \item Twitter: $@i3enhamin, @mbostock$
+        \end{itemize}
+\end{frame}
+
 
 
 \section{Installation}
@@ -117,204 +158,198 @@ end
 \end{frame}
 
 
-\section{Resources}
+\section{Tutorials}
 
 
 \begin{frame}
-    \frametitle{Resources}
+    \frametitle{Ready to Get Started?}
+    \begin{block}{Canonical Test}
         \begin{itemize}
-        \item \href{http://mbostock.github.com/d3/}{Github}
-            \begin{itemize}
-            \item \href{https://github.com/mbostock/d3/wiki/API-Reference}{API}
-            \item \href{http://mbostock.github.com/d3/ex/}{Examples}
-            \item \href{}{Extended Examples}
-            \item \href{https://github.com/mbostock/d3.git}{Source}
-            \end{itemize}
-        \item \href{http://groups.google.com/group/d3-js?pli=1}{Google group}
-        \item \href{http://www.w3.org/TR/SVG/}{SVG Specification (v1.1)}
-        \item Twitter: $@i3enhamin, @mbostock$
+        \pause
+        \item Navigate to an exercise file
+        \pause
+        \item Open up your browser's web developer tools
+        \pause
+        \item Go to console
+        \pause
+        \item Enter d3 and you should see 'object' in the response
         \end{itemize}
+    \end{block}
 \end{frame}
 
 
-%\begin{frame}
-%    \frametitle{Ready to Get Started?}
-%    \begin{block}{Canonical Test}
-%        \begin{itemize}
-%        \item Navigate to an exercise file
-%        \item Open up web developer tools
-%        \item Go to console
-%        \item Enter d3 and you should see 'object' in the response
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
-%
-%
-%
-%\section{Background}
-%
-%\begin{frame}
-%    \frametitle{Background}
-%    \begin{block}{jQuery + Protovis}
-%        \begin{itemize}
-%        \item Any jQuery experience?
-%            \pause
-%            \begin{itemize}
-%            \item D3 is similar, but can also target the SVG (xml-like image format)
-%            \pause
-%            \item They both do some fancy functional programming to make it possible 
-%                  for us to declaratively (and efficiently) reach into the dom tree.
-%            \pause
-%        \item Any Protovis exposure by any chance?
-%       \end{itemize}
-%    \end{block}
-%\end{frame}
+\subsection{Hello World}
+
+\begin{frame}
+    \frametitle{Tutorials}
+    \begin{block}{exercise-01.html}
+        \begin{itemize}
+            \pause
+            \item  Hello world only using HTML (i.e. no SVG)
+            \pause
+            \item  Concepts
+            \begin{itemize}
+                \pause
+    			\item Sourcing d3 file 
+                \pause
+                \item Unified d3 namepace
+                \pause
+                \item css3 selector notation
+                \pause
+                \begin{itemize}
+                    \item Element, class, id, attribute, descendants, etc.
+                \end{itemize}
+                \pause
+                \item d3.select("") $\approx$ \$("") $\approx$ jQuery("")
+                \pause
+                \item Cascading/callbacks
+            \end{itemize}
+        \end{itemize}
+    \end{block}
+\end{frame}
 
 
-%\section{Tutorials}
-%
-%
-%\begin{frame}
-%    \frametitle{Tutorials}
-%    \begin{block}{exercise-01.html}
-%        \begin{itemize}
-%        \item  Hello world
-%        \item  Concepts
-%        \begin{itemize}
-%			\item sourcing d3 file 
-%            \item unified d3 namepace
-%            \item css3 selector notation
-%            \item element, class, id, attribute, descendants, etc.
-%            \item d3.select("") ~ \$("") ~ jQuery("")
-%            \item cascading/callbacks
-%       \end{itemize}
-%    \end{block}
-%    \footnote{We are only manipulating html elements so far}
-%\end{frame}
+\subsection{Circle and Text}
+
+\begin{frame}
+    \frametitle{Tutorials}
+    \begin{block}{exercise-03.html}
+        \begin{itemize}
+            \pause
+            \item A circle with text
+            \pause
+            \item Concepts
+            \begin{itemize}
+                \pause
+                \item SVG elements
+                \pause
+                \item Appending
+                \pause
+                \item Tranforms
+                \pause
+                \item Namespaces
+                \pause
+                \item Attr
+                \pause
+                \item Appropriate use of namespace variables
+            \end{itemize}
+        \end{itemize}
+    \end{block}
+\end{frame}
 
 
-%\begin{frame}
-%    \frametitle{exercise-03.html}
-%    \begin{block}{}
-%        \begin{itemize}
-%        \item 
-%%\begin{frame}
-%%		 	- get rid of text
-%%		 	- get rid of clever tranform
-%%		    .append("svg:svg")  --> mention that he has other namespace**
-%%	    	.attr("width", w)
-%%	    	make a namespace variable for the svg canvas (not to be confused with the "other" <canvas>)
-%%	    		it's highly likely that we will want to reuse it and traversing the dom tree
-%%	    		to get here is 'expensive'
-%%\end{frame}
-%        \item 
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
-%
-%\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
-%        \begin{itemize}
-%        \item 
-%%\begin{frame}
-%%		 exercise-10 ... 
-%%		 	identity function**
-%%		 		- functional programming
-%%		 	data binding
-%%		 		update
-%%		 		enter
-%%		 		exit
-%%		 			explain the misnomer nature, stage/venn diagram analogy
-%%		 	g namespace
-%%		 	clever transform
-%%\end{frame}
-%        \item 
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
-%
-%
-%\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
-%        \begin{itemize}
-%        \item 
-%%		 exercise-11 ... 
-%%		 	2D array into html table
-%%		 	scales
-%        \item 
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
-%
-%
-%\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
-%        \begin{itemize}
-%        \item 
-%%		 exercise-12 ... bar chart
-%%		 	range bands**
-%        \item 
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
-%
-%
-%\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
-%        \begin{itemize}
-%%		 finale: exercise 13 bar chart with axes elements
-%%		 	ex
-%        \item 
-%        \item 
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
-%
-%
-%\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
-%        \begin{itemize}
-%%		 Extras
-%%			 css-hover
-%%			 d3 event-based transition
-%%			 ease
-%%			 tween
-%%			 interpolate
-%        \item 
-%        \item 
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
-%
-%\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
-%        \begin{itemize}
-%        \item 
-%%Conclusion / summary
-%        \item 
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
-%
-%
-%\begin{frame}
-%    \frametitle{}
-%    \begin{block}{}
-%        \begin{itemize}
-%%Checklist
-%%	Ensure that 6 examples are as I want them
-%%	5 + 6 slides
-%        \item 
-%        \item 
-%        \end{itemize}
-%    \end{block}
-%\end{frame}
-%
-%** Perhaps we should videotape it
+\subsection{Bar Chart}
+
+\begin{frame}
+    \frametitle{Tutorials}
+    \begin{block}{exercise-10.html}
+        \begin{itemize}
+            \pause
+            \item Bar Chart with HTML Elements
+            \pause
+            \item Concepts
+            \begin{itemize}
+                \pause
+                \item Identity function
+                \pause
+                \item Functional programming
+                \pause
+                \item Data binding selections
+                \begin{itemize}
+                    \pause
+                    \item Update
+                    \pause
+                    \item Enter
+                    \pause
+                    \item Exit
+                \end{itemize}
+                \pause
+                \item g namespace
+            \end{itemize}
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+
+\subsection{2d Array into HTML Table}
+
+\begin{frame}
+    \frametitle{Tutorials}
+    \begin{block}{exercise-11.html}
+        \pause
+        \begin{itemize}
+        \pause
+        \item 2d Array into HTML Table
+        \pause
+        \item Concepts
+            \begin{itemize}
+                \item Styles
+                \item Scales
+            \end{itemize}
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+
+\subsection{2d Array into SVG Bar Chart}
+
+\begin{frame}
+    \frametitle{Tutorials}
+    \begin{block}{exercise-12.html}
+        \pause
+        \begin{itemize}
+        \pause
+        \item 2d Array into SVG Bar Chart
+        \pause
+        \item Concepts
+            \begin{itemize}
+                \item RangeBands
+                \item Linear vs. ordinal scales
+            \end{itemize}
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+
+\subsection{Axes Elements}
+
+\begin{frame}
+    \frametitle{Tutorials}
+    \begin{block}{exercise-13.html}
+        \begin{itemize}
+            \pause
+            \item Axes Elements
+        \end{itemize} 
+    \end{block}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Tutorials}
+    \begin{block}{Extras}
+        \begin{itemize}
+            \item css-hover
+            \item d3 event-based transition
+            \item Transition : just a non-instantaneous transformation
+            \begin{itemize}
+                \item Duration
+                \item Delay
+            \end{itemize}
+            \item Ease
+            \item Interpolate
+            \item Tween
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+
+\subsection{Conclusion}
+
+\begin{frame}
+    \frametitle{Conclusion}
+    \begin{itemize}
+        \item Blah
+    \end{itemize}
+\end{frame}
+
 \end{document}

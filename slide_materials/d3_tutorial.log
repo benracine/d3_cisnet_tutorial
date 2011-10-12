@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.11)  12 OCT 2011 10:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.11)  12 OCT 2011 12:02
 entering extended mode
  %&-line parsing enabled.
 **d3_tutorial.tex
@@ -959,16 +959,17 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
 
 ] (./d3_tutorial.toc) [2
 
-] [3
+] (./d3_tutorial.toc)
+[3
 
-] [4
+] (./d3_tutorial.toc) [4
 
-] [5
+] (./d3_tutorial.toc) [5
 
-] [6
+] (./d3_tutorial.toc)
+[6
 
-]
-[7
+] [7
 
 ] [8
 
@@ -978,27 +979,141 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
 
 ] [11
 
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
 ]
 \openout3 = `d3_tutorial.vrb'.
 
- (./d3_tutorial.vrb
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 4.
 
-(/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
+(./d3_tutorial.vrb
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 4.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 18.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 18.
-) [12
+)
+[21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
 
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 209.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 209.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 209.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 209.
+ [27
 
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 137.
+] [28
 
-[13
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+]
+[36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+] [50
+
+]
+[51
+
+] [52
+
+] [53
+
+] [54
+
+] [55
+
+] [56
+
+] [57
+
+] [58
+
+] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+]
+[66
 
 ]
 \tf@nav=\write7
@@ -1012,25 +1127,23 @@ Package hyperref Warning: Empty destination name,
 
  (./d3_tutorial.aux) ) 
 Here is how much of TeX's memory you used:
- 14320 strings out of 495061
- 250941 string characters out of 1182620
+ 14559 strings out of 495061
+ 254388 string characters out of 1182620
  341867 words of memory out of 3000000
- 17019 multiletter control sequences out of 15000+50000
- 44464 words of font info for 69 fonts, out of 3000000 for 9000
+ 17133 multiletter control sequences out of 15000+50000
+ 52961 words of font info for 84 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 45i,19n,62p,319b,688s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{UNDEFINED} has been reference
-d but does not exist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-texlive/fo
-nts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/t
-exmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts
-/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvet
-ic/uhvro8a.pfb>
-Output written on d3_tutorial.pdf (13 pages, 145470 bytes).
+ 45i,19n,63p,319b,909s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}{/u
+sr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvi
+ps/lm/lm-mathsy.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+ss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/couri
+er/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></u
+sr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on d3_tutorial.pdf (66 pages, 639823 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2642 PDF objects out of 2984 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
