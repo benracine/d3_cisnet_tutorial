@@ -1,62 +1,64 @@
 \beamer@endinputifotherversion {3.07pt}
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\slideentry {0}{0}{2}{2/6}{}{0}}
-\headcommand {\beamer@framepages {2}{6}}
-\headcommand {\sectionentry {1}{Introduction}{7}{Introduction}{0}}
-\headcommand {\beamer@sectionpages {1}{6}}
-\headcommand {\beamer@subsectionpages {1}{6}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{7}{Attendee Introduction}}\headcommand {\beamer@subsectionpages {7}{6}}
-\headcommand {\slideentry {1}{1}{1}{7/9}{Attendee Introduction}{0}}
-\headcommand {\beamer@framepages {7}{9}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{10}{Browser Poll}}\headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\slideentry {1}{2}{1}{10/15}{Browser Poll}{0}}
-\headcommand {\beamer@framepages {10}{15}}
-\headcommand {\sectionentry {2}{Background}{16}{Background}{0}}
-\headcommand {\beamer@sectionpages {7}{15}}
-\headcommand {\beamer@subsectionpages {10}{15}}
-\headcommand {\slideentry {2}{0}{2}{16/19}{}{0}}
-\headcommand {\beamer@framepages {16}{19}}
-\headcommand {\sectionentry {3}{Resources}{20}{Resources}{0}}
-\headcommand {\beamer@sectionpages {16}{19}}
-\headcommand {\beamer@subsectionpages {16}{19}}
-\headcommand {\slideentry {3}{0}{3}{20/20}{}{0}}
-\headcommand {\beamer@framepages {20}{20}}
-\headcommand {\sectionentry {4}{Installation}{21}{Installation}{0}}
-\headcommand {\beamer@sectionpages {20}{20}}
-\headcommand {\beamer@subsectionpages {20}{20}}
-\headcommand {\slideentry {4}{0}{4}{21/21}{}{0}}
+\headcommand {\slideentry {0}{0}{2}{2/7}{}{0}}
+\headcommand {\beamer@framepages {2}{7}}
+\headcommand {\sectionentry {1}{Introduction}{8}{Introduction}{0}}
+\headcommand {\beamer@sectionpages {1}{7}}
+\headcommand {\beamer@subsectionpages {1}{7}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{8}{Attendee Introduction}}\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\slideentry {1}{1}{1}{8/10}{Attendee Introduction}{0}}
+\headcommand {\beamer@framepages {8}{10}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{11}{Browser Poll}}\headcommand {\beamer@subsectionpages {8}{10}}
+\headcommand {\slideentry {1}{2}{1}{11/16}{Browser Poll}{0}}
+\headcommand {\beamer@framepages {11}{16}}
+\headcommand {\sectionentry {2}{Background}{17}{Background}{0}}
+\headcommand {\beamer@sectionpages {8}{16}}
+\headcommand {\beamer@subsectionpages {11}{16}}
+\headcommand {\slideentry {2}{0}{2}{17/20}{}{0}}
+\headcommand {\beamer@framepages {17}{20}}
+\headcommand {\sectionentry {3}{Resources}{21}{Resources}{0}}
+\headcommand {\beamer@sectionpages {17}{20}}
+\headcommand {\beamer@subsectionpages {17}{20}}
+\headcommand {\slideentry {3}{0}{3}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\sectionentry {5}{Tutorials}{22}{Tutorials}{0}}
+\headcommand {\sectionentry {4}{Installation}{22}{Installation}{0}}
 \headcommand {\beamer@sectionpages {21}{21}}
 \headcommand {\beamer@subsectionpages {21}{21}}
-\headcommand {\slideentry {5}{0}{5}{22/26}{}{0}}
-\headcommand {\beamer@framepages {22}{26}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{27}{Hello World}}\headcommand {\beamer@subsectionpages {22}{26}}
-\headcommand {\slideentry {5}{1}{1}{27/35}{Hello World}{0}}
-\headcommand {\beamer@framepages {27}{35}}
-\headcommand {\beamer@subsectionentry {0}{5}{2}{36}{Circle and Text}}\headcommand {\beamer@subsectionpages {27}{35}}
-\headcommand {\slideentry {5}{2}{1}{36/44}{Circle and Text}{0}}
-\headcommand {\beamer@framepages {36}{44}}
-\headcommand {\beamer@subsectionentry {0}{5}{3}{45}{Bar Chart}}\headcommand {\beamer@subsectionpages {36}{44}}
-\headcommand {\slideentry {5}{3}{1}{45/54}{Bar Chart}{0}}
-\headcommand {\beamer@framepages {45}{54}}
-\headcommand {\beamer@subsectionentry {0}{5}{4}{55}{2d Array into HTML Table}}\headcommand {\beamer@subsectionpages {45}{54}}
-\headcommand {\slideentry {5}{4}{1}{55/58}{2d Array into HTML Table}{0}}
-\headcommand {\beamer@framepages {55}{58}}
-\headcommand {\beamer@subsectionentry {0}{5}{5}{59}{2d Array into SVG Bar Chart}}\headcommand {\beamer@subsectionpages {55}{58}}
-\headcommand {\slideentry {5}{5}{1}{59/62}{2d Array into SVG Bar Chart}{0}}
-\headcommand {\beamer@framepages {59}{62}}
-\headcommand {\beamer@subsectionentry {0}{5}{6}{63}{Axes Elements}}\headcommand {\beamer@subsectionpages {59}{62}}
-\headcommand {\slideentry {5}{6}{1}{63/64}{Axes Elements}{0}}
-\headcommand {\beamer@framepages {63}{64}}
-\headcommand {\slideentry {5}{6}{2}{65/65}{Axes Elements}{0}}
-\headcommand {\beamer@framepages {65}{65}}
-\headcommand {\beamer@subsectionentry {0}{5}{7}{66}{Conclusion}}\headcommand {\beamer@subsectionpages {63}{65}}
-\headcommand {\slideentry {5}{7}{1}{66/66}{Conclusion}{0}}
+\headcommand {\slideentry {4}{0}{4}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\sectionentry {5}{Tutorials}{23}{Tutorials}{0}}
+\headcommand {\beamer@sectionpages {22}{22}}
+\headcommand {\beamer@subsectionpages {22}{22}}
+\headcommand {\slideentry {5}{0}{5}{23/27}{}{0}}
+\headcommand {\beamer@framepages {23}{27}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{28}{Hello World}}\headcommand {\beamer@subsectionpages {23}{27}}
+\headcommand {\slideentry {5}{1}{1}{28/36}{Hello World}{0}}
+\headcommand {\beamer@framepages {28}{36}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{37}{Circle and Text}}\headcommand {\beamer@subsectionpages {28}{36}}
+\headcommand {\slideentry {5}{2}{1}{37/45}{Circle and Text}{0}}
+\headcommand {\beamer@framepages {37}{45}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{46}{Bar Chart}}\headcommand {\beamer@subsectionpages {37}{45}}
+\headcommand {\slideentry {5}{3}{1}{46/55}{Bar Chart}{0}}
+\headcommand {\beamer@framepages {46}{55}}
+\headcommand {\beamer@subsectionentry {0}{5}{4}{56}{2d Array into HTML Table}}\headcommand {\beamer@subsectionpages {46}{55}}
+\headcommand {\slideentry {5}{4}{1}{56/59}{2d Array into HTML Table}{0}}
+\headcommand {\beamer@framepages {56}{59}}
+\headcommand {\beamer@subsectionentry {0}{5}{5}{60}{2d Array into SVG Bar Chart}}\headcommand {\beamer@subsectionpages {56}{59}}
+\headcommand {\slideentry {5}{5}{1}{60/63}{2d Array into SVG Bar Chart}{0}}
+\headcommand {\beamer@framepages {60}{63}}
+\headcommand {\beamer@subsectionentry {0}{5}{6}{64}{Axes Elements}}\headcommand {\beamer@subsectionpages {60}{63}}
+\headcommand {\slideentry {5}{6}{1}{64/65}{Axes Elements}{0}}
+\headcommand {\beamer@framepages {64}{65}}
+\headcommand {\slideentry {5}{6}{2}{66/66}{Axes Elements}{0}}
 \headcommand {\beamer@framepages {66}{66}}
-\headcommand {\beamer@partpages {1}{66}}
-\headcommand {\beamer@subsectionpages {66}{66}}
-\headcommand {\beamer@sectionpages {22}{66}}
-\headcommand {\beamer@documentpages {66}}
+\headcommand {\sectionentry {6}{Conclusion}{67}{Conclusion}{0}}
+\headcommand {\beamer@sectionpages {23}{66}}
+\headcommand {\beamer@subsectionpages {64}{66}}
+\headcommand {\slideentry {6}{0}{3}{67/67}{}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\beamer@partpages {1}{67}}
+\headcommand {\beamer@subsectionpages {67}{67}}
+\headcommand {\beamer@sectionpages {67}{67}}
+\headcommand {\beamer@documentpages {67}}
 \headcommand {\def \inserttotalframenumber {16}}

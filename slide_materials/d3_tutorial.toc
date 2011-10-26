@@ -1,16 +1,16 @@
 \beamer@endinputifotherversion {3.07pt}
 \select@language {english}
-\beamer@sectionintoc {1}{Introduction}{7}{0}{1}
-\beamer@subsectionintoc {1}{1}{Attendee Introduction}{7}{0}{1}
-\beamer@subsectionintoc {1}{2}{Browser Poll}{10}{0}{1}
-\beamer@sectionintoc {2}{Background}{16}{0}{2}
-\beamer@sectionintoc {3}{Resources}{20}{0}{3}
-\beamer@sectionintoc {4}{Installation}{21}{0}{4}
-\beamer@sectionintoc {5}{Tutorials}{22}{0}{5}
-\beamer@subsectionintoc {5}{1}{Hello World}{27}{0}{5}
-\beamer@subsectionintoc {5}{2}{Circle and Text}{36}{0}{5}
-\beamer@subsectionintoc {5}{3}{Bar Chart}{45}{0}{5}
-\beamer@subsectionintoc {5}{4}{2d Array into HTML Table}{55}{0}{5}
-\beamer@subsectionintoc {5}{5}{2d Array into SVG Bar Chart}{59}{0}{5}
-\beamer@subsectionintoc {5}{6}{Axes Elements}{63}{0}{5}
-\beamer@subsectionintoc {5}{7}{Conclusion}{66}{0}{5}
+\beamer@sectionintoc {1}{Introduction}{8}{0}{1}
+\beamer@subsectionintoc {1}{1}{Attendee Introduction}{8}{0}{1}
+\beamer@subsectionintoc {1}{2}{Browser Poll}{11}{0}{1}
+\beamer@sectionintoc {2}{Background}{17}{0}{2}
+\beamer@sectionintoc {3}{Resources}{21}{0}{3}
+\beamer@sectionintoc {4}{Installation}{22}{0}{4}
+\beamer@sectionintoc {5}{Tutorials}{23}{0}{5}
+\beamer@subsectionintoc {5}{1}{Hello World}{28}{0}{5}
+\beamer@subsectionintoc {5}{2}{Circle and Text}{37}{0}{5}
+\beamer@subsectionintoc {5}{3}{Bar Chart}{46}{0}{5}
+\beamer@subsectionintoc {5}{4}{2d Array into HTML Table}{56}{0}{5}
+\beamer@subsectionintoc {5}{5}{2d Array into SVG Bar Chart}{60}{0}{5}
+\beamer@subsectionintoc {5}{6}{Axes Elements}{64}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{67}{0}{6}
