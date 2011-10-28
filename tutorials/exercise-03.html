@@ -5,15 +5,15 @@
     <script type="text/javascript" src="./d3.js"></script>
     <style tyle="text/css">
 
-circle {
+#my_circle {
   fill: steelblue;
 }
 
-circle:hover {
+#my_circle:hover {
   fill: brown;
 }
 
-text {
+#my_text {
   font: 300 36px "Helvetica Neue";
   fill: white;
   text-shadow: 0 1px 4px #000;
@@ -27,16 +27,20 @@ text {
 var w = 960,
     h = 500;
 
-var svg = d3.select("body").append("svg:svg")
+var svg = d3.select("body")
+  .append("svg:svg")
     .attr("width", w)
     .attr("height", h)
   .append("svg:g")
+    .attr("id", "transform")
     .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
 
 svg.append("svg:circle")
+    .attr("id", "my_circle")
     .attr("r", h / 4);
 
 svg.append("svg:text")
+    .attr("id", "my_text")
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")
     .text("Hello, CSS!");

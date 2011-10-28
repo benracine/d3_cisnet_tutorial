@@ -144,7 +144,7 @@
 \section{Installation}
 
 \begin{frame}[fragile]
-    \frametitle{Introductions}
+    \frametitle{Installation}
     \begin{block}{Decision Tree}
         \tiny{
         \begin{verbatim}
@@ -187,6 +187,28 @@ end
 
 \subsection{Hello World}
 
+\html tags, elements, attributes and properties 
+- get straight on 
+
+change the text size and be sure to use style, because
+style targets properties
+
+change the text-color using style as well
+
+change the id attribute 
+
+
+make people grok array/callbacks by manipulating a couple spans...
+    - add two spans
+    - comment out your original code
+    - select all spans d3.select("span")
+    - go to scripts
+    - 
+    - use selectAll to choose all elements
+    - this allows us to select span
+    - 
+
+
 \begin{frame}
     \frametitle{Tutorials}
     \begin{block}{exercise-01.html}
@@ -199,24 +221,55 @@ end
                 \pause
     			\item Sourcing d3 file 
                 \pause
-                \item Unified d3 namepace
+                \item Unified d3 namespace... all 
                 \pause
-                \item css3 selector notation
+                \item Selectors
                 \pause
                 \begin{itemize}
-                    \item Element, class, id, attribute, descendants, etc.
+                        - use CSS3 selector style notation
+                     you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child").
+
+                     Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR).
+
+                     Make us not need to use for loops and instead program in a declarative way across all elements.
+
+                     Though note: each() can provide support for accessing each element manually
+
+                     Can also accept a node, i.e. document.body
                 \end{itemize}
                 \pause
+                \item select (just chooses the first element) vs. selectAll
                 \item d3.select("") $\approx$ \$("") $\approx$ jQuery("")
                 \pause
+
+Do a better job here, but... 
+
+
+                \item Operators can get or set attr, class, style, property, html and text
+                \item attr - 
+                By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.prefix.
+                \item class
+                toggling of css classes
+                \item style
+                sets the css style property, can be run w/ priority levels
+                \item property
+                \item can be set as either constants or as functions
+
                 \item Cascading/callbacks
+                When used to set document content, the operators return the current selection, so you can chain multiple operators together in a concise statement.
             \end{itemize}
         \end{itemize}
     \end{block}
 \end{frame}
 
+do we want to address exercise-02.html?
+
+
 
 \subsection{Circle and Text}
+
+- change the color of the drop-shadow
+- 
 
 \begin{frame}
     \frametitle{Tutorials}
@@ -228,22 +281,65 @@ end
             \item Concepts
             \begin{itemize}
                 \pause
-                \item SVG elements
+                \item Have to touch on CSS styling a little bit
+                note that the css selector notation in the style section is 
+                the same as that used in the d3.select("") command
                 \pause
-                \item Appending
+                \item SVG elements, reference the SVG spec for relevant attributes
+                \item think of an SVG element as the canvas that we're going to draw on
+
+                \item width and height could be related to the width and height of the 
+                \item window in order to be self-adjusting
                 \pause
-                \item Tranforms
+                \item Appending is fairly self-explanatory
                 \pause
-                \item Namespaces
+                \item Transforms, coordinate transform to make it easier to think of
+                \item Note that the origin is in the top-left corner and that positive y
+                      is down.
+                \item Jumping ahead, I will commonly account for this, not with a transform, but
+                        with an appropriate scale, which we will get to shortly
+                \item Note: a side effect of this transform is that by not setting the x,y variables
+                        on the circle... it defaults to zero.  This zero is now the point that is
+                        transformed to the middle of the page though.
                 \pause
-                \item Attr
+                \item Namespaces, explain that svg:svg <-- first one is a namespace, second
+                one is the element itself
+                svg:g is kind of like a div in html... just a bag in which to group other things
+                in
+                note: you give them uniqueness through class or id
+                \pause
+                \item Attr, addressed in previous slide
                 \pause
                 \item Appropriate use of namespace variables
+                \item Assign a namespace at any "juncture" in your workflow
+                    i.e. if you're about to add circles AND text to your scenegraph... it's
+                        probably appropriate to add a name to the state of your scenegraph at
+                        that point
+                \pause
+                \item 
             \end{itemize}
         \end{itemize}
     \end{block}
 \end{frame}
 
+exercise-04.html
+event listeners
+
+exercise-05.html
+- skip tweens and get to data bindings
+
+exercise-06.html
+- notice that we're scaling the whole image, 
+
+exercise-07.html
+- listen to user events, i.e watch the mouse move
+
+exercise-08.html
+- mouse fading events
+
+exercise-09.html
+- how to draw a bar graph
+- the basics of appending 
 
 \subsection{Bar Chart}
 
@@ -254,6 +350,8 @@ end
             \pause
             \item Bar Chart with HTML Elements
             \pause
+            \item have to explain scales... 
+
             \item Concepts
             \begin{itemize}
                 \pause
@@ -280,6 +378,9 @@ end
 
 \subsection{2d Array into HTML Table}
 
+- some subtle behavior
+- if I could ask Lauren to help me put this clearly that would probably help
+
 \begin{frame}
     \frametitle{Tutorials}
     \begin{block}{exercise-11.html}
@@ -300,6 +401,9 @@ end
 
 \subsection{2d Array into SVG Bar Chart}
 
+he's used rangebands and ordinal scales
+
+
 \begin{frame}
     \frametitle{Tutorials}
     \begin{block}{exercise-12.html}
@@ -318,8 +422,10 @@ end
 \end{frame}
 
 
+exercise-13.html
 \subsection{Axes Elements}
-
+axes elements are the stars
+do a quick little demo of changing the results to show off how flexible it is
 \begin{frame}
     \frametitle{Tutorials}
     \begin{block}{exercise-13.html}
@@ -330,6 +436,18 @@ end
     \end{block}
 \end{frame}
 
+
+\subsection
+address exercise-04.html
+event listeners can take many forms
+    - i.e. you can listen for different types of events
+    - click, mouseover, submit, etc.
+    - there's a subtlety of attaching to multiple functions to the same event... 
+      i.e. click.foo -> one function, click.bar -> another function
+    - d, i, this...  
+
+
+I didn't bring over d3.time.js nor d3.csv.js --> because I didn't search very thoroughly
 
 \begin{frame}
     \frametitle{Tutorials}
@@ -345,6 +463,7 @@ end
             \item Ease
             \item Interpolate
             \item Tween
+            \item call and each for control flow 
         \end{itemize}
     \end{block}
 \end{frame}
