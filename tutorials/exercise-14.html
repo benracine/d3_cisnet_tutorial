@@ -53,7 +53,7 @@ var svg = d3.select("body").append("svg:svg")
   .append("svg:g")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.csv("data/dji.csv", function(data) {
+d3.csv("./dji.csv", function(data) {
 
   // Parse dates and numbers.
   data.reverse().forEach(function(d) {
