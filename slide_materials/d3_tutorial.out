@@ -1,14 +1,22 @@
 \BOOKMARK [2][]{Outline0.1}{Introduction}{}
-\BOOKMARK [3][]{Outline0.1.1.8}{Attendee Introduction}{Outline0.1}
-\BOOKMARK [3][]{Outline0.1.2.11}{Browser Poll}{Outline0.1}
+\BOOKMARK [3][]{Outline0.1.1.2}{Attendee Introduction}{Outline0.1}
+\BOOKMARK [3][]{Outline0.1.2.9}{Browser Poll}{Outline0.1}
 \BOOKMARK [2][]{Outline0.2}{Background}{}
 \BOOKMARK [2][]{Outline0.3}{Resources}{}
 \BOOKMARK [2][]{Outline0.4}{Installation}{}
-\BOOKMARK [2][]{Outline0.5}{Tutorials}{}
-\BOOKMARK [3][]{Outline0.5.1.28}{Hello World}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.2.37}{Circle and Text}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.3.46}{Bar Chart}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.4.56}{2d Array into HTML Table}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.5.60}{2d Array into SVG Bar Chart}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.6.64}{Axes Elements}{Outline0.5}
-\BOOKMARK [2][]{Outline0.6}{Conclusion}{}
+\BOOKMARK [3][]{Outline0.4.1.29}{Clone or Download Slides, Source Code and Exercises}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.2.30}{Canonical Test to Ensure Installation}{Outline0.4}
+\BOOKMARK [2][]{Outline0.5}{Tutorials: Round One}{}
+\BOOKMARK [3][]{Outline0.5.1.31}{Briefly playing in the console}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.2.32}{Hello world}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.3.36}{Including an SVG element}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.4.38}{Combining with CSS Selections}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.5.41}{Event Listeners}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.6.42}{Tweens, scaling, user-events}{Outline0.5}
+\BOOKMARK [2][]{Outline0.6}{Tutorials: Round Two}{}
+\BOOKMARK [3][]{Outline0.6.1.43}{Bar Chart}{Outline0.6}
+\BOOKMARK [3][]{Outline0.6.2.45}{2d Array into HTML Table}{Outline0.6}
+\BOOKMARK [3][]{Outline0.6.3.46}{2d Array into SVG Bar Chart}{Outline0.6}
+\BOOKMARK [3][]{Outline0.6.4.47}{Axes Elements}{Outline0.6}
+\BOOKMARK [3][]{Outline0.6.5.48}{Extras}{Outline0.6}
+\BOOKMARK [2][]{Outline0.7}{Conclusion}{}

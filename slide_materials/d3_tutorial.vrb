@@ -1,18 +1,10 @@
-\frametitle {Introductions}
-    \begin{block}{Decision Tree}
+\frametitle {Clone or Download Slides, Source Code and Exercises}
         \tiny{
         \begin{verbatim}
-if you are comfortable developing in the browser
    if you are a git user
        git clone git@github.com:benracine/d3_cisnet_tutorial.git
    else
        https://github.com/benracine/d3_cisnet_tutorial/downloads
    end
-else
-    jsfiddle links
-end
         \end{verbatim}
         }
-    \end{block}
-%   \footnote{Recommended to serve up on localhost on Chrome, i.e. python -m SimpleHTTPServer 8000}
-    \footnote{jsfiddle examples still need to be done}
