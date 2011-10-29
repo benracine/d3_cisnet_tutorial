@@ -9,6 +9,34 @@
 
 d3.select("body").text("Hello, D3!");
 
+/*
+Concepts
+- include the main d3 file in line 5
+	- this is the 'core' module
+	- the default build of d3.js includes the core, scale, svg and behavior modules
+	- others include:
+		- time
+		- geo
+		- csv
+- all d3 commands live in a unified d3 namespace
+- d3 supports CSS3 notation, i.e. can select by:
+	- can select by tag ("div")
+	- class (".awesome")
+	- unique identifier ("#foo")
+	- containment ("parent child")
+	- selectors can be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR)
+	- attribute ("[color=red]")
+- note the difference between d3.select and d3.selectAll
+- text is an "operator"
+	- operators can both get or set
+	- other operators include:
+		- style 
+- notice the method chaining has already begun
+- elements can be accessed directly, by either:
+	- selection[0][0]
+	- each statements
+*/
+
     </script>
   </body>
 </html>

@@ -3,7 +3,6 @@
 %  Date:   November 2, 2011
 
 \documentclass{beamer}
-
 \mode<presentation>
 {
     \usetheme{Warsaw}
@@ -52,6 +51,7 @@
 \end{frame}
 
 
+
 \section{Introduction}
 
 \subsection{Attendee Introduction}
@@ -62,7 +62,9 @@
     \begin{block}{Favorite Tools?} 
     \begin{itemize}
         \item Database and/or spreadsheet tools
+        \pause
         \item DSL and/or general programming languages
+        \pause
         \item Visualization tools
         \end{itemize}
     \end{block}
@@ -145,7 +147,6 @@
 
 \begin{frame}[fragile]
     \frametitle{Installation}
-    \begin{block}{Decision Tree}
         \tiny{
         \begin{verbatim}
 if you are comfortable developing in the browser
@@ -159,8 +160,7 @@ else
 end
         \end{verbatim}
         }
-    \end{block}
-%   \footnote{Recommended to serve up on localhost on Chrome, i.e. python -m SimpleHTTPServer 8000}
+    \footnote{Recommended to serve up on localhost on Chrome, i.e. python -m SimpleHTTPServer 8000}
     \footnote{jsfiddle examples still need to be done}
 \end{frame}
 
@@ -168,93 +168,104 @@ end
 \section{Tutorials}
 
 
+\subsection{Canonical Test}
+
 \begin{frame}
     \frametitle{Ready to Get Started?}
     \begin{block}{Canonical Test}
         \begin{itemize}
         \pause
-        \item Navigate to an exercise file
+        \item Navigate to an exercise file on your hard-drive in your browser
         \pause
         \item Open up your browser's web developer tools
         \pause
         \item Go to console
         \pause
-        \item Enter d3 and you should see 'object' in the response
+        \item Enter d3 and you should see "object" in the response
         \end{itemize}
     \end{block}
 \end{frame}
 
 
+\subsection{Briefly playing in the console}
+
+\begin{frame}
+    \frametitle{Getting Started}
+    \begin{itemize}
+    \item navigate to \href{http://mbostock.github.com/d3/}{\underline{Github}: http://mbostock.github.com/d3/}
+    \item let's change the color of the hyperlinks
+        \begin{itemize}
+        \item open console; d3.selectAll("a").style("color","red")
+        \end{itemize}
+    \end{itemize}
 \subsection{Hello World}
 
-\html tags, elements, attributes and properties 
-- get straight on 
-
-change the text size and be sure to use style, because
-style targets properties
-
-change the text-color using style as well
-
-change the id attribute 
 
 
-make people grok array/callbacks by manipulating a couple spans...
-    - add two spans
-    - comment out your original code
-    - select all spans d3.select("span")
-    - go to scripts
-    - 
-    - use selectAll to choose all elements
-    - this allows us to select span
-    - 
+\subsection{Hello world}
+
+\begin{frame}
+    \frametitle{Exercise-01.html}
+    \begin{itemize}
+    \item just raw HTML (i.e. no SVG)
+    \item include the main d3 file in line 5
+        \begin{itemize}
+        \item this is the 'core' module
+        \item the default build of d3.js includes the core, scale, svg and behavior modules
+        \item others include:
+            \begin{itemize}
+            \item time
+            \item geo
+            \item csv
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
 
 
 \begin{frame}
-    \frametitle{Tutorials}
-    \begin{block}{exercise-01.html}
+    \frametitle{Exercise-01.html}
+    \begin{itemize}
+    \item all d3 commands live in a unified d3 namespace
+    \item d3 supports CSS3 notation, i.e. can select by:
         \begin{itemize}
-            \pause
-            \item  Hello world only using HTML (i.e. no SVG)
-            \pause
-            \item  Concepts
-            \begin{itemize}
-                \pause
-    			\item Sourcing d3 file 
-                \pause
-                \item Unified d3 namespace... all 
-                \pause
-                \item Selectors
-                \pause
-                \begin{itemize}
-                        - use CSS3 selector style notation
-                     you can select by tag ("div"), class (".awesome"), unique identifier ("#foo"), attribute ("[color=red]"), or containment ("parent child").
+        \item can select by tag ("div")
+        \item class (".awesome")
+        \item unique identifier ("#foo")
+        \item containment ("parent child")
+        \item selectors can be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR)
+        \item attribute ("[color=red]")
+        \end{itemize}
+    \item note the difference between d3.select and d3.selectAll
+    \item text is an "operator"
+        \begin{itemize}
+            \item operators can both get or set
+            \item other operators include: attr, style, html, classed, property
+        \end{itemize}
+    \item notice the method chaining has already begun
+    \item elements can be accessed directly
+        \begin{itemize}
+        \item (e.g., selection[0][0])
+        \item through the each call
+        \end{itemize}
+    \end{itemize}
+\end{frame}
 
-                     Selectors can also be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR).
 
-                     Make us not need to use for loops and instead program in a declarative way across all elements.
-
-                     Though note: each() can provide support for accessing each element manually
-
-                     Can also accept a node, i.e. document.body
-                \end{itemize}
-                \pause
-                \item select (just chooses the first element) vs. selectAll
+\begin{frame}
+    \frametitle{Exercise-01.html}
+    \begin{itemize}
+        \begin{itemize}
+        \end{itemize}
                 \item d3.select("") $\approx$ \$("") $\approx$ jQuery("")
-                \pause
-
-Do a better job here, but... 
-
 
                 \item Operators can get or set attr, class, style, property, html and text
                 \item attr - 
-                By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.prefix.
-                \item class
-                toggling of css classes
-                \item style
-                sets the css style property, can be run w/ priority levels
-                \item property
+                \item By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.prefix.
+                \item class: toggling of css classes
+                \item style: sets the css style property, can be run w/ priority levels
+                \item property: 
                 \item can be set as either constants or as functions
-
                 \item Cascading/callbacks
                 When used to set document content, the operators return the current selection, so you can chain multiple operators together in a concise statement.
             \end{itemize}
@@ -262,14 +273,9 @@ Do a better job here, but...
     \end{block}
 \end{frame}
 
-do we want to address exercise-02.html?
-
-
 
 \subsection{Circle and Text}
-
 - change the color of the drop-shadow
-- 
 
 \begin{frame}
     \frametitle{Tutorials}
