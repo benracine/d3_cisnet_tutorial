@@ -13,11 +13,8 @@ var w = 960,
 var svg = d3.select("body").append("svg:svg")
     .attr("width", w)
     .attr("height", h);
-
-    /*
   .append("svg:g")
     .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
-    */
 
 svg.append("svg:circle")
     .attr("r", h / 4)
@@ -25,7 +22,6 @@ svg.append("svg:circle")
     .attr("cy", h / 2)
     .attr("fill", "steelblue");
 
-/*
 svg.append("svg:text")
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")
@@ -34,7 +30,19 @@ svg.append("svg:text")
     .attr("font-family", "Helvetica Neue")
     .attr("fill", "white")
     .text("Hello, SVG!");
-    */
+
+/* Concepts
+- g element is means of containing other svg elements
+- tranform is a handy way of moving the coordinate system to a desired location
+- coord system
+    - origin is the top-left
+    - x is positive to the right
+    - y is positive down
+- svg:circle self explanatory
+    - refer to the SVG spec for relevant circle attributes
+    - fill 
+- note the use of the svg namespace variable to cache a selection of interest
+*/
 
     </script>
   </body>
