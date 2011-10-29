@@ -43,6 +43,8 @@ var y = d3.scale.ordinal()
     .domain(d3.range(numbers.length))
     .rangeRoundBands([0, h], .1);
 
+  
+
 var svg = d3.select("body").append("svg:svg")
     .attr("width", w + m[1] + m[3])
     .attr("height", h + m[0] + m[2])

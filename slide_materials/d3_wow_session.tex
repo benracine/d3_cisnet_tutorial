@@ -1,0 +1,91 @@
+%  d3 Tutorial CISNET Programmers Breakout November 2, 2011
+%  Author: Ben Racine
+%  Date:   November 2, 2011
+%
+
+\documentclass{beamer}
+\mode<presentation>
+{
+    \usetheme{Warsaw}
+    \setbeamercovered{transparent}
+}
+
+\setbeamercolor{math text}{fg=red!50!black}
+
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage[english]{babel}
+\usepackage{fancybox, stmaryrd}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage{pgf, pgfnodes}
+\usepackage[T1]{fontenc} 
+\usepackage{times}
+\usepackage{verbatim}
+
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+
+\title{PBO Workshop} 
+\subtitle{Data-Driven Documents With d3} 
+\author{Ben Racine \inst{1} }
+\institute{\inst{1} Cornerstone Systems NW }
+\date{November 2, 2011}
+\subject{Data Visualization}
+
+\begin{document}
+
+
+\begin{frame}
+    \frametitle{}
+    \titlepage
+\end{frame}
+
+
+%\begin{frame}
+%    \scriptsize{
+%        \frametitle{Outline}
+%        \tableofcontents[pausesections]
+%    }
+%\end{frame}
+
+
+\section{d3 Wow}
+
+%\begin{frame}
+    \frametitle{d3 Wow
+    \begin{itemize}
+    \item Solves the crux visualization
+        \begin{itemize}
+        \item Scales
+            \begin{itemize}
+            \item Quantitative scales: Linear, log, power, discrete/continuous, 
+            \item Ordinal scales
+            \item Both can be mapped to colors
+            \item invert() allows for two way scaling
+            \item User-defined
+            \end{itemize}
+        \item Intelligently binding data to style elements
+        \end{itemize}
+    \item Interactively working at different levels of detail
+        \begin{itemize}
+        \item Circle packing
+        \item Radial
+        \item Icicle Tree
+        \end{itemize}
+    \item Makes geo-located data a snap
+        \begin{itemize}
+        \item Our little side project for Startup Weekend
+        \end{itemize}
+    \item Flexible scales, axis elements, lines, areas and shapes enable the usual suspects
+        \begin{itemize}
+        \item Bar/column 
+        \item Pie 
+        \item Scatter 
+        \item Line 
+        \end{itemize}
+    \end{itemize}
+%\end{frame}
+
+\end{document}
