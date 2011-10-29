@@ -59,6 +59,13 @@
 
 \begin{frame}
     \frametitle{Attendee Introduction}
+    \begin{itemize}
+    These materials live at http://mbostock.github.com/d3/}{http://mbostock.github.com/d3/}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Attendee Introduction}
 \pause
     \begin{block}{Favorite Tools?} 
 \pause
@@ -188,6 +195,7 @@
 
 
 
+
 \section{Tutorials: Round One}
 
 \subsection{Briefly playing in the console}
@@ -198,10 +206,11 @@
     \item Navigate to \href{http://mbostock.github.com/d3/}{http://mbostock.github.com/d3/}
     \item Let's change the color of the hyperlinks
         \begin{itemize}
-        \item open console
+        \item Open console
         \item d3.selectAll("a").style("color","red")
         \item d3.selectAll("p").style("color","blue")
         \end{itemize}
+    \item Note the existence of both d3.select and d3.selectAll
     \end{itemize}
 \end{frame}
 
@@ -212,16 +221,16 @@
 \begin{frame}
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
-    \item just raw html (i.e. no SVG)
-    \item include the main d3 file in line 5
+    \item This example only uses raw html (i.e. no SVG)
+    \item Include the main d3 file in line 5
         \begin{itemize}
-        \item this is the 'core' module
-        \item the default build of d3.js includes the core, scale, svg and behavior modules
-        \item others include:
+        \item This, d3.js, is the 'core' module
+        \item The default build of d3.js includes the core, scale, svg and behavior modules
+        \item Others include:
             \begin{itemize}
-            \item time
-            \item geo
-            \item csv
+            \item d3.time.js
+            \item d3.geo.js
+            \item d3.csv.js
             \end{itemize}
         \end{itemize}
     \end{itemize}
@@ -231,22 +240,23 @@
 \begin{frame}
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
-    \item all d3 commands live in a unified d3 namespace
-    \item d3 supports CSS3 notation, i.e. can select by:
+    \item All d3 commands live in a unified d3 namespace
+    \item d3 supports CSS3 notation, i.e. one can select by:
         \begin{itemize}
-        \item can select by tag ("div")
-        \item class (".awesome")
-%        \item unique identifier ("#foo")
-        \item containment ("parent child")
-        \item selectors can be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR)
-%        \item attribute ("[color=red]")
+        \item Tag ("div")
+        \item Class (".awesome")
+        \item Identifier ("$#foo$")
+        \item Containment ("parent child")
+        \item Intersection (".this.that" for logical AND) 
+        \item Union (".this, .that" for logical OR)
+        \item Attribute ("$[color=red]$")
         \end{itemize}
-    \item note the difference between d3.select and d3.selectAll
-    \item notice the method chaining has already begun
-    \item elements can be accessed directly
+    \item Notice that method chaining has already begun
+    \item Method chaining = returning the same selection for further modification
+    \item Elements can be accessed directly
         \begin{itemize}
-%        \item (e.g., selection\[0][0])
-        \item through the each call
+        \item (e.g., selection$[0][0]$)
+        \item Through the each call
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -256,12 +266,16 @@
 \begin{frame}
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
-    \item text is an "operator"
-    \item operators can both get or set 
-    \item class: toggling of css classes
-    \item style: sets the css style property, can be run w/ priority levels
-    \item property: example, a slider value
-    \item by default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces. Additional namespaces can be registered by adding to d3.ns.prefix.
+    \item .text() is an "operator"
+    \item Operators can both get or set:
+        \begin{itemize}
+        \item .classed() : toggling of css classes
+        \item .style() : sets the CSS style property (can be run w/ priority levels)
+        \item .property() : example, a slider value
+        \item .property() : example, a slider value
+        \end{itemize}
+    \item By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces
+    \item Additional namespaces can be registered
     \end{itemize}
 \end{frame}
 
@@ -269,8 +283,8 @@
 \begin{frame}
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
-    \item can be set as either constants or as functions
-    \item when used to set document content, the operators return the current selection, so you can chain multiple operators together in a concise statement.
+    \item Can be set as either constants or as functions
+    \item When used to set document content, the operators return the current selection, so you can chain multiple operators together in a concise statement.
     \item d3.select("") $\approx$ \$("") $\approx$ jQuery("")
     \end{itemize}
 \end{frame}
@@ -283,15 +297,16 @@
 \begin{frame}
     \frametitle{Exercise-02.html:: Including an SVG Element}
     \begin{itemize}
-    \item width and height could be related to the width and height of the window in order to be self-adjusting
-    \item think of the svg element as a canvas with a transformed coordinate system
-    \item g element is means of containing other svg elements
-    \item tranform is a handy way of moving the coordinate system to a desired location
+    \item Width and height could be related to the width and height of the window
+    \item Think of the svg element as a canvas with a transformed coordinate system
+    \item A svg:g element is means of containing other svg elements
+    \item A tranform can be a handy way of moving the coordinate system to a desired location
+    \item Regarding the coordinate system, note:
         \begin{itemize}
-        \item coord system
-        \item origin is the top-left
+        \item Origin is the top-left
         \item x is positive to the right
         \item y is positive down
+        \item scales can be used to correct to cartesian coords
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -302,9 +317,9 @@
     \begin{itemize}
     \item svg:circle self explanatory
         \begin{itemize}
-        \item refer to the SVG spec for relevant circle attributes
+        \item Refer to the SVG spec for relevant and/or required circle attributes
         \end{itemize}
-    \item note the use of the svg namespace variable to cache a selection of interest
+    \item Note the use of a JavaScript namespace variable to cache a selection of interest
     \end{itemize}
 \end{frame}
 
@@ -315,21 +330,19 @@
 \begin{frame}
     \frametitle{Exercise-03.html: Combining with CSS Selections}
         \begin{itemize}
-            \item Concepts
+        \item Concepts
             \begin{itemize}
-                \item CSS3 selector notation in the style section $\approx$ in the d3.select("") command
-                \item Appending is fairly self-explanatory
-                \item Transforms, coordinate transform to make it easier to think of
-                \item Note that the origin is in the top-left corner and that positive y is down.
+            \item CSS3 selector notation in the style section $\approx$ in the d3.select("") command
+            \item Appending is fairly self-explanatory
+            \item Good practice to use intelligent id and class attributes
             \end{itemize}
         \end{itemize}
 \end{frame}
 
+
 \begin{frame}
     \frametitle{Exercise-03.html: Combining with CSS Selections}
         \begin{itemize}
-                \item Jumping ahead, I will commonly account for this, not with a transform, but with an appropriate scale, which we will get to shortly
-                \item Note: a side effect of this transform is that by not setting the x,y variables on the circle... it defaults to zero.  This zero is now the point that is transformed to the middle of the page though.
                 \item Namespaces, explain that svg:svg <-- first one is a namespace, second one is the element itself svg:g is kind of like a div in html:... just a bag in which to group other things in note: you give them uniqueness through class or id
                 \item Attr, addressed in previous slide
                 \item Appropriate use of namespace variables
@@ -345,18 +358,18 @@
 \begin{frame}
     \frametitle{Exercises-05.html through Exercise-08.html: Skipping for now}
     \begin{itemize}
-    \item d, i, this...
-    \item event listeners can take many forms
-    \item you can listen for different types of events
-    \item click, mouseover, submit, etc.
-    \item there's a subtlety of attaching to multiple functions to the same event...
+    \item d, i, and this
+    \item Event listeners can take many forms
+    \item Can listen for different types of events
+    \item Click, mouseover, submit, etc.
+    \item There's a subtlety of attaching to multiple functions to the same event...
     \item i.e. click.foo maps to one function, click.bar maps to another function
     \end{itemize}
 \end{frame}
 
 
 
-\subsection{Tweens, scaling, user-events}
+\subsection{Tweens, Scaling, User-events}
 
 \begin{frame}
     \frametitle{Exercises-05.html through Exercise-08.html: Skipping for now}
@@ -378,17 +391,14 @@
 \begin{frame}
     \frametitle{Exercise-09.html: Bar Chart}
     \begin{itemize}
-    \item Bar Chart with html: Elements
-    \item have to explain scales... 
-    \item Concepts
+    \item Bar Chart with HTML Elements
+    \item Scales
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Exercise-09.html: Bar Chart}
     \begin{itemize}
-    \item how to draw a bar graph
-    \item the basics of appending 
     \item Identity function
     \item Functional programming
     \item Data binding selections
@@ -400,16 +410,14 @@
 
 
 
-
 \subsection{2d Array into HTML Table}
 
 \begin{frame}
-    \frametitle{Exercise-11.html: 2d Array into HTML Table}
+    \frametitle{Exercise-11.html: 2d Array into an HTML Table}
     \begin{itemize}
-    \item foo
+    \item Foo
     \end{itemize}
 \end{frame}
-
 
 
 
@@ -419,7 +427,6 @@
     \frametitle{Exercise-12.html: 2d Array into SVG Bar Chart}
     \begin{itemize}
     \item 2d Array into SVG Bar Chart
-    \item he's used rangebands and ordinal scales
     \item RangeBands
     \item Linear vs. ordinal scales
     \end{itemize}
@@ -432,9 +439,7 @@
 \begin{frame}
     \frametitle{Exercise-13.html: Axes Elements}
     \begin{itemize}
-    \item axes elements are the stars
-    \item do a quick little demo of changing the results to show off how flexible it is
-    \item Axes Elements
+    \item 
     \end{itemize} 
 \end{frame}
 
@@ -467,6 +472,7 @@
     \item 
     \end{itemize}
 \end{frame}
+
 
 
 \end{document}
