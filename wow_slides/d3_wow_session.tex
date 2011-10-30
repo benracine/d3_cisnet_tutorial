@@ -1,7 +1,6 @@
 %  d3 Tutorial CISNET Programmers Breakout November 2, 2011
 %  Author: Ben Racine
 %  Date:   November 2, 2011
-%
 
 \documentclass{beamer}
 \mode<presentation>
@@ -26,7 +25,6 @@
 \definecolor{links}{HTML}{2A1B81}
 \hypersetup{colorlinks,linkcolor=,urlcolor=links}
 
-
 \title{PBO Workshop} 
 \subtitle{Data-Driven Documents With d3} 
 \author{Ben Racine \inst{1} }
@@ -34,8 +32,8 @@
 \date{November 2, 2011}
 \subject{Data Visualization}
 
-\begin{document}
 
+\begin{document}
 
 \begin{frame}
     \frametitle{}
@@ -43,49 +41,152 @@
 \end{frame}
 
 
-%\begin{frame}
+% \begin{frame}
 %    \scriptsize{
 %        \frametitle{Outline}
 %        \tableofcontents[pausesections]
 %    }
-%\end{frame}
+% \end{frame}
 
 
-\section{d3 Wow}
 
-%\begin{frame}
-    \frametitle{d3 Wow
+\section{Background}
+
+\begin{frame}
+\frametitle{Background}
+\begin{itemize}
+\item d3.js is a small, free JavaScript library for manipulating documents based on data.
+\item d3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. 
+\item For example:
     \begin{itemize}
-    \item Solves the crux visualization
-        \begin{itemize}
-        \item Scales
-            \begin{itemize}
-            \item Quantitative scales: Linear, log, power, discrete/continuous, 
-            \item Ordinal scales
-            \item Both can be mapped to colors
-            \item invert() allows for two way scaling
-            \item User-defined
-            \end{itemize}
-        \item Intelligently binding data to style elements
-        \end{itemize}
-    \item Interactively working at different levels of detail
-        \begin{itemize}
-        \item Circle packing
-        \item Radial
-        \item Icicle Tree
-        \end{itemize}
-    \item Makes geo-located data a snap
-        \begin{itemize}
-        \item Our little side project for Startup Weekend
-        \end{itemize}
-    \item Flexible scales, axis elements, lines, areas and shapes enable the usual suspects
-        \begin{itemize}
-        \item Bar/column 
-        \item Pie 
-        \item Scatter 
-        \item Line 
-        \end{itemize}
+    \item You can use d3 to generate a basic HTML table from a matrix of numbers.
+    \item You could use the same data to create an interactive SVG bar chart with smooth transitions and interaction.
     \end{itemize}
-%\end{frame}
+\item Further:
+    \begin{itemize}
+    \item SVG is supported across all the modern browsers including
+    \item JavaScript performance has recently increased considerably
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Background (cont.)}
+\begin{itemize}
+\item d3.js is loosely associated with the \href{http://vis.stanford.edu/}{\underline{Stanford Visualization Group}}
+\item Supersedes the ProtoVis project
+\item Mike Bostock is the primary author, but it is open source on Github
+\item Only a year or two old
+\end{itemize}
+\end{frame}
+
+
+
+\section{Tour}
+
+\subsection{The Author's Tour}
+
+\begin{frame}
+\frametitle{The Author's Tour}
+\href{http://mbostock.github.com/d3/talk/20111018/#2}{A Tour}
+\begin{itemize}
+\item Association / adjacency representations via chord diagrams
+\item Various hierarchical layouts (bundle, cluster, partition, pack, treemap, hierarchical bar charts)
+\item Calendar
+\item Time-series 
+\item Pan and zoom 
+\item Scale elements (with tick, label, title and location options)
+\item Smooth transitions
+\item Interaction 
+\item Animation
+\item Chloropleth / projections
+\item Force (helpful in solving the non-collision problem)
+\end{itemize}
+\end{frame}
+
+
+
+\subsection{My Tour}
+
+\begin{frame}
+\frametitle{My Tour}
+\begin{itemize}
+\item 1242141265!@#@!#^%!#
+\item Still need to clean up this version
+\item \href{http://localhost:9000/examples/my_cisnet_demo/navpane.html}{My navpane task}
+\item See a side project that I consulted on for the \href{http://www.startupweekendviz.johnmorefield.com/d3/examples/SW/map.html}{Startup Weekend}
+\end{itemize}
+\end{frame}
+
+
+
+\subsection{Repository Examples}
+
+\begin{frame}
+\frametitle{Repository Examples}
+\begin{itemize}
+\item Bar/column 
+\item Box plot
+\item Bullet
+\item Histogram
+\item Hyperbolic tree
+\item Pie 
+\item qq plots
+\item Radial
+\item Stack
+\item Streamgraph
+\end{itemize}
+\end{frame}
+
+
+
+\section{The Philosophy of d3}
+
+\subsection{Why d3?}
+
+\begin{frame}
+\frametitle{Why d3?}
+\begin{itemize}
+\item It is a small and sharp tool 
+\item It does "one" thing and does it well
+\item Plays well with others
+\item Doesn't pollute the global namespace
+\end{itemize}
+\end{frame}
+
+
+
+\subsection{The Cruxes of Visualization}
+
+\begin{frame}
+\frametitle{The Cruxes of Visualization}
+\begin{block}{Scales}
+\begin{itemize}
+\item Scales define the mapping between the data and pixel/color space
+\item A reverse function can be used to map the other direction too
+\item Linear, log, power, discrete/continuous, banded, ordinal and user defined
+\end{itemize}
+\end{block}
+\begin{block}{Data Binding}
+\begin{itemize}
+\item Detailed control over the ability append, remove, union and difference the two
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+\subsection{Reuse of Existing Standards}
+
+\begin{frame}
+\frametitle{
+\begin{itemize}{Reuse of Existing Standards}
+\item Takes advantage of existing w3 standards instead of reinventing the wheel
+\item Authors can take their new depth of knowledge of modern web standards with them
+\end{itemize}
+\end{frame}
+
 
 \end{document}
