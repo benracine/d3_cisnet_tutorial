@@ -1,10 +1,14 @@
 \frametitle {Clone or Download Slides, Source Code and Exercises}
         \tiny{
         \begin{verbatim}
-   if you are a git user
-       git clone git@github.com:benracine/d3_cisnet_tutorial.git
-   else
-       https://github.com/benracine/d3_cisnet_tutorial/downloads
-   end
+    if you have an internet connection
+        if you are a git user
+            git clone git@github.com:benracine/d3_cisnet_tutorial.git
+        else
+            https://github.com/benracine/d3_cisnet_tutorial/downloads
+        end
+    else
+        We have usb sticks
+    end
         \end{verbatim}
         }

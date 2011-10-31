@@ -1,6 +1,7 @@
-%  d3 Tutorial CISNET Programmers Breakout November 2, 2011
-%  Author: Ben Racine
-%  Date:   November 2, 2011
+% d3 Tutorial CISNET Programmers Breakout November 2, 2011
+% Author: Ben Racine
+% Date:   November 2, 2011
+% 
 
 \documentclass{beamer}
 \mode<presentation>
@@ -45,12 +46,12 @@
 
 
 
-\begin{frame}
-    \scriptsize{
-        \frametitle{Outline}
-        \tableofcontents[pausesections]
-    }
-\end{frame}
+% \begin{frame}
+%     \scriptsize{
+%         \frametitle{Outline}
+%         \tableofcontents[pausesections]
+%     }
+% \end{frame}
 
 
 
@@ -62,31 +63,74 @@
 
 \begin{frame}
     \frametitle{If you are eager to obtain everything}
-    \href{https://github.com/benracine/d3_cisnet_tutorial/downloads}{https://github.com/benracine/d3_cisnet_tutorial/downloads}
+    \href{https://github.com/benracine/d3_cisnet_tutorial/downloads}{PBO, d3 Tutorial}
 \end{frame}
 
 
 \begin{frame}
     \frametitle{Attendee Introduction}
 \pause
-    \begin{block}{Favorite Tools?} 
-\pause
     \begin{itemize}
-    \item Database and/or spreadsheet tools
-\pause
-    \item DSL and/or general programming languages
 \pause
     \item Visualization tools
+\pause
+    \item Any web development experience?
+\pause
+    \item Any Javascript experience?
+\pause
     \end{itemize}
-    \end{block}
-\pause
-    \begin{block}{Any web developers?}
-        \begin{itemize}
-\pause
-        \item Any Javascript experience?
-        \end{itemize}
-    \end{block}
 \end{frame}
+
+\begin{frame}
+    \frametitle{Javascript in 120 seconds}
+    \begin{itemize}
+    \item C control structures
+    \item Dynamic and weak/duck typing
+    \item Primitive Types
+        \begin{itemize}
+        \item var mayday = false;
+        \item var sal = 20;
+        \item var pal = 12.1;
+        \item var myName = "Some Name";
+        \end{itemize}
+    \item Collections
+        \begin{itemize}
+        \item var myArray = [0, 2, 4];
+        \item var myObject = {}; myObject.foo = "bar";
+        \end{itemize}
+    \item Functions
+        \begin{itemize}
+        \item Are objects; have properties and methods
+        \item Can be assigned to variables
+        \item Can be passed as arguments
+        \item Can be returned by other functions
+        \item May be nested -> 
+        \item Closures -> see Python example on wikipedia closure article for a concise example
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% \begin{frame}
+%     \frametitle{Attendee Introduction}
+% \pause
+%     \begin{block}{Favorite Tools?} 
+% \pause
+%     \begin{itemize}
+% %    \item Database and/or spreadsheet tools
+% \pause
+% %    \item DSL and/or general programming languages
+% \pause
+%     \item Visualization tools
+%     \end{itemize}
+%     \end{block}
+% \pause
+%     \begin{block}{Any web developers?}
+%         \begin{itemize}
+% \pause
+%         \item Any Javascript experience?
+%         \end{itemize}
+%     \end{block}
+% \end{frame}
 
 
 \subsection{Browser Poll}
@@ -253,13 +297,13 @@
     \item All d3 commands live in a unified d3 namespace
     \item d3 supports CSS3 notation, i.e. one can select by:
         \begin{itemize}
-        \item Tag ("div")
-        \item Class (".awesome")
-        \item Identifier ("$#foo$")
-        \item Containment ("parent child")
-        \item Intersection (".this.that" for logical AND) 
-        \item Union (".this, .that" for logical OR)
-        \item Attribute ("$[color=red]$")
+        \item Tag ($"div"$)
+        \item Class ($".awesome"$)
+        \item Identifier ($"#foo"$)
+        \item Containment ($"parent child"$)
+        \item Intersection ($".this.that"$ for logical AND) 
+        \item Union ($".this, .that"$ for logical OR)
+        \item Attribute ($"[color=red]"$)
         \end{itemize}
     \item Notice that method chaining has already begun
     \item Method chaining takes advantage of function that return the modifed version of the incoming selection
@@ -340,26 +384,25 @@
 
 \begin{frame}
     \frametitle{Exercise-03.html: Combining with CSS Selections}
+    \begin{itemize}
+    \item Concepts
         \begin{itemize}
-        \item Concepts
-            \begin{itemize}
-            \item CSS3 selector notation in the style section $\approx$ in the d3.select("") command
-            \item Appending is fairly self-explanatory
-            \item Good practice to use intelligent id and class attributes
-            \end{itemize}
+        \item CSS3 selector notation in the style section $\approx$ in the d3.select("") command
+        \item Appending is fairly self-explanatory
+        \item Good practice to use intelligent id and class attributes
         \end{itemize}
+    \end{itemize}
 \end{frame}
 
 
 \begin{frame}
     \frametitle{Exercise-03.html: Combining with CSS Selections}
-        \begin{itemize}
-                \item Namespaces, explain that svg:svg <-- first one is a namespace, second one is the element itself svg:g is kind of like a div in html:... just a bag in which to group other things in note: you give them uniqueness through class or id
-                \item Attr, addressed in previous slide
-                \item Appropriate use of namespace variables
-                \item Assign a namespace at any "juncture" in your workflow i.e. if you're about to add circles AND text to your scenegraph... it's probably appropriate to add a name to the state of your scenegraph at that point
-            \end{itemize}
-        \end{itemize}
+    \begin{itemize}
+    \item Namespaces, explain that svg:svg <-- first one is a namespace, second one is the element itself svg:g is kind of like a div in html:... just a bag in which to group other things in note: you give them uniqueness through class or id
+    \item Attr, addressed in previous slide
+    \item Appropriate use of namespace variables
+    \item Assign a namespace at any "juncture" in your workflow i.e. if you're about to add circles AND text to your scenegraph... it's probably appropriate to add a name to the state of your scenegraph at that point
+    \end{itemize}
 \end{frame}
 
 
