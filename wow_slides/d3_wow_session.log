@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.11)  31 OCT 2011 10:22
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.11)  31 OCT 2011 10:24
 entering extended mode
  %&-line parsing enabled.
 **d3_wow_session.tex
@@ -963,9 +963,10 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
 ]
 (./d3_wow_session.toc) [3
 
-] [4
+] (./d3_wow_session.toc) [4
 
-] [5
+] (./d3_wow_session.toc)
+[5
 
 ] [6
 
@@ -973,35 +974,39 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
 
 ] [8
 
-]
-Overfull \vbox (26.27151pt too high) detected at line 111
- []
-
-[9
+] [9
 
 ] [10
 
 ]
-Overfull \vbox (65.46057pt too high) detected at line 155
+Overfull \vbox (41.56918pt too high) detected at line 111
  []
 
 [11
 
 ] [12
 
-] [13
+]
+Overfull \vbox (80.75824pt too high) detected at line 155
+ []
+
+[13
 
 ] [14
 
 ] [15
 
-]
-Overfull \vbox (31.05281pt too high) detected at line 256
- []
-
-[16
+] [16
 
 ] [17
+
+]
+Overfull \vbox (46.35048pt too high) detected at line 256
+ []
+
+[18
+
+] [19
 
 ]
 \tf@nav=\write7
@@ -1015,18 +1020,36 @@ Overfull \vbox (31.05281pt too high) detected at line 256
 
  (./d3_wow_session.aux) ) 
 Here is how much of TeX's memory you used:
- 14232 strings out of 495061
- 248846 string characters out of 1182620
+ 14296 strings out of 495061
+ 249890 string characters out of 1182620
  344951 words of memory out of 3000000
- 16931 multiletter control sequences out of 15000+50000
+ 16981 multiletter control sequences out of 15000+50000
  36360 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 45i,19n,62p,341b,784s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}
-</usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on d3_wow_session.pdf (17 pages, 135655 bytes).
+ 45i,19n,63p,341b,784s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Outline0.4.3.17} has been 
+referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.4.2.16} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.4.1.15} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.3.14} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.2.13} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.1.11} has been referenced but does not e
+xist, replaced by a fixed one
+
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive
+/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on d3_wow_session.pdf (19 pages, 169644 bytes).
 PDF statistics:
- 581 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
