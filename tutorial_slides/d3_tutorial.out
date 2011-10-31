@@ -1,22 +1,23 @@
 \BOOKMARK [2][]{Outline0.1}{Introduction}{}
-\BOOKMARK [3][]{Outline0.1.1.2}{Attendee Introduction}{Outline0.1}
-\BOOKMARK [3][]{Outline0.1.2.9}{Browser Poll}{Outline0.1}
+\BOOKMARK [3][]{Outline0.1.1.10}{Attendee Introduction}{Outline0.1}
+\BOOKMARK [3][]{Outline0.1.2.18}{Browser Poll}{Outline0.1}
 \BOOKMARK [2][]{Outline0.2}{Background}{}
 \BOOKMARK [2][]{Outline0.3}{Resources}{}
 \BOOKMARK [2][]{Outline0.4}{Installation}{}
-\BOOKMARK [3][]{Outline0.4.1.29}{Clone or Download Slides, Source Code and Exercises}{Outline0.4}
-\BOOKMARK [3][]{Outline0.4.2.30}{Canonical Test to Ensure Installation}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.1.38}{Clone or Download Slides, Source Code and Exercises}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.2.39}{Canonical Test to Ensure Installation}{Outline0.4}
 \BOOKMARK [2][]{Outline0.5}{Tutorials: Round One}{}
-\BOOKMARK [3][]{Outline0.5.1.31}{Briefly playing in the console}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.2.32}{Hello world}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.3.36}{Including an SVG element}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.4.38}{Combining with CSS Selections}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.5.41}{Event Listeners}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.6.42}{Tweens, scaling, user-events}{Outline0.5}
-\BOOKMARK [2][]{Outline0.6}{Tutorials: Round Two}{}
-\BOOKMARK [3][]{Outline0.6.1.43}{Bar Chart}{Outline0.6}
-\BOOKMARK [3][]{Outline0.6.2.45}{2d Array into HTML Table}{Outline0.6}
-\BOOKMARK [3][]{Outline0.6.3.46}{2d Array into SVG Bar Chart}{Outline0.6}
-\BOOKMARK [3][]{Outline0.6.4.47}{Axes Elements}{Outline0.6}
-\BOOKMARK [3][]{Outline0.6.5.48}{Extras}{Outline0.6}
-\BOOKMARK [2][]{Outline0.7}{Conclusion}{}
+\BOOKMARK [3][]{Outline0.5.1.45}{Briefly playing in the console}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.2.46}{Hello world}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.3.50}{Including an SVG element}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.4.52}{Combining with CSS Selections}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.5.54}{Event Listeners}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.6.55}{Tweens, Scaling, User-events}{Outline0.5}
+\BOOKMARK [2][]{Outline0.6}{A Quick Break}{}
+\BOOKMARK [2][]{Outline0.7}{Tutorials: Round Two}{}
+\BOOKMARK [3][]{Outline0.7.1.57}{Bar Chart}{Outline0.7}
+\BOOKMARK [3][]{Outline0.7.2.59}{2d Array into HTML Table}{Outline0.7}
+\BOOKMARK [3][]{Outline0.7.3.60}{2d Array into SVG Bar Chart}{Outline0.7}
+\BOOKMARK [3][]{Outline0.7.4.61}{Axes Elements}{Outline0.7}
+\BOOKMARK [3][]{Outline0.7.5.62}{Extras}{Outline0.7}
+\BOOKMARK [2][]{Outline0.8}{Conclusion}{}
