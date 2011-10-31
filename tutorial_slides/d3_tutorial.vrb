@@ -1,4 +1,4 @@
-\frametitle {Clone or Download Slides, Source Code and Exercises}
+\frametitle {Clone or Download Slides, Source Code and Tutorials}
         \tiny{
         \begin{verbatim}
     if you have an internet connection
@@ -8,7 +8,7 @@
             https://github.com/benracine/d3_cisnet_tutorial/downloads
         end
     else
-        We have usb sticks
+        we have usb sticks
     end
         \end{verbatim}
         }
