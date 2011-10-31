@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.11)  31 OCT 2011 06:22
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.11)  31 OCT 2011 07:01
 entering extended mode
  %&-line parsing enabled.
 **d3_tutorial.tex
@@ -770,25 +770,25 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks48
 \verbatim@in@stream=\read2
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+Package hyperref Info: Option `colorlinks' set `true' on input line 27.
  (./d3_tutorial.aux)
 \openout1 = `d3_tutorial.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 38.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -847,7 +847,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring ON on input line 37.
+Package hyperref Info: Link coloring ON on input line 38.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -856,151 +856,123 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count156
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
  (./d3_tutorial.out) (./d3_tutorial.out)
 \@outlinefile=\write6
 \openout6 = `d3_tutorial.out'.
 
 \AtBeginShipoutBox=\box56
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 37.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 38.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 37.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 38.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/ptm/m/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 37.
+(Font)                  OT1/cmss/m/n --> T1/ptm/m/n on input line 38.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/phv/bx/n on input line 37.
+(Font)                  OT1/lmr/bx/n --> T1/phv/bx/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/phv/bx/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 37.
+(Font)                  OT1/lmr/bx/n --> T1/phv/bx/n on input line 38.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/phv/m/n on input line 37.
+(Font)                  OT1/lmss/m/n --> T1/phv/m/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/phv/m/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 37.
+(Font)                  OT1/lmss/bx/n --> T1/phv/m/n on input line 38.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/phv/m/it on input line 37.
+(Font)                  OT1/lmr/m/it --> T1/phv/m/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/phv/m/it on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 37.
+(Font)                  OT1/lmr/bx/it --> T1/phv/m/it on input line 38.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/pcr/m/n on input line 37.
+(Font)                  OT1/lmtt/m/n --> T1/pcr/m/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/pcr/m/n on input line 37.
+(Font)                  OT1/lmtt/m/n --> T1/pcr/m/n on input line 38.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 37.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 38.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 37.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/ptm/bx/n on input line 37.
+(Font)                  OT1/cmss/bx/n --> T1/ptm/bx/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 37.
+(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 37.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 37.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/pcr/m/n --> T1/pcr/bx/n on input line 37.
+(Font)                  T1/pcr/m/n --> T1/pcr/bx/n on input line 38.
 
 (/usr/share/texmf-texlive/tex/latex/translator/translator-theorem-dictionary-En
 glish.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./d3_tutorial.nav)
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 44.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 45.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 45.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 44.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 45.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 44.
+(Font)              <10.95> on input line 45.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 44.
+(Font)              <8> on input line 45.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 44.
-LaTeX Font Info:    Try loading font information for U+msa on input line 44.
+(Font)              <6> on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 45.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 44.
+LaTeX Font Info:    Try loading font information for U+msb on input line 45.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 44.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 45.
 
 (/usr/share/texmf-texlive/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 44.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 45.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 44.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 45.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 44.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 45.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 44.
+(Font)              <5> on input line 45.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 44.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 45.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./d3_tutorial.toc)
-Overfull \vbox (60.0348pt too high) detected at line 53
- []
+] [2
 
-[2
+] [3
 
-] (./d3_tutorial.toc)
-Overfull \vbox (60.0348pt too high) detected at line 53
- []
+] [4
 
-[3
+] [5
 
-] (./d3_tutorial.toc)
-Overfull \vbox (60.0348pt too high) detected at line 53
- []
+] [6
 
-[4
+] [7
 
-] (./d3_tutorial.toc)
-Overfull \vbox (60.0348pt too high) detected at line 53
- []
+] [8
 
-[5
-
-] (./d3_tutorial.toc)
-Overfull \vbox (60.0348pt too high) detected at line 53
- []
-
-[6
-
-] (./d3_tutorial.toc)
-Overfull \vbox (60.0348pt too high) detected at line 53
- []
-
-[7
-
-] (./d3_tutorial.toc)
-Overfull \vbox (60.0348pt too high) detected at line 53
- []
-
-[8
-
-] (./d3_tutorial.toc)
-Overfull \vbox (60.0348pt too high) detected at line 53
+]
+Overfull \vbox (57.34358pt too high) detected at line 111
  []
 
 [9
@@ -1029,7 +1001,16 @@ Overfull \vbox (60.0348pt too high) detected at line 53
 
 ] [21
 
-] [22
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 203.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 203.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 203.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 203.
+ [22
 
 ] [23
 
@@ -1047,15 +1028,14 @@ Overfull \vbox (60.0348pt too high) detected at line 53
 ] [29
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 159.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 159.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 159.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 159.
- [30
+\openout3 = `d3_tutorial.vrb'.
+
+ (./d3_tutorial.vrb
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 3.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)) [30
 
 ] [31
 
@@ -1063,7 +1043,8 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [33
 
-] [34
+]
+[34
 
 ] [35
 
@@ -1071,18 +1052,13 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [37
 
+] [38
+
 ]
-\openout3 = `d3_tutorial.vrb'.
+Overfull \vbox (24.66365pt too high) detected at line 316
+ []
 
-
-(./d3_tutorial.vrb
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 3.
- (/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-))
-[38
-
-] [39
+[39
 
 ] [40
 
@@ -1098,42 +1074,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 ] [46
 
-]
-! Illegal parameter number in definition of \test.
-<to be read again> 
-                   f
-l.263         \end{itemize}
-                           
-? 
-! Illegal parameter number in definition of \iterate.
-<to be read again> 
-                   f
-l.272 \end{frame}
-                 
-? 
-! Illegal parameter number in definition of \iterate.
-<to be read again> 
-                   f
-l.272 \end{frame}
-                 
-? 
-! Illegal parameter number in definition of \beamer@doifinframe.
-<to be read again> 
-                   f
-l.272 \end{frame}
-                 
-? 
-! You can't use `macro parameter character #' in math mode.
-\beamer@doifinframe ...e"$) \item Identifier ($"##
-                                                  foo"$) \item Containment (...
-l.272 \end{frame}
-                 
-? 
-
-Overfull \vbox (24.66365pt too high) detected at line 272
- []
-
-[47
+] [47
 
 ] [48
 
@@ -1147,26 +1088,10 @@ Overfull \vbox (24.66365pt too high) detected at line 272
 
 ] [53
 
-] [54
+]
+[54
 
 ] [55
-
-] [56
-
-] [57
-
-] [58
-
-] [59
-
-] [60
-
-] [61
-
-]
-[62
-
-] [63
 
 ]
 \tf@nav=\write7
@@ -1180,23 +1105,23 @@ Overfull \vbox (24.66365pt too high) detected at line 272
 
  (./d3_tutorial.aux) ) 
 Here is how much of TeX's memory you used:
- 14589 strings out of 495061
- 254355 string characters out of 1182620
- 345911 words of memory out of 3000000
- 17156 multiletter control sequences out of 15000+50000
- 52019 words of font info for 79 fonts, out of 3000000 for 9000
+ 14512 strings out of 495061
+ 252504 string characters out of 1182620
+ 341911 words of memory out of 3000000
+ 17112 multiletter control sequences out of 15000+50000
+ 50802 words of font info for 78 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 45i,19n,63p,338b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,19n,59p,338b,813s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}{/u
-sr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvi
-ps/lm/lm-mathit.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+sr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvi
+ps/lm/lm-mathsy.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
 ss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/couri
 er/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></u
 sr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on d3_tutorial.pdf (63 pages, 640529 bytes).
+Output written on d3_tutorial.pdf (55 pages, 531662 bytes).
 PDF statistics:
- 2742 PDF objects out of 2984 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
- 337 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2278 PDF objects out of 2487 (max. 8388607)
+ 134 named destinations out of 1000 (max. 500000)
+ 325 words of extra memory for PDF output out of 10000 (max. 10000000)
 
