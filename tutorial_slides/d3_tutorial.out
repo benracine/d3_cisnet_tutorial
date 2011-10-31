@@ -1,6 +1,6 @@
 \BOOKMARK [2][]{Outline0.1}{Introduction}{}
 \BOOKMARK [3][]{Outline0.1.1.2}{If you are eager to get these materials}{Outline0.1}
-\BOOKMARK [3][]{Outline0.1.2.3}{Attendee Introduction}{Outline0.1}
+\BOOKMARK [3][]{Outline0.1.2.6}{Attendee Introduction}{Outline0.1}
 \BOOKMARK [3][]{Outline0.1.3.8}{Javascript in 120 seconds \(yeah right\)}{Outline0.1}
 \BOOKMARK [3][]{Outline0.1.4.10}{Browser Poll}{Outline0.1}
 \BOOKMARK [2][]{Outline0.2}{Background}{}
@@ -8,19 +8,19 @@
 \BOOKMARK [3][]{Outline0.2.2.23}{Resources}{Outline0.2}
 \BOOKMARK [2][]{Outline0.3}{Installation}{}
 \BOOKMARK [3][]{Outline0.3.1.31}{Clone or Download Slides, Source Code and Tutorials}{Outline0.3}
-\BOOKMARK [3][]{Outline0.3.2.32}{Canonical Test to Ensure Installation}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.2.33}{Canonical Test to Ensure Installation}{Outline0.3}
 \BOOKMARK [2][]{Outline0.4}{Tutorials: Round One}{}
-\BOOKMARK [3][]{Outline0.4.1.38}{Briefly playing in the console}{Outline0.4}
-\BOOKMARK [3][]{Outline0.4.2.39}{Hello world}{Outline0.4}
-\BOOKMARK [3][]{Outline0.4.3.44}{Including an SVG element}{Outline0.4}
-\BOOKMARK [3][]{Outline0.4.4.46}{Combining with CSS Selections}{Outline0.4}
-\BOOKMARK [3][]{Outline0.4.5.48}{Event Listeners}{Outline0.4}
-\BOOKMARK [3][]{Outline0.4.6.49}{Tweens, Scaling, User-events}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.1.39}{Briefly playing in the console}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.2.40}{Hello world}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.3.45}{Including an SVG element}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.4.48}{Combining with CSS Selections}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.5.50}{Event Listeners}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.6.51}{Tweens, Scaling, User-events}{Outline0.4}
 \BOOKMARK [2][]{Outline0.5}{A Quick Break}{}
 \BOOKMARK [2][]{Outline0.6}{Tutorials: Round Two}{}
-\BOOKMARK [3][]{Outline0.6.1.51}{Bar Chart}{Outline0.6}
-\BOOKMARK [3][]{Outline0.6.2.53}{2d Array into HTML Table}{Outline0.6}
-\BOOKMARK [3][]{Outline0.6.3.54}{2d Array into SVG Bar Chart}{Outline0.6}
-\BOOKMARK [3][]{Outline0.6.4.55}{Axes Elements}{Outline0.6}
-\BOOKMARK [3][]{Outline0.6.5.56}{Extras}{Outline0.6}
+\BOOKMARK [3][]{Outline0.6.1.53}{Bar Chart}{Outline0.6}
+\BOOKMARK [3][]{Outline0.6.2.55}{2d Array into HTML Table}{Outline0.6}
+\BOOKMARK [3][]{Outline0.6.3.56}{2d Array into SVG Bar Chart}{Outline0.6}
+\BOOKMARK [3][]{Outline0.6.4.57}{Axes Elements}{Outline0.6}
+\BOOKMARK [3][]{Outline0.6.5.58}{Extras}{Outline0.6}
 \BOOKMARK [2][]{Outline0.7}{Conclusion}{}

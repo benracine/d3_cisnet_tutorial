@@ -1,14 +1,5 @@
-\frametitle {Clone or Download Slides, Source Code and Tutorials}
-        \tiny{
-        \begin{verbatim}
-    if you have an internet connection
-        if you are a git user
-            git clone git@github.com:benracine/d3_cisnet_tutorial.git
-        else
-            https://github.com/benracine/d3_cisnet_tutorial/downloads
-        end
-    else
-        we have usb sticks
-    end
-        \end{verbatim}
-        }
+\frametitle {Participation Query}
+    \begin{itemize}
+    \item Can I get a sense of the fraction that intend on stepping through the exercises?
+    \item Versus the number that would just like to follow along?
+    \end{itemize}
