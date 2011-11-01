@@ -58,18 +58,22 @@
 \section{Introduction}
 
 
+\subsection{If you are eager to get these materials}
+
+\begin{frame}
+    \frametitle{If you are eager to obtain everything}
+    \begin{itemize}
+    \item Go to github.com
+    \item Search for benracine
+    \item This repo should be the first hit, else "d3_cisnet_tutorial"
+\end{frame}
+
+
 \subsection{Attendee Introduction}
 
 
 \begin{frame}
-    \frametitle{If you are eager to obtain everything}
-    \href{https://github.com/benracine/d3_cisnet_tutorial/downloads}{PBO, d3 Tutorial}
-\end{frame}
-
-
-\begin{frame}
     \frametitle{Attendee Introduction}
-\pause
     \begin{itemize}
 \pause
     \item Visualization tools
@@ -81,8 +85,12 @@
     \end{itemize}
 \end{frame}
 
+
+\subsection{Javascript in 120 seconds (yeah right)}
+
+
 \begin{frame}
-    \frametitle{Javascript in 120 seconds}
+    \frametitle{Javascript in 120 seconds (yeah right)}
     \begin{itemize}
     \item C control structures
     \item Dynamic and weak/duck typing
@@ -93,6 +101,13 @@
         \item var pal = 12.1;
         \item var myName = "Some Name";
         \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Javascript in 120 seconds (yeah right)}
+    \begin{itemize}
     \item Collections
         \begin{itemize}
         \item var myArray = [0, 2, 4];
@@ -145,9 +160,11 @@
 \pause
         \item Firefox 3+
 \pause
-        \item IE9
-\pause
         \item Safari
+\pause
+        \item Opera
+\pause        
+        \item IE9
 \pause
         \item None of the above?
         \end{itemize}
@@ -157,18 +174,20 @@
 
 \section{Background}
 
+\subsection{Really Helpful But Improbable Analogues}
+
 \begin{frame}
     \frametitle{Background}
     \begin{block}{jQuery $+$ Protovis $\approx$ d3}
 \pause
         \begin{itemize}
-        \item Any jQuery experience?
+        \item Any jQuery experience by any chance?
 \pause
             \begin{itemize}
-            \item d3 is similar, but can also target the SVG (an xml-esque image format)
+            \item d3 is similar, but can also target the SVG (an xml-like image format)
 \pause
             \item They both do some fancy functional programming to make it possible 
-                  for us to declaratively (and efficiently) reach into the dom tree
+                  for us to declaratively reach into the dom tree
             \end{itemize}
 \pause
        \item Any Protovis exposure by any chance?
@@ -178,7 +197,7 @@
 
 
 
-\section{Resources}
+\subsection{Resources}
 
 \begin{frame}
     \frametitle{Resources}
@@ -187,7 +206,7 @@
         \item \href{http://mbostock.github.com/d3/}{\underline{Github}: http://mbostock.github.com/d3/}
 \pause
             \begin{itemize}
-            \item \href{https://github.com/mbostock/d3/wiki/API-Reference}{\underline{API}: https://github.com/mbostock/d3/wiki/API-Reference}
+            \item \href{https://github.com/mbostock/d3/wiki/API-Reference}{\underline{API Documentation}: https://github.com/mbostock/d3/wiki/API-Reference}
 \pause
             \item \href{http://mbostock.github.com/d3/ex/}{\underline{Examples}: http://mbostock.github.com/d3/ex/}
 \pause
@@ -198,7 +217,8 @@
 \pause
         \item \href{http://www.w3.org/TR/SVG/}{SVG Specification (v1.1)}
 \pause
-        \item Twitter: $@i3enhamin, @mbostock$
+        \item Me $@i3enhamin
+        \item The Author $@mbostock$
         \end{itemize}
 \end{frame}
 
@@ -206,10 +226,10 @@
 
 \section{Installation}
 
-\subsection{Clone or Download Slides, Source Code and Exercises}
+\subsection{Clone or Download Slides, Source Code and Tutorials}
 
 \begin{frame}[fragile]
-    \frametitle{Clone or Download Slides, Source Code and Exercises}
+    \frametitle{Clone or Download Slides, Source Code and Tutorials}
         \tiny{
         \begin{verbatim}
     if you have an internet connection
@@ -219,7 +239,7 @@
             https://github.com/benracine/d3_cisnet_tutorial/downloads
         end
     else
-        We have usb sticks
+        we have usb sticks
     end
         \end{verbatim}
         }
@@ -233,13 +253,17 @@
     \frametitle{Canonical Test to Ensure Installation}
     \begin{itemize}
 \pause
-    \item Navigate to an exercise file on your hard-drive in your browser
+    \item Navigate to the download local location of a tutorial file in your browser
 \pause
     \item Open up your browser's web developer tools
+        \begin{itemize}
+        \item Chrome, Safari, Opera and IE9 have built in tools
+        \item Firebug for Firefox
+        \end{itemize}
 \pause
-    \item Go to the developer tool console
+    \item Locate your JavaScript console
 \pause
-    \item Enter d3 and you should see "object" in the response
+    \item Enter d3 and you should see $\> Object $ in the response
 \pause
     \end{itemize}
 \end{frame}
@@ -254,6 +278,7 @@
 \begin{frame}
     \frametitle{Briefly playing in the console}
     \begin{itemize}
+    \item This doesn't even require proper installation
     \item Navigate to \href{http://mbostock.github.com/d3/}{http://mbostock.github.com/d3/}
     \item Let's change the color of the hyperlinks
         \begin{itemize}
@@ -295,18 +320,30 @@
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
     \item All d3 commands live in a unified d3 namespace
-    \item d3 supports CSS3 notation, i.e. one can select by:
+    \item A \underline{selector}, (i.e. d3.select("body")), is a key d3 term
         \begin{itemize}
-        \item Tag ($"div"$)
-        \item Class ($".awesome"$)
-        \item Identifier ($"\#foo"$)
-        \item Containment ($"parent child"$)
-        \item Intersection ($".this.that"$ for logical AND) 
-        \item Union ($".this, .that"$ for logical OR)
-        \item Attribute ($"[color=red]"$)
+        \item d3 supports CSS3 selector notation for reaching into the DOM tree
+            \begin{itemize}
+            \item Tag ($"div"$)
+            \item Class ($".awesome"$)
+            \item Identifier ($"\#foo"$)
+                \begin{itemize}
+                \item Containment ($"parent child"$)
+                \item Intersection ($".this.that"$ for logical AND) 
+                \item Union ($".this, .that"$ for logical OR)
+                \item Attribute ($"[color=red]"$)
+                \end{itemize}
+            \end{itemize}
         \end{itemize}
-    \item Notice that method chaining has already begun
-    \item Method chaining takes advantage of function that return the modifed version of the incoming selection
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Exercise-01.html: Hello World}
+    \begin{itemize}
+    \item Notice that \underline{method chaining} has already begun
+    \item Method chaining takes advantage of functions that are written to return the modifed version of the incoming selection
     \item Elements can be accessed directly
         \begin{itemize}
         \item (e.g., selection$[0][0]$)
@@ -320,16 +357,19 @@
 \begin{frame}
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
-    \item .text() is an "operator", a d3 term
-    \item Operators can both get or set:
+    \item Although elements can be selected individually we're normally using operators on the whole set
         \begin{itemize}
-        \item .classed() : toggling of css classes
-        \item .style() : sets the CSS style property (can be run w/ priority levels)
-        \item .property() : example, a slider value
-        \item .property() : example, a slider value
+        \item .text() is an "\underline{operator}", another key d3 term
+        \item Operators can both get or set:
+            \begin{itemize}
+            \item .classed() : toggling of css classes
+            \item .style() : sets the CSS style property (can be run w/ priority levels)
+            \item .property() : example, a slider value
+            \item .property() : example, a slider value
+            \end{itemize}
+        \item By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces
+        \item Additional namespaces can be registered
         \end{itemize}
-    \item By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces
-    \item Additional namespaces can be registered
     \end{itemize}
 \end{frame}
 
