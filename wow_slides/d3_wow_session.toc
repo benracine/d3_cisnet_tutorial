@@ -4,3 +4,11 @@
 \beamer@sectionintoc {2}{The Cruxes of Visualization}{12}{0}{2}
 \beamer@sectionintoc {3}{Background}{23}{0}{3}
 \beamer@sectionintoc {4}{Tour}{31}{0}{4}
+\beamer@subsectionintoc {4}{1}{Dynamic Linked Tree-Map and Line-Chart}{31}{0}{4}
+\beamer@subsectionintoc {4}{2}{Scatterplot Matrix of Pairwise Correlations}{34}{0}{4}
+\beamer@subsectionintoc {4}{3}{Transitions}{35}{0}{4}
+\beamer@subsectionintoc {4}{4}{Updating Bar Graph}{36}{0}{4}
+\beamer@subsectionintoc {4}{5}{Calendar}{37}{0}{4}
+\beamer@subsectionintoc {4}{6}{Geographic Projections}{38}{0}{4}
+\beamer@subsectionintoc {4}{7}{Chord Diagrams}{39}{0}{4}
+\beamer@subsectionintoc {4}{8}{Linked Bar, Geographic Projection, and Pie Charts}{40}{0}{4}
