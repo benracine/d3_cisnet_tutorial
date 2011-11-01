@@ -3,26 +3,27 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{If you are eager to get these materials}{2}{0}{1}
 \beamer@subsectionintoc {1}{2}{Attendee Introduction}{2}{0}{1}
-\beamer@subsectionintoc {1}{3}{Javascript in 120 seconds (yeah right)}{4}{0}{1}
-\beamer@subsectionintoc {1}{4}{Browser Poll}{6}{0}{1}
+\beamer@subsectionintoc {1}{3}{Browser Poll}{4}{0}{1}
+\beamer@subsectionintoc {1}{4}{Javascript in 120 seconds (yeah right)}{12}{0}{1}
 \beamer@sectionintoc {2}{Background}{14}{0}{2}
 \beamer@subsectionintoc {2}{1}{Really Helpful But Improbable Analogues}{14}{0}{2}
 \beamer@subsectionintoc {2}{2}{Resources}{19}{0}{2}
 \beamer@sectionintoc {3}{Installation}{27}{0}{3}
-\beamer@subsectionintoc {3}{1}{Clone or Download Slides, Source Code and Tutorials}{27}{0}{3}
-\beamer@subsectionintoc {3}{2}{Canonical Test to Ensure Installation}{30}{0}{3}
-\beamer@sectionintoc {4}{Tutorials: Round One}{35}{0}{4}
-\beamer@subsectionintoc {4}{1}{Briefly playing in the console}{35}{0}{4}
-\beamer@subsectionintoc {4}{2}{Hello world}{36}{0}{4}
-\beamer@subsectionintoc {4}{3}{Including an SVG element}{41}{0}{4}
-\beamer@subsectionintoc {4}{4}{Combining with CSS Selections}{44}{0}{4}
-\beamer@sectionintoc {5}{A Quick Break}{46}{0}{5}
-\beamer@sectionintoc {6}{Tutorials: Round Two}{47}{0}{6}
-\beamer@subsectionintoc {6}{1}{Bar Chart}{47}{0}{6}
-\beamer@subsectionintoc {6}{2}{2d Array into HTML Table}{49}{0}{6}
-\beamer@subsectionintoc {6}{3}{2d Array into SVG Bar Chart}{50}{0}{6}
-\beamer@subsectionintoc {6}{4}{Axes Elements}{51}{0}{6}
-\beamer@subsectionintoc {6}{5}{Extras}{52}{0}{6}
-\beamer@subsectionintoc {6}{6}{Event Listeners}{52}{0}{6}
-\beamer@subsectionintoc {6}{7}{Tweens, Scaling, User-events}{53}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{55}{0}{7}
+\beamer@subsectionintoc {3}{1}{Participation Query}{27}{0}{3}
+\beamer@subsectionintoc {3}{2}{Clone or Download Slides, Source Code and Tutorials}{29}{0}{3}
+\beamer@subsectionintoc {3}{3}{Canonical Test to Ensure Installation}{30}{0}{3}
+\beamer@sectionintoc {4}{Tutorials: Round One}{40}{0}{4}
+\beamer@subsectionintoc {4}{1}{Briefly playing in the console}{40}{0}{4}
+\beamer@subsectionintoc {4}{2}{Hello world}{41}{0}{4}
+\beamer@subsectionintoc {4}{3}{Including an SVG element}{46}{0}{4}
+\beamer@subsectionintoc {4}{4}{Combining with CSS Selections}{49}{0}{4}
+\beamer@sectionintoc {5}{A Quick Break}{51}{0}{5}
+\beamer@sectionintoc {6}{Tutorials: Round Two}{52}{0}{6}
+\beamer@subsectionintoc {6}{1}{Bar Chart}{52}{0}{6}
+\beamer@subsectionintoc {6}{2}{2d Array into HTML Table}{55}{0}{6}
+\beamer@subsectionintoc {6}{3}{2d Array into an SVG Bar Chart}{56}{0}{6}
+\beamer@subsectionintoc {6}{4}{Axes Elements}{57}{0}{6}
+\beamer@subsectionintoc {6}{5}{Extras}{58}{0}{6}
+\beamer@subsectionintoc {6}{6}{Event Listeners}{58}{0}{6}
+\beamer@subsectionintoc {6}{7}{Tweens, Scaling, User-events}{59}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{61}{0}{7}
