@@ -28,7 +28,7 @@
 
 
 \title{PBO Workshop} 
-\subtitle{Creating Data-Driven Documents With d3} 
+\subtitle{Creating Data-Driven Documents With D3} 
 \author{Ben Racine \inst{1} }
 \institute{\inst{1} Cornerstone Systems NW }
 \date{November 2, 2011}
@@ -60,12 +60,16 @@
 
 \subsection{If you are eager to get these materials}
 
+
 \begin{frame}
     \frametitle{If you are eager to obtain everything}
     \begin{itemize}
-    \item Go to github.com
+\pause
+    \item Navigate to github.com
+\pause
     \item Search for benracine
-    \item This repo should be the first hit, else "d3\_cisnet\_tutorial"
+\pause
+    \item This repo should be the first hit, i.e. "d3\_cisnet\_tutorial"
     \end{itemize}
 \end{frame}
 
@@ -77,12 +81,11 @@
     \frametitle{Attendee Introduction}
     \begin{itemize}
 \pause
-    \item Visualization tools
-\pause
+    \item Name
+    \item Group
+    \item 2 main visualization tools you have experience with or like
     \item Any web development experience?
-\pause
     \item Any Javascript experience?
-\pause
     \end{itemize}
 \end{frame}
 
@@ -97,10 +100,9 @@
     \item Dynamic and weak/duck typing
     \item Primitive Types
         \begin{itemize}
-        \item var mayday = false;
-        \item var sal = 20;
-        \item var pal = 12.1;
-        \item var myName = "Some Name";
+        \item Boolean: var mayday = false;
+        \item Number: var sal = 20; var pal = 12.1;
+        \item String: var myName = "Some Name";
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -111,8 +113,8 @@
     \begin{itemize}
     \item Collections
         \begin{itemize}
-        \item var myArray = [0, 2, 4];
-        \item var myObject = {}; myObject.foo = "bar";
+        \item Array: var myArray = [[0], [2, 4]]; console.log(myArray[1][1]); > 4
+        \item Object: var myObject = {}; myObject.foo = "bar";
         \end{itemize}
     \item Functions
         \begin{itemize}
@@ -120,7 +122,7 @@
         \item Can be assigned to variables
         \item Can be passed as arguments
         \item Can be returned by other functions
-        \item May be nested -> 
+        \item May be nested
         \item Closures -> see Python example on wikipedia closure article for a concise example
         \end{itemize}
     \end{itemize}
@@ -248,6 +250,15 @@
 
 
 
+\begin{frame}[fragile]
+    \frametitle{Participation Query}
+    \begin{itemize}
+    \item Can I get a sense of the fraction that intend on stepping through the exercises?
+    \item Versus the number that would just like to follow along?
+    \end{itemize}
+\end{frame}
+
+
 \subsection{Canonical Test to Ensure Installation}
 
 \begin{frame}
@@ -274,12 +285,14 @@
 
 \section{Tutorials: Round One}
 
+
 \subsection{Briefly playing in the console}
+
 
 \begin{frame}
     \frametitle{Briefly playing in the console}
     \begin{itemize}
-    \item This doesn't even require proper installation
+    \item Even if you don't plan on following along, you can do this starter
     \item Navigate to \href{http://mbostock.github.com/d3/}{http://mbostock.github.com/d3/}
     \item Let's change the color of the hyperlinks
         \begin{itemize}
@@ -295,21 +308,27 @@
 \end{frame}
 
 
-
 \subsection{Hello world}
+
 
 \begin{frame}
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
     \item This example only uses raw html (i.e. no SVG)
+    \item Note: we're putting html, css and js all in one file for brevity
     \item Include the main d3 file in line 5
         \begin{itemize}
         \item This, d3.js, is the 'core' module
-        \item The default build of d3.js includes the core, scale, svg and behavior modules
+        \item The default build of d3.js includes:
+            \begin{itemize}
+            \item the core
+            \item scale
+            \item svg 
+            \item behavior modules
+            \end{itemize}
         \item Others include:
             \begin{itemize}
             \item d3.time.js
-            \item d3.geo.js
             \item d3.csv.js
             \end{itemize}
         \end{itemize}
@@ -318,7 +337,7 @@
 
 
 \begin{frame}
-    \frametitle{Exercise-01.html: Hello World}
+    \frametitle{Exercise-01.html: Hello World: Selectors}
     \begin{itemize}
     \item All d3 commands live in a unified d3 namespace
     \item A \underline{selector}, (i.e. d3.select("body")), is a key d3 term
@@ -339,15 +358,16 @@ pause
 \end{frame}
 
 
+
 \begin{frame}
-    \frametitle{Exercise-01.html: Hello World}
+    \frametitle{Exercise-01.html: Hello World: Method Chaining}
     \begin{itemize}
     \item Notice that \underline{method chaining} has already begun
     \item Method chaining takes advantage of functions that are written to return the modifed version of the incoming selection
     \item Elements can be accessed directly
         \begin{itemize}
         \item (e.g., selection$[0][0]$)
-        \item Through the each call
+        \item or through the .each() call
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -355,20 +375,18 @@ pause
 
 
 \begin{frame}
-    \frametitle{Exercise-01.html: Hello World}
+    \frametitle{Exercise-01.html: Hello World: Operators}
     \begin{itemize}
     \item Although elements can be selected individually we're normally using operators on the whole set
         \begin{itemize}
         \item .text() is an "\underline{operator}", another key d3 term
         \item Operators can both get or set:
             \begin{itemize}
-            \item .classed() : toggling of css classes
-            \item .style() : sets the CSS style property (can be run w/ priority levels)
-            \item .property() : example, a slider value
-            \item .property() : example, a slider value
+            \item attribute: .attr()
+            \item html content: .html()
+            \item CSS classes: .classed() 
+            \item a CSS property: .property() (e.g., a slider value)
             \end{itemize}
-        \item By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces
-        \item Additional namespaces can be registered
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -378,16 +396,17 @@ pause
 \begin{frame}
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
-    \item Can be set as either constants or as functions
-    \item When used to set document content, the operators return the current selection, so you can chain multiple operators together in a concise statement.
-    \item d3.select("") $\approx$ \$("") $\approx$ jQuery("")
+    \item By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces
+    \item Additional namespaces can be registered
+    \item Operators can be set as either constants or as functions
     \end{itemize}
+Bear with me, examples should bring these details to life... 
 \end{frame}
 
 
 
-
 \subsection{Including an SVG element}
+
 
 \begin{frame}
     \frametitle{Exercise-02.html:: Including an SVG Element}
@@ -395,26 +414,37 @@ pause
     \item Width and height could be related to the width and height of the window
     \item Think of the svg element as a canvas with a transformed coordinate system
     \item A svg:g element is means of containing other svg elements
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{Exercise-02.html:: Including an SVG Element: Coordinates}
+    \begin{itemize}
     \item A tranform can be a handy way of moving the coordinate system to a desired location
-    \item Regarding the coordinate system, note:
+    \item Note:
         \begin{itemize}
         \item Origin is the top-left
         \item x is positive to the right
         \item y is positive down
-        \item scales can be used to correct to cartesian coords
+        \item scales can be used to correct to cartesian coords (more on that to come)
         \end{itemize}
     \end{itemize}
 \end{frame}
 
 
+
 \begin{frame}
-    \frametitle{Exercise-02.html:: Including an SVG Element}
+    \frametitle{Exercise-02.html:: Including an SVG Element: Additional Notes}
     \begin{itemize}
     \item svg:circle self explanatory
         \begin{itemize}
         \item Refer to the SVG spec for relevant and/or required circle attributes
         \end{itemize}
     \item Note the use of a JavaScript namespace variable to cache a selection of interest
+    \item An important design decision
+    \item You want to do this at any crossroads in your workflow
     \end{itemize}
 \end{frame}
 
