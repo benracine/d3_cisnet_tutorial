@@ -3,10 +3,10 @@ Programmers Breakout
 ============================
 
 All the day's materials are here except for
-* The author's tour
-* The example tour, but these can be found in the d3 repo itself (examples)
+1.  The author's tour
+2.  The example tour, but these can be found in the d3 repo itself (examples)
 
 Included here are
-* The tutorial slides
-* The tutorials themselves
-* The brief tour 'wow' slides
+1.  The tutorial slides
+2.  The tutorials themselves
+3.  The brief tour 'wow' slides
