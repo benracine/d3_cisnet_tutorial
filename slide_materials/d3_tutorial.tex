@@ -1,7 +1,6 @@
 %  d3 Tutorial CISNET Programmers Breakout November 2, 2011
 %  Author: Ben Racine
 %  Date:   November 2, 2011
-%
 
 \documentclass{beamer}
 \mode<presentation>
@@ -28,7 +27,7 @@
 
 
 \title{PBO Workshop} 
-\subtitle{Data-Driven Documents With d3} 
+\subtitle{Creating Data-Driven Documents With d3} 
 \author{Ben Racine \inst{1} }
 \institute{\inst{1} Cornerstone Systems NW }
 \date{November 2, 2011}
@@ -38,31 +37,34 @@
 \begin{document}
 
 
+
 \begin{frame}
     \frametitle{}
     \titlepage
 \end{frame}
 
 
-%\begin{frame}
-%    \scriptsize{
-%        \frametitle{Outline}
-%        \tableofcontents[pausesections]
-%    }
-%\end{frame}
+
+\begin{frame}
+    \scriptsize{
+        \frametitle{Outline}
+        \tableofcontents[pausesections]
+    }
+\end{frame}
 
 
 
 \section{Introduction}
 
+
 \subsection{Attendee Introduction}
 
+
 \begin{frame}
-    \frametitle{Attendee Introduction}
-    \begin{itemize}
-    These materials live at http://mbostock.github.com/d3/}{http://mbostock.github.com/d3/}
-    \end{itemize}
+    \frametitle{If you are eager to obtain everything}
+    \href{https://github.com/benracine/d3_cisnet_tutorial/downloads}{https://github.com/benracine/d3_cisnet_tutorial/downloads}
 \end{frame}
+
 
 \begin{frame}
     \frametitle{Attendee Introduction}
@@ -81,7 +83,7 @@
     \begin{block}{Any web developers?}
         \begin{itemize}
 \pause
-        \item Javascript experience?
+        \item Any Javascript experience?
         \end{itemize}
     \end{block}
 \end{frame}
@@ -119,7 +121,7 @@
         \item Any jQuery experience?
 \pause
             \begin{itemize}
-            \item d3 is similar, but can also target the SVG (xml-like image format)
+            \item d3 is similar, but can also target the SVG (an xml-esque image format)
 \pause
             \item They both do some fancy functional programming to make it possible 
                   for us to declaratively (and efficiently) reach into the dom tree
@@ -129,6 +131,7 @@
        \end{itemize}
     \end{block}
 \end{frame}
+
 
 
 \section{Resources}
@@ -165,11 +168,15 @@
     \frametitle{Clone or Download Slides, Source Code and Exercises}
         \tiny{
         \begin{verbatim}
-   if you are a git user
-       git clone git@github.com:benracine/d3_cisnet_tutorial.git
-   else
-       https://github.com/benracine/d3_cisnet_tutorial/downloads
-   end
+    if you have an internet connection
+        if you are a git user
+            git clone git@github.com:benracine/d3_cisnet_tutorial.git
+        else
+            https://github.com/benracine/d3_cisnet_tutorial/downloads
+        end
+    else
+        We have usb sticks
+    end
         \end{verbatim}
         }
 \end{frame}
@@ -211,6 +218,9 @@
         \item d3.selectAll("p").style("color","blue")
         \end{itemize}
     \item Note the existence of both d3.select and d3.selectAll
+        \begin{itemize}
+        \item d3.select only chooses the first element
+        \end{itemize}
     \end{itemize}
 \end{frame}
 
@@ -252,7 +262,7 @@
         \item Attribute ("$[color=red]$")
         \end{itemize}
     \item Notice that method chaining has already begun
-    \item Method chaining = returning the same selection for further modification
+    \item Method chaining takes advantage of function that return the modifed version of the incoming selection
     \item Elements can be accessed directly
         \begin{itemize}
         \item (e.g., selection$[0][0]$)
@@ -266,7 +276,7 @@
 \begin{frame}
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
-    \item .text() is an "operator"
+    \item .text() is an "operator", a d3 term
     \item Operators can both get or set:
         \begin{itemize}
         \item .classed() : toggling of css classes
@@ -278,6 +288,7 @@
     \item Additional namespaces can be registered
     \end{itemize}
 \end{frame}
+
 
 
 \begin{frame}
@@ -383,10 +394,18 @@
 \end{frame}
 
 
+\section{A Quick Break}
+
+\begin{frame}
+    \frametitle{A Quick Break}
+\end{frame}
+
 
 \section{Tutorials: Round Two}
 
+
 \subsection{Bar Chart}
+
 
 \begin{frame}
     \frametitle{Exercise-09.html: Bar Chart}
@@ -395,6 +414,7 @@
     \item Scales
     \end{itemize}
 \end{frame}
+
 
 \begin{frame}
     \frametitle{Exercise-09.html: Bar Chart}
@@ -407,7 +427,6 @@
     \item Exit
     \end{itemize}
 \end{frame}
-
 
 
 \subsection{2d Array into HTML Table}
@@ -452,8 +471,8 @@
     \begin{itemize}
     \item Transition $\approx$ a non-instantaneous transformation with extra attributes:
         \begin{itemize}
-        \item Duration
-        \item Delay
+        \item Duration - 
+        \item Delay -  
         \end{itemize}
     \item Ease
     \item Interpolate
@@ -469,10 +488,9 @@
 \begin{frame}
     \frametitle{Conclusion}
     \begin{itemize}
-    \item 
+    \item You rock for sticking through this duration
     \end{itemize}
 \end{frame}
-
 
 
 \end{document}
