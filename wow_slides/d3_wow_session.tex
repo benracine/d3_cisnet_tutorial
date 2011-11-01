@@ -35,22 +35,25 @@
 
 \begin{document}
 
+
 \begin{frame}
     \frametitle{}
     \titlepage
 \end{frame}
 
 
-% \begin{frame}
-%    \scriptsize{
-%        \frametitle{Outline}
-%        \tableofcontents[pausesections]
-%    }
-% \end{frame}
+ \begin{frame}
+    \scriptsize{
+        \frametitle{Outline}
+        \tableofcontents[pausesections]
+    }
+ \end{frame}
 
 
 
 \section{Background}
+
+
 
 \begin{frame}
 \frametitle{Background}
@@ -62,11 +65,34 @@
     \item You can use d3 to generate a basic HTML table from a matrix of numbers.
     \item You could use the same data to create an interactive SVG bar chart with smooth transitions and interaction.
     \end{itemize}
-\item Further:
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Ecosystem}
+\begin{itemize}
+\item It largely targets the SVG element
+\item SVG is being increasingly supported:
     \begin{itemize}
-    \item SVG is supported across all the modern browsers including
-    \item JavaScript performance has recently increased considerably
+    \item IE, 9+
+    \item Chrome
+    \item Firefox
+    \item Safari
+    \item Opera, 9.5+
+    \item iOS
+    \item Android, 3.0+
     \end{itemize}
+\item A few additional JavaScript libraries can be useful for minor data transformations and persistence
+    \begin{itemize}
+    \item Underscore.js
+    \item Backbone.js
+    \item JSONSelect.js 
+    \item Science.js
+    \end{itemize}
+\item JavaScript performance has recently increased considerably
+\item JavaScript has a beautiful functional language buried under some famous warts
 \end{itemize}
 \end{frame}
 
@@ -77,7 +103,7 @@
 \begin{itemize}
 \item d3.js is loosely associated with the \href{http://vis.stanford.edu/}{\underline{Stanford Visualization Group}}
 \item Supersedes the ProtoVis project
-\item Mike Bostock is the primary author, but it is open source on Github
+\item Mike Bostock is the primary author, but it is open source on Github.com
 \item Only a year or two old
 \end{itemize}
 \end{frame}
@@ -86,16 +112,41 @@
 
 \section{Tour}
 
+
 \subsection{The Author's Tour}
+
 
 \begin{frame}
 \frametitle{The Author's Tour}
-\href{http://mbostock.github.com/d3/talk/20111018/#2}{A Tour}
+\href{http://mbostock.github.com/d3/talk/20111018/#0}{A Tour}
 \begin{itemize}
-\item Association / adjacency representations via chord diagrams
-\item Various hierarchical layouts (bundle, cluster, partition, pack, treemap, hierarchical bar charts)
+\item The author uses "layouts"
+\item Association / adjacency representations are addressed with chord layout
+    \begin{itemize}
+    \item Chord - produce a chord diagram from a matrix of relationships.
+    \end{itemize}
+\item A whole collection of hierarchical layouts 
+    \begin{itemize}
+    \item Bundle - apply Holten's hierarchical bundling algorithm to edges.
+    \item Cluster - cluster entities into a dendrogram.
+    \item Hierarchy - derive a custom hierarchical layout implementation.
+    \item Histogram - compute the distribution of data using quantized bins.
+    \item Pack - produce a hierarchical layout using recursive circle-packing.
+    \item Partition - recursively partition a node tree into a sunburst or icicle.
+    \item Stack - compute the baseline for each series in a stacked bar or area chart.
+    \item Tree - position a tree of nodes tidily.
+    \item Treemap - use recursive spatial subdivision to display a tree of nodes.
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{The Author's Tour Continued}
+\begin{itemize}
 \item Calendar
-\item Time-series 
+\item Time-series (note Mike's other project: \href{https://github.com/square/cube}{"Cube"})
 \item Pan and zoom 
 \item Scale elements (with tick, label, title and location options)
 \item Smooth transitions
@@ -108,35 +159,33 @@
 
 
 
-\subsection{My Tour}
-
-\begin{frame}
-\frametitle{My Tour}
-\begin{itemize}
-\item 1242141265!@#@!#^%!#
-\item Still need to clean up this version
-\item \href{http://localhost:9000/examples/my_cisnet_demo/navpane.html}{My navpane task}
-\item See a side project that I consulted on for the \href{http://www.startupweekendviz.johnmorefield.com/d3/examples/SW/map.html}{Startup Weekend}
-\end{itemize}
-\end{frame}
-
-
-
 \subsection{Repository Examples}
 
 \begin{frame}
 \frametitle{Repository Examples}
 \begin{itemize}
-\item Bar/column 
-\item Box plot
-\item Bullet
-\item Histogram
+\item Bar / column 
+\item Box plot - quintile distribution of a single variable
+\item Bullet - considered a best-practices replacement for gauge charts
+\item Histogram - compute the distribution of data using quantized bins.
 \item Hyperbolic tree
-\item Pie 
-\item qq plots
-\item Radial
-\item Stack
-\item Streamgraph
+\item Pie - compute the start and end angles for arcs in a pie or donut chart.
+\item QQ plots - compare two probability distributions by graphing their quantiles against each other
+\item Radial - 
+\item Stack - 
+\item Streamgraph - a generalization of stacked area graphs
+\end{itemize}
+\end{frame}
+
+
+
+\subsection{My Tour}
+
+\begin{frame}
+\frametitle{My Tour}
+\begin{itemize}
+\item A side project that I consulted on for the \href{http://www.startupweekendviz.johnmorefield.com/d3/examples/SW/map.html}{Startup Weekend}
+\item ** \href{http://localhost:9000/examples/my_cisnet_demo/navpane.html}{My navpane task}
 \end{itemize}
 \end{frame}
 
@@ -150,9 +199,14 @@
 \frametitle{Why d3?}
 \begin{itemize}
 \item It is a small and sharp tool 
-\item It does "one" thing and does it well
+\item Kind of in the Unix philosophy, it does "one" thing and does it well
+\begin{itemize}
+\item i.e. It solves the cruxes of visualization
+\end{itemize}
 \item Plays well with others
-\item Doesn't pollute the global namespace
+\begin{itemize}
+\item i.e. doesn't pollute the global namespace
+\end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -164,6 +218,14 @@
 \frametitle{The Cruxes of Visualization}
 \begin{block}{Scales}
 \begin{itemize}
+\item Data access by url
+\begin{itemize}
+\item text
+\item json
+\item xml
+\item html
+\item csv
+\end{itemize}
 \item Scales define the mapping between the data and pixel/color space
 \item A reverse function can be used to map the other direction too
 \item Linear, log, power, discrete/continuous, banded, ordinal and user defined
@@ -187,6 +249,7 @@
 \item Authors can take their new depth of knowledge of modern web standards with them
 \end{itemize}
 \end{frame}
+
 
 
 \end{document}
