@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.11)  31 OCT 2011 19:59
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.11)  1 NOV 2011 06:01
 entering extended mode
  %&-line parsing enabled.
 **d3_tutorial.tex
@@ -1011,22 +1011,22 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
 ]
 [27
 
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 247.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 247.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 247.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 247.
- [28
+] [28
 
 ] [29
 
 ] [30
 
-] [31
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 246.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 246.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 246.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 246.
+ [31
 
 ] [32
 
@@ -1036,13 +1036,20 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 
 ] [35
 
+] [36
+
+] [37
+
+] [38
+
 ]
 \openout3 = `d3_tutorial.vrb'.
 
- (./d3_tutorial.vrb) [36
+ (./d3_tutorial.vrb) [39
 
-]
-(./d3_tutorial.vrb) [37
+] (./d3_tutorial.vrb) [40
+
+] (./d3_tutorial.vrb) [41
 
 ]
 \openout3 = `d3_tutorial.vrb'.
@@ -1052,7 +1059,7 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 3.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) [38
+)) [42
 
 ]
 Overfull \hbox (117.95915pt too wide) in paragraph at lines 303--303
@@ -1060,7 +1067,7 @@ Overfull \hbox (117.95915pt too wide) in paragraph at lines 303--303
 hortcutsExamples 
  []
 
-[39
+[43
 
 ]
 Overfull \hbox (117.95915pt too wide) in paragraph at lines 303--303
@@ -1068,7 +1075,7 @@ Overfull \hbox (117.95915pt too wide) in paragraph at lines 303--303
 hortcutsExamples 
  []
 
-[40
+[44
 
 ]
 Overfull \hbox (117.95915pt too wide) in paragraph at lines 303--303
@@ -1076,7 +1083,7 @@ Overfull \hbox (117.95915pt too wide) in paragraph at lines 303--303
 hortcutsExamples 
  []
 
-[41
+[45
 
 ]
 Overfull \hbox (117.95915pt too wide) in paragraph at lines 303--303
@@ -1084,15 +1091,7 @@ Overfull \hbox (117.95915pt too wide) in paragraph at lines 303--303
 hortcutsExamples 
  []
 
-[42
-
-] [43
-
-] [44
-
-] [45
-
-] [46
+[46
 
 ] [47
 
@@ -1102,12 +1101,7 @@ hortcutsExamples
 
 ] [50
 
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 401.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 401.
- [51
+] [51
 
 ] [52
 
@@ -1115,12 +1109,16 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 
 ] [54
 
-] [55
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 401.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 401.
+ [55
 
 ] [56
 
-]
-[57
+] [57
 
 ] [58
 
@@ -1128,7 +1126,8 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 
 ] [60
 
-] [61
+]
+[61
 
 ] [62
 
@@ -1148,6 +1147,14 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 
 ] [70
 
+] [71
+
+] [72
+
+] [73
+
+] [74
+
 ]
 \tf@nav=\write7
 \openout7 = `d3_tutorial.nav'.
@@ -1162,9 +1169,9 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (./d3_tutorial.aux) ) 
 Here is how much of TeX's memory you used:
  14584 strings out of 495061
- 253279 string characters out of 1182620
- 339912 words of memory out of 3000000
- 17142 multiletter control sequences out of 15000+50000
+ 252913 string characters out of 1182620
+ 339905 words of memory out of 3000000
+ 17132 multiletter control sequences out of 15000+50000
  54178 words of font info for 85 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  45i,19n,59p,338b,813s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1176,9 +1183,9 @@ r/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb>
 </usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf
 -texlive/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on d3_tutorial.pdf (70 pages, 667640 bytes).
+Output written on d3_tutorial.pdf (74 pages, 701518 bytes).
 PDF statistics:
- 2838 PDF objects out of 2984 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 357 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3002 PDF objects out of 3580 (max. 8388607)
+ 176 named destinations out of 1000 (max. 500000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 
