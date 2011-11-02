@@ -61,9 +61,9 @@
 \frametitle{The Philosophy of d3}
 \begin{itemize}
 \item d3 isn't just a charting library
-    \begin{itemize}
-    \item But, it does come with many examples and layouts
-    \end{itemize}
+\pause
+\item But, it does come with many examples and layouts
+\pause
 \item d3 is small
 \end{itemize}
 \end{frame}
@@ -73,10 +73,11 @@
 \frametitle{The Philosophy of d3}
 \begin{itemize}
 \item d3 doesn't pollute the global namespace
+\pause
 \item d3 honors and web standards instead of reinventing them
-    \begin{itemize}
-    \item Authors' exposure to modern web standards are portable
-    \end{itemize}
+\pause
+\item Authors' exposure to modern web standards are portable
+\pause
 \item d3 does "one" thing and does it well, reminiscent of the UNIX spirit
 \end{itemize}
 \end{frame}
@@ -86,12 +87,12 @@
 
 \begin{frame}
 \frametitle{d3 Solves the Cruxes of Visualization}
-Well, to be accurate it does more than one thing, it:
 \begin{itemize}
 \item Binds data and styled presentation elements 
     \begin{itemize}
     \item Provides control over the ability to update, append and remove these bonds
     \end{itemize}
+\pause
 \item Provides scales to define the mapping back and forth between between data and pixel space
     \begin{itemize}
     \item These scales include linear, log, power, discrete/continuous, banded, ordinal, etc.
@@ -104,11 +105,10 @@ Well, to be accurate it does more than one thing, it:
 \begin{frame}
 \begin{itemize}
 \frametitle{d3 Solves the Cruxes of Visualization}
-\item Applies data-driven dynamic transformations to the document
-    \begin{itemize}
-    \item Locate data anywhere by url (formats include text, json, xml, html, csv)
-    \end{itemize}
+\item Obtain data anywhere by url (formats include text, json, xml, html, csv)
+\pause
 \item Transitions between different style representations
+\pause
 \item Targets the browser, making it ideal for quickly reaching a wide audience
     \begin{itemize}
     \item And is there a story for getting to paper from there
@@ -125,7 +125,9 @@ Well, to be accurate it does more than one thing, it:
 \frametitle{Background}
 \begin{itemize}
 \item d3.js is loosely associated with the \href{http://vis.stanford.edu/}{\underline{Stanford Visualization Group}}
+\pause
 \item Supersedes the ProtoVis project, so resources found there can be relevant
+\pause
 \item Mike Bostock is the primary author
 \item Open sourced on the highly active GitHub.com
 \item Only a year or two old
@@ -136,6 +138,7 @@ Well, to be accurate it does more than one thing, it:
 \begin{frame}
 \frametitle{Background, cont.}
 It largely targets the SVG element, which is being increasingly supported across all major browsers:
+\pause
     \begin{itemize}
     \item Internet Explorer, 9+
     \item Chrome
@@ -145,7 +148,8 @@ It largely targets the SVG element, which is being increasingly supported across
     \item Android, 3.0+
     \item Opera, 9.5+
     \end{itemize}
-It should be noted that JavaScript has had huge investments in increaing its performance recently
+\pause
+It should be noted that JavaScript has had huge investments in increasing its performance recently
 \end{frame}
 
 
@@ -159,75 +163,76 @@ It should be noted that JavaScript has had huge investments in increaing its per
 \begin{frame}
 \frametitle{The Author's Tour}
 \href{http://mbostock.github.com/d3/talk/20111018/\#0}{A Tour}
-\begin{itemize}
-\item The author uses "layouts"
-\item Association / adjacency representations are addressed with chord layout
-    \begin{itemize}
-    \item Chord - produce a chord diagram from a matrix of relationships.
-    \end{itemize}
-\item A whole collection of hierarchical layouts 
-    \begin{itemize}
-    \item Bundle - apply Holten's hierarchical bundling algorithm to edges.
-    \item Cluster - cluster entities into a dendrogram.
-    \item Hierarchy - derive a custom hierarchical layout implementation.
-    \item Histogram - compute the distribution of data using quantized bins.
-    \item Pack - produce a hierarchical layout using recursive circle-packing.
-    \item Partition - recursively partition a node tree into a sunburst or icicle.
-    \item Stack - compute the baseline for each series in a stacked bar or area chart.
-    \item Tree - position a tree of nodes tidily.
-    \item Treemap - use recursive spatial subdivision to display a tree of nodes.
-    \end{itemize}
-\end{itemize}
+% % \begin{itemize}
+% % \item The author uses "layouts"
+% % \item Association / adjacency representations are addressed with chord layout
+% %     \begin{itemize}
+% %     \item Chord - produce a chord diagram from a matrix of relationships.
+% %     \end{itemize}
+% % \item A whole collection of hierarchical layouts 
+% %     \begin{itemize}
+% %     \item Bundle - apply Holten's hierarchical bundling algorithm to edges.
+% %     \item Cluster - cluster entities into a dendrogram.
+% %     \item Hierarchy - derive a custom hierarchical layout implementation.
+% %     \item Histogram - compute the distribution of data using quantized bins.
+% %     \item Pack - produce a hierarchical layout using recursive circle-packing.
+% %     \item Partition - recursively partition a node tree into a sunburst or icicle.
+% %     \item Stack - compute the baseline for each series in a stacked bar or area chart.
+% %     \item Tree - position a tree of nodes tidily.
+% %     \item Treemap - use recursive spatial subdivision to display a tree of nodes.
+% %     \end{itemize}
+% % \end{itemize}
 \end{frame}
 
 
 
+% \begin{frame}
+% \frametitle{The Author's Tour Continued}
+% \begin{itemize}
+% \item Calendar
+% \item Time-series (note Mike's other project: \href{https://github.com/square/cube}{"Cube"})
+% \item Pan and zoom 
+% \item Scale elements (with tick, label, title and location options)
+% \item Smooth transitions
+% \item Interaction 
+% \item Animation
+% \item Chloropleth / projections
+% \item Force (helpful in solving the non-collision problem)
+% \end{itemize}
+% \end{frame}
+
+
+
+\subsection{Additional Examples}
+
 \begin{frame}
-\frametitle{The Author's Tour Continued}
+\frametitle{Additional Examples}
 \begin{itemize}
-\item Calendar
-\item Time-series (note Mike's other project: \href{https://github.com/square/cube}{"Cube"})
-\item Pan and zoom 
-\item Scale elements (with tick, label, title and location options)
-\item Smooth transitions
-\item Interaction 
-\item Animation
-\item Chloropleth / projections
-\item Force (helpful in solving the non-collision problem)
-\end{itemize}
-\end{frame}
-
-
-
-\subsection{Repository Examples}
-
-\begin{frame}
-\frametitle{Repository Examples}
-\begin{itemize}
-\item Bar / column 
 \item Box plot - quintile distribution of a single variable
 \item Bullet - considered a best-practices replacement for gauge charts
-\item Histogram - compute the distribution of data using quantized bins.
-\item Hyperbolic tree
-\item Pie - compute the start and end angles for arcs in a pie or donut chart.
-\item QQ plots - compare two probability distributions by graphing their quantiles against each other
-\item Radial - 
-\item Stack - 
-\item Streamgraph - a generalization of stacked area graphs
 \end{itemize}
 \end{frame}
 
 
+% \item Histogram - compute the distribution of data using quantized bins.
+% \item Bar / column 
+% \item Hyperbolic tree
+% \item Pie - compute the start and end angles for arcs in a pie or donut chart.
+% \item QQ plots - compare two probability distributions by graphing their quantiles against each other
+% \item Radial - 
+% \item Stack - 
+% \item Streamgraph - a generalization of stacked area graphs
 
-\subsection{My Tour}
 
-\begin{frame}
-\frametitle{My Tour}
-\begin{itemize}
-\item A side project that I consulted on for the \href{http://www.startupweekendviz.johnmorefield.com/d3/examples/SW/map.html}{Startup Weekend}
-\item ** \href{http://localhost:9000/examples/my_cisnet_demo/navpane.html}{My navpane task}
-\end{itemize}
-\end{frame}
+% \subsection{My Tour}
+
+% \begin{frame}
+% \frametitle{My Tour}
+% \begin{itemize}
+% \item A side project that I consulted on for the \href{http://www.startupweekendviz.johnmorefield.com/d3/examples/SW/map.html}{Startup Weekend}
+% \item ** \href{http://localhost:9000/examples/my_cisnet_demo/navpane.html}{My navpane task}
+% \end{itemize}
+% \end{frame}
 
 
 

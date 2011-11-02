@@ -90,6 +90,29 @@
 \end{frame}
 
 
+\subsection{Browser Poll}
+
+\begin{frame}
+    \frametitle{Introductions}
+\pause
+    \begin{block}{Browser Poll}
+        \begin{itemize}
+\pause
+        \item Chrome
+\pause
+        \item Firefox 3+
+\pause
+        \item Safari
+\pause
+        \item Opera
+\pause        
+        \item IE9
+\pause
+        \item None of the above?
+        \end{itemize}
+    \end{block}
+\end{frame}
+
 
 \subsection{Javascript in 120 seconds (yeah right)}
 
@@ -163,28 +186,6 @@
 % \end{frame}
 
 
-\subsection{Browser Poll}
-
-\begin{frame}
-    \frametitle{Introductions}
-\pause
-    \begin{block}{Browser Poll}
-        \begin{itemize}
-\pause
-        \item Chrome
-\pause
-        \item Firefox 3+
-\pause
-        \item Safari
-\pause
-        \item Opera
-\pause        
-        \item IE9
-\pause
-        \item None of the above?
-        \end{itemize}
-    \end{block}
-\end{frame}
 
 
 \section{Background}
@@ -241,6 +242,18 @@
 
 \section{Installation}
 
+\subsection{Participation Query}
+
+\begin{frame}[fragile]
+    \frametitle{Participation Query}
+    \begin{itemize}
+    \item Can I get a sense of the fraction that intend on stepping through the exercises?
+\pause
+    \item Versus the number that would just like to follow along?
+    \end{itemize}
+\end{frame}
+
+
 \subsection{Clone or Download Slides, Source Code and Tutorials}
 
 \begin{frame}[fragile]
@@ -254,7 +267,7 @@
             https://github.com/benracine/d3_cisnet_tutorial/downloads
         end
     else
-        we have usb sticks
+        we have usb sticks (that also have Chrome on them)
     end
         \end{verbatim}
         }
@@ -262,31 +275,34 @@
 
 
 
-\begin{frame}[fragile]
-    \frametitle{Participation Query}
-    \begin{itemize}
-    \item Can I get a sense of the fraction that intend on stepping through the exercises?
-\pause
-    \item Versus the number that would just like to follow along?
-    \end{itemize}
-\end{frame}
-
-
 \subsection{Canonical Test to Ensure Installation}
 
 \begin{frame}
-    \frametitle{Canonical Test to Ensure Installation}
+    \frametitle{Fire up your Developer Tools}
     \begin{itemize}
 \pause
-    \item Navigate to the download local location of a tutorial file in your browser
+    \item In your browser, navigate to exercise-01.html in the tutorials folder of the repo I provided
 \pause
     \item Open up your browser's web developer tools
         \begin{itemize}
         \item Chrome, Safari, Opera and IE9 have built in tools
         \item Firebug for Firefox
         \end{itemize}
-\pause
-    \item Locate your JavaScript console
+    \item ctrl-shift-i in Chrome
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Canonical Test to Ensure Installation}
+    \begin{itemize}
+    \item Take a peek at:
+    \begin{itemize}
+        \items Elements: shows you the current document structure
+        \items Resources: shows you all documents involved in this rendering
+        \items Scripts: allows for breakpoints like a classic IDE
+        \items Console: a REPL to test code
+    \end{itemize}
 \pause
     \item Enter d3 and you should see $\> Object $ in the response
     \end{itemize}
@@ -309,8 +325,13 @@
     \item Let's change the color of the hyperlinks
         \begin{itemize}
         \item Open console
-        \item d3.selectAll("a").style("color","red")
-        \item d3.selectAll("p").style("color","blue")
+        \begin{scriptsize}
+        \begin{verbatim}
+        d3.selectAll("a").style("color","red")
+        d3.selectAll("p").style("color","blue")
+        d3.selectAll("p").style("color", function(d,i) {return "hsl(" + Math.random() * 360 + ",100%,50%)"; });
+        \end{verbatim}
+        \end{scriptsize}
         \end{itemize}
     \item Note the existence of both d3.select and d3.selectAll
         \begin{itemize}
@@ -372,6 +393,25 @@ pause
 
 
 \begin{frame}
+    \frametitle{Exercise-01.html: Hello World: Operators}
+    \begin{itemize}
+    \item Although elements can be selected individually we're normally using operators on the whole set
+        \begin{itemize}
+        \item .text() is an "\underline{operator}", another key d3 term
+        \item Operators can both get or set:
+            \begin{itemize}
+            \item attribute: .attr()
+            \item html content: .html()
+            \item CSS classes: .classed() 
+            \item a CSS property: .property() (Some HTML elements have special properties that are not addressable using standard attributes or styles)
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
     \frametitle{Exercise-01.html: Hello World: Method Chaining}
     \begin{itemize}
     \item Notice that \underline{method chaining} has already begun
@@ -387,32 +427,13 @@ pause
 
 
 \begin{frame}
-    \frametitle{Exercise-01.html: Hello World: Operators}
-    \begin{itemize}
-    \item Although elements can be selected individually we're normally using operators on the whole set
-        \begin{itemize}
-        \item .text() is an "\underline{operator}", another key d3 term
-        \item Operators can both get or set:
-            \begin{itemize}
-            \item attribute: .attr()
-            \item html content: .html()
-            \item CSS classes: .classed() 
-            \item a CSS property: .property() (e.g., a slider value)
-            \end{itemize}
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-
-
-\begin{frame}
     \frametitle{Exercise-01.html: Hello World}
     \begin{itemize}
     \item By default, D3 supports svg, xhtml, xlink, xml and xmlns namespaces
     \item Additional namespaces can be registered
     \item Operators can be set as either constants or as functions
     \end{itemize}
-Bear with me, examples should bring these details to life... 
+Bear with me, more examples should solidify this stuff...
 \end{frame}
 
 
@@ -504,7 +525,7 @@ Bear with me, examples should bring these details to life...
 
 
 \begin{frame}
-    \frametitle{Exercise-09.html: Bar Chart}
+    \frametitle{Exercise-10.html: Bar Chart}
     \begin{itemize}
     \item Bar Chart with HTML Elements
     \item Scales
@@ -512,8 +533,9 @@ Bear with me, examples should bring these details to life...
 \end{frame}
 
 
+
 \begin{frame}
-    \frametitle{Exercise-09.html: Bar Chart}
+    \frametitle{Exercise-10.html: Bar Chart}
     \begin{itemize}
     \item Identity function
     \item Functional programming
@@ -523,6 +545,13 @@ Bear with me, examples should bring these details to life...
     \item Exit
     \end{itemize}
 \end{frame}
+
+
+
+\begin{frame}
+
+\end{frame}
+
 
 
 \subsection{2d Array into HTML Table}
@@ -536,7 +565,7 @@ Bear with me, examples should bring these details to life...
 
 
 
-\subsection{2d Array into SVG Bar Chart}
+\subsection{2d Array into an SVG Bar Chart}
 
 \begin{frame}
     \frametitle{Exercise-12.html: 2d Array into SVG Bar Chart}
