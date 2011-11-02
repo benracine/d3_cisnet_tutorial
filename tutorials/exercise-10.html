@@ -36,11 +36,13 @@ var origin = canvas.selectAll("g")
 // So now we are passing around a length 6 collection, each element with data stuck to it
 // and with data bound to it
 
-origin.append("svg:rect")
+origin
+  .append("svg:rect")
     .attr("height", 25)
     .attr("width", function(d) { return d * 10; });
 
-origin.append("svg:text")
+origin
+  .append("svg:text")
     .attr("x", function(d) { return d * 10 - 6; })
     .attr("y", 25 / 2)
     .attr("dy", ".35em")

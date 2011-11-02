@@ -32,21 +32,70 @@ var matrix = [
   [ 1013,   990,  940, 6907]
 ];
 
-var x = d3.scale.linear()
+
+d3.select("body").append("table");
+
+make_table(matrix);
+
+
+
+// var tr = table.selectAll("tr")
+//     .data(matrix)
+//   .enter().append("tr");
+
+// var td = tr.selectAll("td")
+//     .data(function(d) { return d; })
+//   .enter().append("td")
+//     .style("background", function(d, i){ return x(d); })
+//     .text(function(d) { return d; });
+
+matrix = [
+  [0, 1, 2, 3],
+  [0, 1, 2, 3],
+  [0, 4, 2, 3],
+  [0, 4, 2, 3],
+  [0, 4, 2, 3],
+  [0, 1, 2, 3],
+];
+
+make_table(matrix);
+
+
+function make_table(matrix){
+
+  var x = d3.scale.linear()
     .domain([d3.min(d3.merge(matrix)), d3.max(d3.merge(matrix))])
-    .range(["steelblue", "brown"]);
+    .range(["black", "white"]);
 
-var table = d3.select("body").append("table");
+  var table = d3.select("table");
+  var tr, 
+      td;
 
-var tr = table.selectAll("tr")
-    .data(matrix)
-  .enter().append("tr");
+  // update
+  tr = table.selectAll("tr")
+      .data(matrix);
 
-var td = tr.selectAll("td")
+  // enter
+  tr.enter().append("tr");
+
+  // exit
+  tr.exit().remove();
+
+  // update
+  td = tr.selectAll("td")
     .data(function(d) { return d; })
-  .enter().append("td")
-    .style("background", x)
-    .text(function(d) { return d; });
+
+  // enter
+  td.enter().append("td");
+
+  // exit
+  td.exit().remove();
+
+  tr.selectAll("td")
+      .style("background", function(d, i){ return x(d); })
+      .text(function(d) { return d; });
+
+}
 
     </script>
   </body>

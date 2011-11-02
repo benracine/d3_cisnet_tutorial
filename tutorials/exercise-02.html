@@ -10,20 +10,21 @@
 var w = 960,
     h = 500;
 
-var origin = d3.select("body").append("svg:svg")
+var origin = d3.select("body")
+  .append("svg:svg")
     .attr("width", w)
     .attr("height", h)
   .append("svg:g")
     .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
 
-origin.append("svg:circle")
+origin
+  .append("svg:circle")
     .attr("id", "circle")
     .attr("r", h / 4)
-    .attr("cx", 0)
-    .attr("cy", 0)
     .attr("fill", "steelblue");
 
-origin.append("svg:text")
+origin
+  .append("svg:text")
     .attr("id", "text")
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")
