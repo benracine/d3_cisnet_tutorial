@@ -18,7 +18,12 @@
       <div class="content">
 
 
+
 <script type='text/javascript'>
+/*
+Now typically, the subscription data would be downloaded to the client via an HTTP request. You can poll the server to refresh the latest data every minute, or use web sockets to stream data incrementally, minimizing latency. To simplify this tutorial and focus on the task of visualization, we’ll construct a synthetic (i.e., fake) dataset by random walk:
+*/
+
 var t = 1297110663,                   // start time (seconds since epoch)
     v = 70,                           // start value (subscribers)
     data = d3.range(33).map(next);    // starting dataset
@@ -31,8 +36,28 @@ function next() {
 }
 </script>
 
+<script type='text/javascript'>
+/*
+If you stream data from the server, you can redraw the bar chart whenever new data becomes available. In this case, we’ll cycle the data every 1.5 seconds:
+
+The shift operation removes the first (oldest) element in the array, while the push appends after the last (newest) element. If you have a lot of data, a circular buffer will improve performance; with smaller data, the inefficiency of the shift operation is negligible and can be ignored. The redraw method is a function that you will define; we’ll get to that shortly.
+*/
+setInterval(function() {
+  data.shift();
+  data.push(next());
+  redraw1();
+  redraw2();
+  redraw3();
+}, 1500);
+</script>
+
 
 <script type='text/javascript'>
+
+/*
+For now, the next step is to construct two scales, based on our knowledge of the dataset and the desired chart size. To fix the maximum bar size to 80×20, construct two linear scales:
+*/
+
 var w = 20,
     h = 80;
 
@@ -73,7 +98,7 @@ chart.append("svg:line")
 </script>
 
 
-<div> A Bar Chart With Dynamic Values </div>
+<div> A Bar Chart With Dynamic Bars </div>
 
 <script type='text/javascript'>
 
@@ -113,7 +138,7 @@ function redraw1() {
 
 </script>
 
-<p> A Bar Chart with 
+<p> A Bar Chart with Object Constancy </p>
 
 <script type='text/javascript'>
 
@@ -200,15 +225,7 @@ function redraw3() {
 </script>
 -->
 
-<script type='text/javascript'>
-setInterval(function() {
-  data.shift();
-  data.push(next());
-  redraw1();
-  redraw2();
-  redraw3();
-}, 1500);
-</script>
+
 
   </body>
 </html>
