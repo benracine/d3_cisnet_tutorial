@@ -1,9 +1,18 @@
-http://www.visualizing.org/full-screen/16266
 http://keminglabs.com/ukuni/
+
+http://www.visualizing.org/full-screen/16266
+
+http://mbostock.github.com/d3/talk/20111018/#16
+http://mbostock.github.com/d3/talk/20111018/#17
+http://mbostock.github.com/d3/talk/20111018/#18
+http://mbostock.github.com/d3/talk/20111018/#19
+
 http://whatdoyouworkfor.appspot.com/index.html#
-http://insights.truliablog.com/vis/tru247/
-http://mbostock.github.com/d3/talk/20111018/#0
-http://mbostock.github.com/d3/ex/box.html
-http://mbostock.github.com/d3/ex/bullet.html
+
 http://www.startupweekendviz.johnmorefield.com/d3/examples/SW/map.html
+
+http://insights.truliablog.com/vis/tru247/
+
+
+
 
