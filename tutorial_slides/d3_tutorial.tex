@@ -120,19 +120,25 @@
 \begin{frame}
     \frametitle{Javascript in 120 seconds (yeah right)}
     \begin{itemize}
+\pause
     \item C control structures
+\pause
     \item Dynamic and weak/duck typing
+\pause
     \item Primitive types include:
+\pause
         \begin{itemize}
         \item Boolean: 
             \begin{itemize}
             \item var mayday = false;
             \end{itemize}
+\pause
         \item Number: 
             \begin{itemize}
             \item var sal = 20; 
             \item var pal = 12.1;
             \end{itemize}
+\pause
         \item String: 
             \begin{itemize}
             \item var myName = "Some Name";
@@ -147,10 +153,13 @@
     \begin{itemize}
     \item Collections
         \begin{itemize}
+\pause
         \item Array: var myArray = [[0], [2, 4]]; 
         \item console.log(myArray[1][1]); > 4
-        \item Object: var myObject = {}; myObject.foo = "bar";
+\pause
+        \item Object: var myObject = \{\}; myObject.foo = "bar";
         \end{itemize}
+\pause
     \item Functions
         \begin{itemize}
         \item Are objects; have properties and methods
@@ -193,14 +202,14 @@
 \subsection{Really Helpful But Improbable Analogues}
 
 \begin{frame}
-    \frametitle{Background}
-    \begin{block}{jQuery $+$ Protovis $\approx$ d3}
+    \frametitle{Really Helpful But Improbable Analogues}
+    \begin{block}{"If ProtoVis and jQuery had a Child it Would be d3"}
 \pause
         \begin{itemize}
         \item Any jQuery experience by any chance?
 \pause
             \begin{itemize}
-            \item d3 is similar, but can also target the SVG (an xml image format)
+            \item d3 is similar, but can also target the SVG (an xml conformant image format)
 \pause
             \item They both do some fancy functional programming to make it possible 
                   for us to declaratively reach into the dom tree
@@ -234,7 +243,6 @@
         \item \href{http://www.w3.org/TR/SVG/}{SVG Specification (v1.1)}
 \pause
         \item Me $@i3enhamin$
-        \item The Author $@mbostock$
         \end{itemize}
 \end{frame}
 
@@ -274,7 +282,6 @@
 \end{frame}
 
 
-
 \subsection{Canonical Test to Ensure Installation}
 
 \begin{frame}
@@ -289,7 +296,9 @@
         \item Firebug for Firefox
         \end{itemize}
 \pause
-    \item ctrl shift i in Chrome
+    \item ctrl-shift-i in Chrome
+    \item F12 in Firebug/Firefox
+    \item href{http://getfirebug.com/wiki/index.php/Keyboard_and_Mouse_Shortcuts}{Examples of What Can Be Done in Your "IDE"}
     \end{itemize}
 \end{frame}
 
