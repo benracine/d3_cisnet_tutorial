@@ -288,7 +288,8 @@
         \item Chrome, Safari, Opera and IE9 have built in tools
         \item Firebug for Firefox
         \end{itemize}
-    \item ctrl-shift-i in Chrome
+\pause
+    \item ctrl shift i in Chrome
     \end{itemize}
 \end{frame}
 
@@ -296,14 +297,18 @@
 \begin{frame}
     \frametitle{Canonical Test to Ensure Installation}
     \begin{itemize}
-    \item Take a peek at:
-    \begin{itemize}
-        \items Elements: shows you the current document structure
-        \items Resources: shows you all documents involved in this rendering
-        \items Scripts: allows for breakpoints like a classic IDE
-        \items Console: a REPL to test code
-    \end{itemize}
 \pause
+    \item Take a peek at:
+        \begin{itemize}
+        \item Elements: shows you the current document structure
+\pause
+        \item Resources: shows you all documents involved in this rendering
+\pause
+        \item Scripts: allows for breakpoints like a classic IDE
+\pause
+        \item Console: a REPL to test code
+\pause
+        \end{itemize}
     \item Enter d3 and you should see $\> Object $ in the response
     \end{itemize}
 \end{frame}
@@ -325,13 +330,9 @@
     \item Let's change the color of the hyperlinks
         \begin{itemize}
         \item Open console
-        \begin{scriptsize}
-        \begin{verbatim}
-        d3.selectAll("a").style("color","red")
-        d3.selectAll("p").style("color","blue")
-        d3.selectAll("p").style("color", function(d,i) {return "hsl(" + Math.random() * 360 + ",100%,50%)"; });
-        \end{verbatim}
-        \end{scriptsize}
+        \item d3.selectAll("a").style("color","red")
+        \item d3.selectAll("p").style("color","blue")
+        \item d3.selectAll("p").style("color", function(d,i) {return "hsl(" $+$ Math.random() $*$ 360 $+$ ",100\%,50\%)"; });
         \end{itemize}
     \item Note the existence of both d3.select and d3.selectAll
         \begin{itemize}
@@ -549,7 +550,8 @@ Bear with me, more examples should solidify this stuff...
 
 
 \begin{frame}
-
+    \frametitle{Exercise-17.html: Dynamic Bar Chart}
+Probably the last exercise
 \end{frame}
 
 
@@ -599,7 +601,7 @@ Bear with me, more examples should solidify this stuff...
     \item Event listeners can take many forms
     \item Can listen for different types of events
     \item Click, mouseover, submit, etc.
-    \item There's a subtlety of attaching to multiple functions to the same event...
+    \item There's a subtlety of attaching to multiple functions to the same event.
     \item i.e. click.foo maps to one function, click.bar maps to another function
     \end{itemize}
 \end{frame}
