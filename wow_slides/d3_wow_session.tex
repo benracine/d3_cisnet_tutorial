@@ -27,11 +27,22 @@
 \hypersetup{colorlinks,linkcolor=,urlcolor=links}
 
 \title{PBO Workshop} 
-\subtitle{Getting Excited About Data-Driven Documents With d3} 
+\subtitle{Getting Excited About Data Visualization With d3} 
 \author{Ben Racine \inst{1} }
 \institute{\inst{1} Cornerstone Systems NW }
 \date{November 2, 2011}
 \subject{Data Visualization}
+
+
+
+
+
+ % \begin{frame}
+ %    \scriptsize{
+ %        \frametitle{Outline}
+ %        \tableofcontents[pausesections]
+ %    }
+ % \end{frame}
 
 
 \begin{document}
@@ -43,26 +54,20 @@
 \end{frame}
 
 
- \begin{frame}
-    \scriptsize{
-        \frametitle{Outline}
-        \tableofcontents[pausesections]
-    }
- \end{frame}
-
-
 
 \section{The Philosophy of d3}
+
 
 
 \begin{frame}
 \frametitle{The Philosophy of d3}
 \begin{itemize}
-\item d3 isn't just a charting library
 \pause
-\item But, it does come with many examples and layouts
+\item d3 isn't "just" a charting library
 \pause
-\item d3 is small
+\item It is a tool for building dynamic and interactive visualizations
+\pause
+\item But, it does come with (a quickly growing number of) examples and layouts
 \end{itemize}
 \end{frame}
 
@@ -71,31 +76,37 @@
 \begin{frame}
 \frametitle{The Philosophy of d3}
 \begin{itemize}
-\item d3 doesn't pollute the global namespace
 \pause
-\item d3 honors and web standards instead of reinventing them
+\item d3 is small and doesn't pollute the global namespace
 \pause
-\item Author exposure to modern web standards are portable
+\item d3 honors modern web standards instead of reinventing them
+\pause
+\item This empowers developers with reusable knowledge
+\pause
+\item d3 emphasizes transparency, which enables fine-grain control
 \pause
 \item d3 does "one" thing and does it well, reminiscent of the UNIX spirit
 \end{itemize}
 \end{frame}
 
 
-\subsection{The Cruxes of Visualization}
+
+
+\section{The Cruxes of Visualization}
 
 
 \begin{frame}
 \frametitle{d3 Solves the Cruxes of Visualization}
 \begin{itemize}
-\item Binds data and styled presentation elements 
-    \begin{itemize}
-    \item Provides control over the ability to update, append and remove these bonds
-    \end{itemize}
 \pause
-\item Provides scales to define the mapping back and forth between between data and pixel space
+\item Enables the binding of data to styled presentation elements 
     \begin{itemize}
-    \item These scales include linear, log, power, discrete/continuous, banded, ordinal, etc.
+    \pause
+    \item Provides control over the ability to update, append and remove these bonds
+    \pause
+    \item Provides transitions between different styles
+    \pause
+    \item Provides the ability to obtain new data by url (formats include text, json, xml, html, csv)
     \end{itemize}
 \end{itemize}
 \end{frame}
@@ -103,15 +114,21 @@
 
 
 \begin{frame}
-\begin{itemize}
 \frametitle{d3 Solves the Cruxes of Visualization}
-\item Obtain data anywhere by url (formats include text, json, xml, html, csv)
+\begin{itemize}
 \pause
-\item Transitions between different style representations
+\item Provides scales to define the mapping between between data and pixels
+\pause
+    \begin{itemize}
+    \item Quantitative scales for continuous domains (linear, power, log, etc.)
+\pause
+    \item Ordinal scales for categorical domains
+    \end{itemize}
 \pause
 \item Targets the browser, making it ideal for quickly reaching a wide audience
     \begin{itemize}
-    \item And is there a story for getting to paper from there
+\pause
+    \item And there is a story for getting to print
     \end{itemize}
 \end{itemize}
 \end{frame}
@@ -119,6 +136,7 @@
 
 
 \section{Background}
+
 
 
 \begin{frame}
@@ -129,10 +147,13 @@
 \item Supersedes the ProtoVis project, so resources found there can be relevant
 \pause
 \item Mike Bostock is the primary author
-\item Open sourced on the highly active GitHub.com
+\pause
+\item Open sourced on GitHub.com
+\pause
 \item Only a year or two old
 \end{itemize}
 \end{frame}
+
 
 
 \begin{frame}
@@ -156,6 +177,14 @@ It should be noted that JavaScript has had huge investments in increasing its pe
 
 \section{Tour}
 
+
+\begin{frame}
+\frametitle{Example}
+Moving onto examples
+\end{frame}
+
+
+\end{document}
 
 % \subsection{The Author's Tour}
 
@@ -237,4 +266,3 @@ It should be noted that JavaScript has had huge investments in increasing its pe
 
 
 
-\end{document}
