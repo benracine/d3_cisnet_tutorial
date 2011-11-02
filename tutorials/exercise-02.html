@@ -12,17 +12,12 @@ var w = 960,
 
 var svg = d3.select("body").append("svg:svg")
     .attr("width", w)
-    .attr("height", h);
+    .attr("height", h)
   .append("svg:g")
     .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
 
-svg.append("svg:circle")
-    .attr("r", h / 4)
-    .attr("cx", w / 2)
-    .attr("cy", h / 2)
-    .attr("fill", "steelblue");
-
 svg.append("svg:text")
+    .attr("id", "text")
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")
     .attr("font-weight", 300)
@@ -30,6 +25,13 @@ svg.append("svg:text")
     .attr("font-family", "Helvetica Neue")
     .attr("fill", "white")
     .text("Hello, SVG!");
+
+svg.append("svg:circle")
+    .attr("id", "circle")
+    .attr("r", h / 4)
+    .attr("cx", 0)
+    .attr("cy", 0)
+    .attr("fill", "steelblue");
 
 /* Concepts
 - g element is means of containing other svg elements
@@ -40,7 +42,6 @@ svg.append("svg:text")
     - y is positive down
 - svg:circle self explanatory
     - refer to the SVG spec for relevant circle attributes
-    - fill 
 - note the use of the svg namespace variable to cache a selection of interest
 */
 

@@ -1,6 +1,7 @@
 %  d3 Tutorial CISNET Programmers Breakout November 2, 2011
 %  Author: Ben Racine
 %  Date:   November 2, 2011
+% 
 
 \documentclass{beamer}
 \mode<presentation>
@@ -51,75 +52,87 @@
 
 
 
-\section{If you are eager to get these materials}
+\section{The Philosophy of d3}
+
+
+\subsection{The Philosophy of d3}
 
 \begin{frame}
-    \frametitle{If you are eager to obtain everything}
+\frametitle{The Philosophy of d3}
+\begin{itemize}
+\item d3 isn't just another charting library
     \begin{itemize}
-\pause
-    \item Navigate to github.com
-\pause
-    \item Search for benracine
-\pause
-    \item This repo should be the first hit, i.e. "d3\_cisnet\_tutorial"
+    \item Although it does happen to come with a lot of prepackaged layouts and examples
     \end{itemize}
+\item d3 is a very small and sharp tool that plays nicely with others
+\item d3 doesn't pollute the global namespace
+\item d3 honors and exposes the user to web standards instead of reinventing them
+    \begin{itemize}
+    \item Authors can take their new depth of knowledge of modern web standards with them
+    \end{itemize}
+\item d3 does "one" thing and does it well, reminiscent of the UNIX spirit
+\end{itemize}
 \end{frame}
 
 
-\section{Background}
+\subsection{The Cruxes of Visualization}
+
+\begin{frame}
+\frametitle{d3 Solves the Cruxes of Visualization}
+Well, to be accurate it does more than one thing, it:
+\begin{itemize}
+\item Binds data and styled presentation elements 
+    \begin{itemize}
+    \item Provides control over the ability to update, append and remove these bonds
+    \end{itemize}
+\item Provides scales to define the mapping back and forth between between data and pixel space
+    \begin{itemize}
+    \item These scales include linear, log, power, discrete/continuous, banded, ordinal, etc.
+    \end{itemize}
+\item Applies data-driven dynamic transformations to the document
+    \begin{itemize}
+    \item Locate data anywhere by url (formats include text, json, xml, html, csv)
+    \end{itemize}
+\item Transitions between different style representations
+\item Targets the browser, making it ideal for quickly reaching a wide audience
+    \begin{itemize}
+    \item And is there a story for getting to paper from there
+    \end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\subsection{Background}
 
 
 \begin{frame}
 \frametitle{Background}
 \begin{itemize}
-\item d3.js is a small, free JavaScript library for manipulating documents based on data.
-\item d3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. 
-\item For example:
-    \begin{itemize}
-    \item You can use d3 to generate a basic HTML table from a matrix of numbers.
-    \item You could use the same data to create an interactive SVG bar chart with smooth transitions and interaction.
-    \end{itemize}
+\item d3.js is loosely associated with the \href{http://vis.stanford.edu/}{\underline{Stanford Visualization Group}}
+\begin{itemize}
+\item Supersedes the ProtoVis project, so resources found there can be relevant
+\item Mike Bostock is the primary author
+\item Open sourced on the highly active GitHub.com
+\item Only a year or two old
 \end{itemize}
 \end{frame}
 
 
-
 \begin{frame}
-\frametitle{Ecosystem}
-\begin{itemize}
-\item It largely targets the SVG element
-\item SVG is being increasingly supported:
+\frametitle{Background, cont.}
+\item It largely targets the SVG element, which is being increasingly supported across all major browsers:
     \begin{itemize}
-    \item IE, 9+
+    \item Internet Explorer, 9+
     \item Chrome
     \item Firefox
     \item Safari
-    \item Opera, 9.5+
     \item iOS
     \item Android, 3.0+
+    \item Opera, 9.5+
     \end{itemize}
-\item A few additional JavaScript libraries can be useful for minor data transformations and persistence
-    \begin{itemize}
-    \item Underscore.js
-    \item Backbone.js
-    \item JSONSelect.js 
-    \item Science.js
-    \end{itemize}
-\item JavaScript performance has recently increased considerably
-\item JavaScript has a beautiful functional language buried under some famous warts
-\end{itemize}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Background (cont.)}
+\item Should be noted that JavaScript has had huge investments in increaing its performance recently
 \begin{itemize}
-\item d3.js is loosely associated with the \href{http://vis.stanford.edu/}{\underline{Stanford Visualization Group}}
-\item Supersedes the ProtoVis project
-\item Mike Bostock is the primary author, but it is open source on Github.com
-\item Only a year or two old
-\end{itemize}
 \end{frame}
 
 
@@ -200,70 +213,6 @@
 \begin{itemize}
 \item A side project that I consulted on for the \href{http://www.startupweekendviz.johnmorefield.com/d3/examples/SW/map.html}{Startup Weekend}
 \item ** \href{http://localhost:9000/examples/my_cisnet_demo/navpane.html}{My navpane task}
-\end{itemize}
-\end{frame}
-
-
-
-\section{The Philosophy of d3}
-
-\subsection{Why d3?}
-
-\begin{frame}
-\frametitle{Why d3?}
-\begin{itemize}
-\item It is a small and sharp tool 
-\item Kind of in the Unix philosophy, it does "one" thing and does it well
-\begin{itemize}
-\item i.e. It solves the cruxes of visualization
-\end{itemize}
-\item Plays well with others
-\begin{itemize}
-\item i.e. doesn't pollute the global namespace
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-
-
-\subsection{The Cruxes of Visualization}
-
-\begin{frame}
-\frametitle{The Cruxes of Visualization}
-
-\begin{block}{Scales}
-\begin{itemize}
-\item Data access by url
-\begin{itemize}
-\item text
-\item json
-\item xml
-\item html
-\item csv
-\end{itemize}
-\item Scales define the mapping between the data and pixel/color space
-\item A reverse function can be used to map the other direction too
-\item Linear, log, power, discrete/continuous, banded, ordinal and user defined
-\end{itemize}
-\end{block}
-
-\begin{block}{Data Binding}
-\begin{itemize}
-\item Detailed control over the ability append, remove, union and difference the two
-\end{itemize}
-\end{block}
-
-\end{frame}
-
-
-
-\subsection{Reuse of Existing Standards}
-
-\begin{frame}
-\frametitle{Reuse of Existing Standards}
-\begin{itemize}
-\item Takes advantage of existing w3 standards instead of reinventing the wheel
-\item Authors can take their new depth of knowledge of modern web standards with them
 \end{itemize}
 \end{frame}
 

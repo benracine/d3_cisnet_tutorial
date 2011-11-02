@@ -9,6 +9,6 @@ All the day's materials are here except for:
 
 Included here are:
 
+- The brief tour 'wow' slides
 - The tutorial slides
--  The tutorials themselves
--  The brief tour 'wow' slides
+- The tutorials themselves

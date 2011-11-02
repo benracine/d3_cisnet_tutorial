@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <!--
+    - include the main d3 file in line 11
+	- d3 is the 'core' module
+	- d3.js includes the core, scale, svg and behavior modules, more on those later
+	- others include: time, geo, csv as examples
+	- d3.js is a mere 
+	-->
     <script type="text/javascript" src="./d3.js"></script>
   </head>
   <body>
@@ -10,29 +16,22 @@
 d3.select("body").text("Hello, D3!");
 
 /*
-Concepts
-- include the main d3 file in line 5
-	- d3 is the 'core' module
-	- the default build of d3.js includes the core, scale, svg and behavior modules
-	- others include:
-		- time
-		- geo
-		- csv
-- all d3 commands live in a unified d3 namespace
+- all d3 commands live in a unified d3 namespace, therefore all commands are d3.foo, d3.foo.bar, etc.
 - d3 supports CSS3 notation, i.e. can select by:
-	- can select by tag ("div")
+	- element tag ("div"), ("span"), ("body")
 	- class (".awesome")
-	- unique identifier ("#foo")
+	- unique id ("#foo")
 	- containment ("parent child")
 	- selectors can be intersected (".this.that" for logical AND) or unioned (".this, .that" for logical OR)
 	- attribute ("[color=red]")
 - note the difference between d3.select and d3.selectAll
+	- select just returns the first element
 - text is an "operator"
 	- operators can both get or set
 	- other operators include:
-		- style 
-- notice the method chaining has already begun
-- elements can be accessed directly, by either:
+		- style, attr, property, html
+- notice that method chaining has already begun, i.e. d3.select("body") returns its selection to be acted upon by the text operator
+- elements may be accessed directly, by either:
 	- selection[0][0]
 	- each statements
 */

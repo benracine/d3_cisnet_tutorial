@@ -61,17 +61,17 @@
 \subsection{If you are eager to get these materials}
 
 
-\begin{frame}
-    \frametitle{If you are eager to obtain everything}
-    \begin{itemize}
-\pause
-    \item Navigate to github.com
-\pause
-    \item Search for benracine
-\pause
-    \item This repo should be the first hit, i.e. "d3\_cisnet\_tutorial"
-    \end{itemize}
-\end{frame}
+% \begin{frame}
+%     \frametitle{Again, ff you are eager to obtain everything}
+%     \begin{itemize}
+% \pause
+%     \item Navigate to github.com
+% \pause
+%     \item Search for benracine
+% \pause
+%     \item This repo should be the first hit, i.e. "d3\_cisnet\_tutorial"
+%     \end{itemize}
+% \end{frame}
 
 
 \subsection{Attendee Introduction}
@@ -100,9 +100,23 @@
     \item Dynamic and weak/duck typing
     \item Primitive Types
         \begin{itemize}
-        \item Boolean: var mayday = false;
-        \item Number: var sal = 20; var pal = 12.1;
-        \item String: var myName = "Some Name";
+        \item Boolean: 
+        \begin{itemize}
+        \item var mayday = false;
+        \end{itemize}
+        \item Boolean: 
+        \begin{itemize}
+        var mayday = false;
+        \end{itemize}
+        \item Number: 
+        \begin{itemize}
+        \item var sal = 20; 
+        \item var pal = 12.1;
+        \end{itemize}
+        \item String: 
+        \begin{itemize}
+        \item var myName = "Some Name";
+        \end{itemize}
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -113,7 +127,8 @@
     \begin{itemize}
     \item Collections
         \begin{itemize}
-        \item Array: var myArray = [[0], [2, 4]]; console.log(myArray[1][1]); > 4
+        \item Array: var myArray = [[0], [2, 4]]; 
+        \item console.log(myArray[1][1]); > 4
         \item Object: var myObject = {}; myObject.foo = "bar";
         \end{itemize}
     \item Functions
@@ -187,7 +202,7 @@
         \item Any jQuery experience by any chance?
 \pause
             \begin{itemize}
-            \item d3 is similar, but can also target the SVG (an xml-like image format)
+            \item d3 is similar, but can also target the SVG (an xml image format)
 \pause
             \item They both do some fancy functional programming to make it possible 
                   for us to declaratively reach into the dom tree
@@ -254,6 +269,7 @@
     \frametitle{Participation Query}
     \begin{itemize}
     \item Can I get a sense of the fraction that intend on stepping through the exercises?
+\pause
     \item Versus the number that would just like to follow along?
     \end{itemize}
 \end{frame}
@@ -276,7 +292,6 @@
     \item Locate your JavaScript console
 \pause
     \item Enter d3 and you should see $\> Object $ in the response
-\pause
     \end{itemize}
 \end{frame}
 
@@ -409,7 +424,7 @@ Bear with me, examples should bring these details to life...
 
 
 \begin{frame}
-    \frametitle{Exercise-02.html:: Including an SVG Element}
+    \frametitle{Exercise-02.html: Including an SVG Element}
     \begin{itemize}
     \item Width and height could be related to the width and height of the window
     \item Think of the svg element as a canvas with a transformed coordinate system
@@ -420,7 +435,7 @@ Bear with me, examples should bring these details to life...
 
 
 \begin{frame}
-    \frametitle{Exercise-02.html:: Including an SVG Element: Coordinates}
+    \frametitle{Exercise-02.html: Including an SVG Element: Coordinates}
     \begin{itemize}
     \item A tranform can be a handy way of moving the coordinate system to a desired location
     \item Note:
@@ -436,7 +451,7 @@ Bear with me, examples should bring these details to life...
 
 
 \begin{frame}
-    \frametitle{Exercise-02.html:: Including an SVG Element: Additional Notes}
+    \frametitle{Exercise-02.html: Including an SVG Element: Additional Notes}
     \begin{itemize}
     \item svg:circle self explanatory
         \begin{itemize}
@@ -476,37 +491,6 @@ Bear with me, examples should bring these details to life...
 \end{frame}
 
 
-
-\subsection{Event Listeners}
-
-\begin{frame}
-    \frametitle{Exercises-05.html through Exercise-08.html: Skipping for now}
-    \begin{itemize}
-    \item d, i, and this
-    \item Event listeners can take many forms
-    \item Can listen for different types of events
-    \item Click, mouseover, submit, etc.
-    \item There's a subtlety of attaching to multiple functions to the same event...
-    \item i.e. click.foo maps to one function, click.bar maps to another function
-    \end{itemize}
-\end{frame}
-
-
-
-\subsection{Tweens, Scaling, User-events}
-
-\begin{frame}
-    \frametitle{Exercises-05.html through Exercise-08.html: Skipping for now}
-    \begin{itemize}
-    \item exercise-05.html: skip tweens and get to data bindings
-    \item exercise-06.html: notice that we're scaling the whole image,
-    \item exercise-07.html: listen to user events, i.e watch the mouse move
-    \item exercise-08.html: mouse fading events
-    \item exercise-09.html: html-based bar-chart to emphasize that it's not just for SVG canvases
-    \end{itemize}
-\end{frame}
-
-
 \section{A Quick Break}
 
 \begin{frame}
@@ -514,7 +498,9 @@ Bear with me, examples should bring these details to life...
 \end{frame}
 
 
+
 \section{Tutorials: Round Two}
+
 
 
 \subsection{Bar Chart}
@@ -579,6 +565,33 @@ Bear with me, examples should bring these details to life...
 
 \subsection{Extras}
 
+\subsection{Event Listeners}
+\begin{frame}
+    \frametitle{Exercises-05.html through Exercise-08.html: Skipping for now}
+    \begin{itemize}
+    \item d, i, and this
+    \item Event listeners can take many forms
+    \item Can listen for different types of events
+    \item Click, mouseover, submit, etc.
+    \item There's a subtlety of attaching to multiple functions to the same event...
+    \item i.e. click.foo maps to one function, click.bar maps to another function
+    \end{itemize}
+\end{frame}
+
+
+\subsection{Tweens, Scaling, User-events}
+
+\begin{frame}
+    \frametitle{Exercises-05.html through Exercise-08.html: Skipping for now}
+    \begin{itemize}
+    \item exercise-05.html: skip tweens and get to data bindings
+    \item exercise-06.html: notice that we're scaling the whole image,
+    \item exercise-07.html: listen to user events, i.e watch the mouse move
+    \item exercise-08.html: mouse fading events
+    \item exercise-09.html: html-based bar-chart to emphasize that it's not just for SVG canvases
+    \end{itemize}
+\end{frame}
+
 \begin{frame}
     \frametitle{Extras}
     \begin{itemize}
@@ -597,6 +610,7 @@ Bear with me, examples should bring these details to life...
 
 
 \section{Conclusion}
+
 
 \begin{frame}
     \frametitle{Conclusion}
