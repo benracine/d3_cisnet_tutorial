@@ -27,7 +27,7 @@
 var w = 960,
     h = 500;
 
-var svg = d3.select("body")
+var origin = d3.select("body")
   .append("svg:svg")
     .attr("width", w)
     .attr("height", h)
@@ -35,11 +35,11 @@ var svg = d3.select("body")
     .attr("id", "transform")
     .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
 
-svg.append("svg:circle")
+origin.append("svg:circle")
     .attr("id", "my_circle")
     .attr("r", h / 4);
 
-svg.append("svg:text")
+origin.append("svg:text")
     .attr("id", "my_text")
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")

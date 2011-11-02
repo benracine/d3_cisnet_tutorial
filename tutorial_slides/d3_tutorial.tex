@@ -62,7 +62,7 @@
 
 
 \begin{frame}
-    \frametitle{Again, ff you are eager to obtain everything}
+    \frametitle{If you are eager to obtain everything}
     \begin{itemize}
 \pause
     \item Navigate to github.com
@@ -154,6 +154,7 @@
         \begin{itemize}
 \pause
         \item Array: var myArray = [[0], [2, 4]]; 
+\pause
         \item console.log(myArray[1][1]); > 4
 \pause
         \item Object: var myObject = \{\}; myObject.foo = "bar";
@@ -202,7 +203,7 @@
 
 \begin{frame}
     \frametitle{Really Helpful But Improbable Analogues}
-    \begin{block}{"If ProtoVis and jQuery had a Child it Would be d3"}
+    \begin{block}{"If ProtoVis and jQuery Had a Child it Would be d3" -Mike Bostock}
 \pause
         \begin{itemize}
         \item Any jQuery experience by any chance?
@@ -297,8 +298,13 @@
         \end{itemize}
 \pause
     \item ctrl-shift-i in Chrome
+\pause
     \item F12 in Firebug/Firefox
-    \item href{http://getfirebug.com/wiki/index.php/Keyboard\_and\_Mouse\_Shortcuts}{Examples of What Can Be Done in Your "IDE"}
+\pause
+    \item cmd-shift-i in Safari?
+\pause
+    \item Google "firebug shortcut keys" for a sense of what can be done with these tools
+    \item All the tools are similar, but too different for me to fully detail for you though
     \end{itemize}
 \end{frame}
 
@@ -308,14 +314,15 @@
     \begin{itemize}
 \pause
     \item Take a peek at:
+\pause
         \begin{itemize}
         \item Elements: shows you the current document structure
 \pause
         \item Resources: shows you all documents involved in this rendering
 \pause
-        \item Scripts: allows for breakpoints like a classic IDE
+        \item Scripts: allows for breakpoints just like a classic IDE
 \pause
-        \item Console: a REPL to test code
+        \item Console: a REPL to test JavaScript code
 \pause
         \end{itemize}
     \item Enter d3 and you should see $\> Object $ in the response
@@ -410,10 +417,11 @@ pause
         \item .text() is an "\underline{operator}", another key d3 term
         \item Operators can both get or set:
             \begin{itemize}
-            \item attribute: .attr()
-            \item html content: .html()
-            \item CSS classes: .classed() 
-            \item a CSS property: .property() (Some HTML elements have special properties that are not addressable using standard attributes or styles)
+            \item attribute values: .attr()
+            \item \underline{inner} html content: .html()
+            \item a raw property: .property() (Some HTML elements have special properties that are not addressable using standard attributes or styles)
+            \item CSS style property: .style()
+            \item add or remove CSS classes: .classed() 
             \end{itemize}
         \end{itemize}
     \end{itemize}
@@ -431,6 +439,7 @@ pause
         \item (e.g., selection$[0][0]$)
         \item or through the .each() call
         \end{itemize}
+    \item Selection are an array of arrays of elements in order to preserve hierarchical structure of subselections
     \end{itemize}
 \end{frame}
 

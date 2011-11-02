@@ -10,13 +10,20 @@
 var w = 960,
     h = 500;
 
-var svg = d3.select("body").append("svg:svg")
+var origin = d3.select("body").append("svg:svg")
     .attr("width", w)
     .attr("height", h)
   .append("svg:g")
     .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
 
-svg.append("svg:text")
+origin.append("svg:circle")
+    .attr("id", "circle")
+    .attr("r", h / 4)
+    .attr("cx", 0)
+    .attr("cy", 0)
+    .attr("fill", "steelblue");
+
+origin.append("svg:text")
     .attr("id", "text")
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")
@@ -26,12 +33,6 @@ svg.append("svg:text")
     .attr("fill", "white")
     .text("Hello, SVG!");
 
-svg.append("svg:circle")
-    .attr("id", "circle")
-    .attr("r", h / 4)
-    .attr("cx", 0)
-    .attr("cy", 0)
-    .attr("fill", "steelblue");
 
 /* Concepts
 - g element is means of containing other svg elements

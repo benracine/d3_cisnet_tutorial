@@ -24,11 +24,11 @@ var numbers = [4, 8, 15, 16, 23, 42];
 var w = 960,
     h = 500;
 
-var svg = d3.selectAll("body").append("svg:svg")
+var canvas = d3.selectAll("body").append("svg:svg")
     .attr("width", w)
     .attr("height", h);
 
-var g = svg.selectAll("g")
+var origin = canvas.selectAll("g")
     .data(numbers)
   .enter().append("svg:g")
     .attr("transform", function(d, i) { return "translate(0," + (i * 26 + 1) + ")"; });
@@ -36,11 +36,11 @@ var g = svg.selectAll("g")
 // So now we are passing around a length 6 collection, each element with data stuck to it
 // and with data bound to it
 
-g.append("svg:rect")
+origin.append("svg:rect")
     .attr("height", 25)
     .attr("width", function(d) { return d * 10; });
 
-g.append("svg:text")
+origin.append("svg:text")
     .attr("x", function(d) { return d * 10 - 6; })
     .attr("y", 25 / 2)
     .attr("dy", ".35em")

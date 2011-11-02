@@ -19,9 +19,9 @@
 
 
 <script type='text/javascript'>
-var t = 1297110663,
-    v = 70,
-    data = d3.range(33).map(next);
+var t = 1297110663,                   // start time (seconds since epoch)
+    v = 70,                           // start value (subscribers)
+    data = d3.range(33).map(next);    // starting dataset
 
 function next() {
   return {
@@ -73,7 +73,6 @@ chart.append("svg:line")
 </script>
 
 
-<!--
 <div> A Bar Chart With Dynamic Values </div>
 
 <script type='text/javascript'>
@@ -114,7 +113,7 @@ function redraw1() {
 
 </script>
 
-
+<p> A Bar Chart with 
 
 <script type='text/javascript'>
 
@@ -155,6 +154,7 @@ function redraw2() {
 
 </script>
 
+<!--
 <script type='text/javascript'>
 
 var chart3 = d3.select(".content")
@@ -198,6 +198,7 @@ function redraw3() {
 }
 
 </script>
+-->
 
 <script type='text/javascript'>
 setInterval(function() {
@@ -208,7 +209,6 @@ setInterval(function() {
   redraw3();
 }, 1500);
 </script>
--->
 
   </body>
 </html>
